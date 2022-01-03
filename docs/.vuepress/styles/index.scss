@@ -1,0 +1,21 @@
+/**
+ * Custom Styles here.
+ *
+ * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ */
+
+.home .hero img {
+  max-width: 450px !important;
+}
+
+:root {
+  // brand colors
+  --c-brand: #23a8e0;
+  --c-brand-light: #4abf8a;
+}
+
+html.dark {
+  // brand colors
+  --c-brand: #3d9ac2;
+  --c-brand-light: #349469;
+}
