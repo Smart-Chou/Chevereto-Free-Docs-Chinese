@@ -50,10 +50,6 @@ Chevereto-Free is a fork from [Chevereto V3.16.2](https://releases.chevereto.com
 * Apache HTTP Web Server
   * mod_rewrite
 
-## 📚 Documentation
-
-[chevereto-free.github.io](https://chevereto-free.github.io)
-
 ## 📜 License
 
 Copyright [Rodolfo Berríos Arce](http://rodolfoberrios.com) - [AGPLv3](LICENSE).

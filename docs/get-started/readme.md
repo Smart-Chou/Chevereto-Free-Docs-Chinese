@@ -50,10 +50,6 @@ Chevereto-Free 是 [Chevereto V3.16.2](https://releases.chevereto.com/3.X/3.16/3
 * Apache HTTP Web Server
   * mod_rewrite
 
-## 📚 文档
-
-[chevereto-free.github.io](https://chevereto-free.github.io)
-
 ## 📜 许可证
 
 版权所有 [Rodolfo Berríos Arce](http://rodolfoberrios.com) - [AGPLv3](LICENSE)。
