@@ -1,11 +1,11 @@
-# Setup cron
+# 设置 cron
 
-Background jobs needs to be configured by running a [cron](../../setup/system/requirements.md#cron). You need to configure this and make sure that is working every time you deploy Chevereto.
+需要通过运行 [cron](../../setup/system/requirements.md#cron) 来配置后台作业。您需要对此进行配置，并确保每次部署 Chevereto 时都能正常工作。
 
-::: danger Must have
-If this is not configured Chevereto won't remove expired images, check for updates, process external storage deletes and run maintenance tasks.
+::: danger 必须有
+如果没有配置 Chevereto 将不会删除过期的图像、检查更新、处理外部存储删除和运行维护任务。
 :::
 
-## Cron Guides
+## Cron 指南
 
-* [Setup Cron on cPanel](../../setup/server/cpanel.md#setup-cron-on-cpanel)
+* [在 cPanel 上设置 Cron](../../setup/server/cpanel.md#setup-cron-on-cpanel)

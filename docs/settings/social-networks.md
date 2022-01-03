@@ -1,111 +1,111 @@
-# Social networks
+# 社交网络
 
 `/dashboard/settings/social-networks`
 
 ## Facebook
 
-Toggles usage of [Facebook login](../features/social-login.md#facebook-login).
+切换 [Facebook 登录](../features/integrations/social-login.md#facebook-login) 的使用。
 
-| Value    | Effect                                       |
+|键值 |效果|
 | -------- | -------------------------------------------- |
-| Enabled  | Enable login with Facebook (not recommended) |
-| Disabled | Disable login with Facebook (recommended)    |
+|启用|启用 Facebook 登录(不推荐)|
+|禁用|禁用 Facebook 登录(推荐)|
 
-## Facebook app id
+## Facebook 应用程序 ID
 
-*Applies only if `Facebook` is set to `Enabled`.
+* 仅在“Facebook”设置为“已启用”时适用。
 
-| Type   | Description     |
+|类型 |说明 |
 | ------ | --------------- |
-| String | Facebook app id |
+|字符串 | Facebook 应用程序 ID |
 
-## Facebook app secret
+## Facebook 应用程序的秘密
 
-*Applies only if `Facebook` is set to `Enabled`.
+* 仅在“Facebook”设置为“已启用”时适用。
 
-| Type   | Description         |
+|类型 |说明 |
 | ------ | ------------------- |
-| String | Facebook app secret |
+|字符串 | Facebook应用秘密|
 
-## Twitter
+## 推特
 
-Toggles usage of [Twitter login](../features/social-login.md#twitter-login).
+切换 [Twitter 登录](../features/integrations/social-login.md#twitter-login) 的使用。
 
-| Value    | Effect                                      |
-| -------- | ------------------------------------------- |
-| Enabled  | Enable login with Twitter (not recommended) |
-| Disabled | Disable login with Twitter (recommended)    |
+|键值 |效果|
+| -------- | --------------------------------------------- |
+|启用|启用 Twitter 登录(不推荐)|
+|禁用|禁用 Twitter 登录(推荐)|
 
-## Twitter API key
+## Twitter API 密钥
 
-*Applies only if `Twitter` is set to `Enabled`.
+* 仅当“Twitter”设置为“已启用”时才适用。
 
-| Type   | Description     |
+|类型 |说明 |
 | ------ | --------------- |
-| String | Twitter API key |
+|字符串 | Twitter API 密钥 |
 
-## Twitter API secret
+## Twitter API 秘密
 
-*Applies only if `Twitter` is set to `Enabled`.
+* 仅当“Twitter”设置为“已启用”时才适用。
 
-| Type   | Description        |
+|类型 |说明 |
 | ------ | ------------------ |
-| String | Twitter API secret |
+|字符串 | Twitter API 秘密 |
 
-## Twitter account
+## 推特账号
 
-*Applies only if `Twitter` is set to `Enabled`.
+* 仅当“Twitter”设置为“已启用”时才适用。
 
-| Type   | Example    |
+|类型 |示例 |
 | ------ | ---------- |
-| String | @chevereto |
+|字符串 | @chevereto |
 
-## Google
+## 谷歌
 
-Toggles usage of [Google login](../features/social-login.md#google-login).
+切换 [Google 登录](../features/integrations/social-login.md#google-login) 的使用。
 
-| Value    | Effect                    |
+|键值 |效果|
 | -------- | ------------------------- |
-| Enabled  | Enable login with Google  |
-| Disabled | Disable login with Google |
+|启用|启用 Google 登录 |
+|禁用|禁用 Google 登录 |
 
-## Google client id
+## Google 客户端 ID
 
-*Applies only if `Google` is set to `Enabled`.
+* 仅当“Google”设置为“已启用”时才适用。
 
-| Type   | Description      |
+|类型 |说明 |
 | ------ | ---------------- |
-| String | Google client id |
+|字符串 | Google 客户 ID |
 
-## Google client secret
+## 谷歌客户端密码
 
-*Applies only if `Google` is set to `Enabled`.
+* 仅当“Google”设置为“已启用”时才适用。
 
-| Type   | Description          |
+|类型 |说明 |
 | ------ | -------------------- |
-| String | Google client secret |
+|字符串 | Google 客户机密 |
 
 ## VK
 
-Toggles usage of [VK login](../features/social-login.md#vk-login).
+切换 [VK 登录](../features/integrations/social-login.md#vk-login) 的使用。
 
-| Value    | Effect                |
+|键值 |效果|
 | -------- | --------------------- |
-| Enabled  | Enable login with VK  |
-| Disabled | Disable login with VK |
+|启用|启用 VK 登录 |
+|禁用|禁用 VK 登录 |
 
-## VK client id
+## VK 客户端 ID
 
-*Applies only if `VK` is set to `Enabled`.
+* 仅当 `VK` 设置为 `启用` 时适用。
 
-| Type   | Description  |
+|类型 |说明 |
 | ------ | ------------ |
-| String | VL client id |
+|字符串 | VL 客户端 ID |
 
-## VK client secret
+## VK 客户端密码
 
-*Applies only if `VK` is set to `Enabled`.
+* 仅当 `VK` 设置为 `启用` 时适用。
 
-| Type   | Description      |
+|类型 |说明 |
 | ------ | ---------------- |
-| String | VK client secret |
+|字符串 | VK 客户端机密 |

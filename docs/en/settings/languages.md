@@ -22,7 +22,7 @@ When enabled, the system language will be set based on user's browser default la
 
 | Value    | Effect                |
 | -------- | --------------------- |
-| Enabled  | Enable auto language  |
+| Enabled | Enable auto language  |
 | Disabled | Disable auto language |
 
 ## Language chooser
@@ -33,10 +33,10 @@ When enabled the system will allow users to choose which language they want to u
 
 | Value    | Effect                   |
 | -------- | ------------------------ |
-| Enabled  | Enable language chooser  |
+| Enabled | Enable language chooser  |
 | Disabled | Disable language chooser |
 
-## Enabled languages
+## Enabledlanguages
 
 This sets  This means that for all users this will be the default language used if "Auto language" is turned off.
 

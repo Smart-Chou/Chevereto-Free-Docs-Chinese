@@ -1,19 +1,19 @@
-# Banners
+# 横幅广告
 
 `/dashboard/settings/banners`
 
-The system comes with 16 predefined ad spaces (32 if you consider SFW and NSFW usage) that allows you to generate revenue.
+该系统带有 16 个预定义的广告空间(如果您考虑使用 SFW 和 NSFW，则为 32 个)，添加广告可让您产生收入。
 
 ::: tip
-Although ad slots are intended to be used to place banners, you can use these for placing any kind of HTML code.
+尽管广告位旨在用于放置横幅，但您可以使用它们来放置任何类型的 HTML 代码。
 :::
 
-| Location                  | Ad spaces                                                                                                                                                                    |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Homepage                  | Before main title (homepage), After call to action (homepage), After cover (homepage), After listing (homepage)                                                              |
-| Listings                  | Before pagination, After pagination                                                                                                                                          |
-| Content (image and album) | Tab about column, Before comments                                                                                                                                            |
-| Image page                | Inside viewer top (image page), Inside viewer foot (image page), After image viewer (image page), Before header (image page), After header (image page), Footer (image page) |
-| Album page                | Before header (album page), After header (album page)                                                                                                                        |
-| User profile page         | After top (user profile), Before listing (user profile)                                                                                                                      |
-| Explore page              | After top (explore page)                                                                                                                                                     |
+|位置 |广告空间 |
+| ------------------------- | ---------------------------------------- |
+|主页 |主标题前(主页)、号召性用语后(主页)、封面后(主页)、上市后(主页) |
+|清单 |分页前，分页后 |
+|内容(图片和相册)|关于列的标签，评论前 |
+|图片页 |内部查看器顶部(图像页面)，内部查看器脚部(图像页面)，图像查看器之后(图像页面)，页眉之前(图像页面)，页眉之后(图像页面)，页脚(图像页面)|
+|专辑页面 |标题前(专辑页面)，标题后(专辑页面)|
+|用户资料页 |置顶之后(用户资料)，上市前(用户资料)|
+|探索页面 |在顶部(探索页面)之后 |

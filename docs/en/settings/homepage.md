@@ -57,7 +57,7 @@ Toggles homepage call to action outline style.
 
 | Value    | Effect                                        |
 | -------- | --------------------------------------------- |
-| Enabled  | Enable homepage call to action outline style  |
+| Enabled | Enable homepage call to action outline style  |
 | Disabled | Disable homepage call to action outline style |
 
 ## Call to action functionality

@@ -1,35 +1,35 @@
-# IP bans
+# IP屏蔽
 
 `/dashboard/settings/ip-bans`
 
-IP bans allows to ban IP addresses and IP ranges from using the system.
+IP 禁止允许禁止 IP 地址和 IP 范围使用系统。
 
-## Adding IP bans
+## 添加 IP 屏蔽
 
-Click on "Add IP ban".
+点击“添加IP屏蔽”。
 
-## IP ban values
+## IP 禁止值
 
-### Ip address
+### IP地址
 
-The IP address to ban.
+要禁止的 IP 地址。
 
-| Type   | Accepted                |
+|类型 |接受 |
 | ------ | ----------------------- |
-| String | IPV4 and IPV6 addresses |
+|字符串 | IPV4 和 IPV6 地址 |
 
-### Expiration date
+### 截止日期
 
-Determines the expiration date for the IP ban.
+确定 IP 屏蔽的到期日期。
 
-| Type     | Optional |
+|类型 |可选 |
 | -------- | -------- |
-| Datetime | Y        |
+|日期时间 |是 |
 
-### Description
+### 描述
 
-A brief description about the category. It will be used in the `<meta name="description">` tag for the category page.
+关于类别的简要说明。它将在类别页面的 `<meta name="description">` 标签中使用。
 
-| Type   | Accepted |
+|类型 |接受 |
 | ------ | -------- |
-| String | Any      |
+|字符串 |任何 |

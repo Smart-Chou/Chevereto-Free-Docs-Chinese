@@ -1,20 +1,20 @@
-# Introduction
+# 介绍
 
-## What is Chevereto?
+## Chevereto 是什么？
 
-Chevereto is a self-hosted multi-user, full-featured image hosting solution.
+Chevereto 是一种自托管的多用户、功能齐全的图像托管解决方案。
 
-## Use
+## 利用
 
-Chevereto on its core provides an image hosting service that you can configure to use it in different contexts. It has many applications, including:
+Chevereto 的核心提供了一种图像托管服务，您可以对其进行配置以在不同的上下文中使用它。它有很多应用，包括：
 
-* Image host/sharing service
-* Showcase galleries
-* Asset image storage
-* Image-based sharing communities
+* 图片托管/分享服务
+* 展示画廊
+* 资产图片存储
+* 基于图像的共享社区
 
-The point of Chevereto is that it handles very large image collections and is optimized for network usage. Chevereto has been designed to provide image hosting and sharing at large scale.
+Chevereto 的重点在于它可以处理非常大的图像集合并针对网络使用进行了优化。 Chevereto 旨在提供大规模的图像托管和共享。
 
-## Origin
+## 起源
 
-Chevereto began in 2007 as a self-hosted alternative to ImageShack. It started as one-click image hosting service and here we are.
+Chevereto 于 2007 年开始作为 ImageShack 的自托管替代方案。它最初是一键式图像托管服务，现在我们来了。

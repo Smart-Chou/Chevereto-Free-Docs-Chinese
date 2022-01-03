@@ -8,7 +8,7 @@ Toggles usage of [Akismet](https://akismet.com/) service.
 
 | Value    | Effect          |
 | -------- | --------------- |
-| Enabled  | Enable Akismet  |
+| Enabled | Enable Akismet  |
 | Disabled | Disable Akismet |
 
 ## Akismet API key
@@ -25,7 +25,7 @@ Toggles usage of [Stop Forum Spam](https://stopforumspam.com/) service.
 
 | Value    | Effect                  |
 | -------- | ----------------------- |
-| Enabled  | Enable Stop Forum Spam  |
+| Enabled | Enable Stop Forum Spam  |
 | Disabled | Disable Stop Forum Spam |
 
 ## CDN
@@ -34,7 +34,7 @@ Toggles usage of [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) (
 
 | Value    | Effect      |
 | -------- | ----------- |
-| Enabled  | Enable CDN  |
+| Enabled | Enable CDN  |
 | Disabled | Disable CDN |
 
 ## CDN URL
@@ -53,7 +53,7 @@ Toggles usage of [reCAPTCHA](https://www.google.com/recaptcha/about/).
 
 | Value    | Effect            |
 | -------- | ----------------- |
-| Enabled  | Enable reCAPTCHA  |
+| Enabled | Enable reCAPTCHA  |
 | Disabled | Disable reCAPTCHA |
 
 ## reCAPTCHA version
@@ -107,7 +107,7 @@ Toggle showing (forced) reCAPTCHA on contact page.
 
 | Value    | Effect                                   |
 | -------- | ---------------------------------------- |
-| Enabled  | Enable forced reCAPTCHA on contact page  |
+| Enabled | Enable forced reCAPTCHA on contact page  |
 | Disabled | Disable forced reCAPTCHA on contact page |
 
 ## Comments API
@@ -165,7 +165,7 @@ Toggles usage of [ModerateContent](https://www.moderatecontent.com/) service.
 
 | Value    | Effect                  |
 | -------- | ----------------------- |
-| Enabled  | Enable ModerateContent  |
+| Enabled | Enable ModerateContent  |
 | Disabled | Disable ModerateContent |
 
 ## ModerateContent API Key
@@ -186,7 +186,7 @@ Toggles automatic approve for content approved by ModerateContent.
 
 | Value    | Effect                                    |
 | -------- | ----------------------------------------- |
-| Enabled  | Enable ModerateContent automatic approve  |
+| Enabled | Enable ModerateContent automatic approve  |
 | Disabled | Disable ModerateContent automatic approve |
 
 ## Block content

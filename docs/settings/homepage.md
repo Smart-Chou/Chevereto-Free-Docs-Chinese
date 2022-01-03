@@ -1,102 +1,102 @@
-# Homepage
+# 主页
 
 `/dashboard/settings/homepage`
 
-## Style
+## 风格
 
-| Value                  | Effect                                                                    |
-| ---------------------- | ------------------------------------------------------------------------- |
-| Landing page           | Set homepage as a landing page with a heading and a call to action button |
-| Split landing + images | Set homepage as split landing plus a list of images                       |
-| Route explore          | Set homepage as `/explore`                                                |
-| Route upload           | Set homepage as `/upload`                                                 |
+|键值 |效果|
+| --------------- | -------------------------------------------------- |
+|登陆页面 |将主页设置为带有标题和号召性用语按钮的登录页面 |
+|拆分着陆 + 图像 |将主页设置为拆分登陆加上图像列表 |
+|路线探索 |设置主页为`/explore` |
+|路线上传 |设置主页为`/upload` |
 
-## Cover image (`n`)
+## 封面图片 (`n`)
 
-Determines the cover image used in homepage (multiple instances).
+确定主页中使用的封面图像(多个实例)。
 
-| Type  | Recommended |
+|类型 |推荐 |
 | ----- | ----------- |
-| Image | `<400KB`    |
+|图像 | `<400KB` |
 
-## Add new cover image
+## 添加新的封面图片
 
-Adds a new cover image.
+添加新的封面图片。
 
-| Type  | Recommended |
+|类型 |推荐 |
 | ----- | ----------- |
-| Image | `<400KB`    |
+|图像 | `<400KB` |
 
-## Title
+## 标题
 
-Determines the title shown in homepage.
+确定主页中显示的标题。
 
-| Type   | Default                       |
+|类型 |默认 |
 | ------ | ----------------------------- |
-| String | Upload and share your images. |
+|字符串 |上传和分享您的图片。 |
 
-## Paragraph
+## 段落
 
-Determines the paragraph shown in homepage.
+确定主页中显示的段落。
 
-| Type   | Default                                                                                                                          |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| String | Drag and drop anywhere you want and start uploading your images now. 2 MB limit. Direct image links, BBCode and HTML thumbnails. |
+|类型 |默认 |
+| ------ | ----------------------------------------------------------------------------------- |
+|字符串 |拖放到您想要的任何位置并立即开始上传您的图像。 2 MB 限制。直接图像链接、BBCode 和 HTML 缩略图。 |
 
-## Call to action button color
+## 号召性用语按钮颜色
 
-Determines the color for the homepage call to action button.
+确定主页号召性用语按钮的颜色。
 
-| Type   | Options                                               |
-| ------ | ----------------------------------------------------- |
-| String | Blue, Green, Orange, Red, Grey, Black, White, Default |
+|类型 |选项 |
+| ------ | ----------------------------------------------- |
+|字符串 |蓝色、绿色、橙色、红色、灰色、黑色、白色、默认 |
 
-## Call to action outline style button
+## 号召性用语大纲样式按钮
 
-Toggles homepage call to action outline style.
+切换主页号召性用语大纲样式。
 
-| Value    | Effect                                        |
+|键值 |效果|
 | -------- | --------------------------------------------- |
-| Enabled  | Enable homepage call to action outline style  |
-| Disabled | Disable homepage call to action outline style |
+|启用|启用主页号召性用语大纲样式 |
+|禁用|禁用主页号召性用语大纲样式 |
 
-## Call to action functionality
+## 号召性用语功能
 
-| Value            | Effect                          |
+|键值 |效果|
 | ---------------- | ------------------------------- |
-| Trigger uploader | Prompt image upload file picker |
-| Open URL         | Link to the target URL          |
+|触发上传器 |提示图片上传文件选择器|
+|打开网址 |链接到目标 URL |
 
-## Call to action URL
+## 号召性用语网址
 
-* Applies only when `Call to action functionality` is set to `Open URL`.
+* 仅当“号召性用语功能”设置为“打开 URL”时适用。
 
-Determines the target URL for the homepage call to action button.
+确定主页号召性用语按钮的目标 URL。
 
-| Type   | Example     |
+|类型 |示例 |
 | ------ | ----------- |
-| String | `/page/tos` |
+|字符串 | `/page/tos` |
 
-## Call to action HTML
+## 号召性用语 HTML
 
-Determines the HTML for the homepage call to action button.
+确定主页号召性用语按钮的 HTML。
 
-| Type   | Default         |
+|类型 |默认 |
 | ------ | --------------- |
-| String | Start uploading |
+|字符串 |开始上传 |
 
-## User IDs
+## 用户 ID
 
 ::: tip
-This setting applies only when `Style` is set to `Split landing + images`.
+此设置仅在“样式”设置为“拆分着陆+图像”时适用。
 :::
 
-Determines the user ids which will source the homepage images. Leave it blank to display "trending" images, which will work as `/explore/trending`.
+确定将提供主页图像的用户 ID。将其留空以显示“趋势”图像，它将作为`/explore/trending`。
 
-| Type          | Example    |
+|类型 |示例 |
 | ------------- | ---------- |
-| Integers list | 1,2,3,5,70 |
+|整数列表 | 1,2,3,5,70 |
 
-::: warning Not showing images?
-Check that the content is not being restricted due to privacy settings.
+::: danger 不显示图像？
+检查内容是否因隐私设置而受到限制。
 :::

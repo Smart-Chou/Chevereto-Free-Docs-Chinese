@@ -1,87 +1,87 @@
-# Email
+# 电子邮件
 
 `/dashboard/settings/email`
 
 ::: tip
-Test email delivery results at [tools](./tools.md#send-test-email).
+在 [tools](./tools.md#send-test-email) 测试电子邮件发送结果。
 :::
 
-## From name
+## 来自名字
 
-Determines the `from` name used when sending transactional emails.
+确定发送交易电子邮件时使用的“发件人”名称。
 
-| Type   | Default     |
+|类型 |默认 |
 | ------ | ----------- |
-| String | `Chevereto` |
+|字符串 | `chevereto` |
 
-## From email address
+## 来自电子邮件地址
 
-Determines the `email` used when sending transactional emails.
+确定发送交易电子邮件时使用的“电子邮件”。
 
-It is recommended to use a "no-reply" address.
+建议使用“无回复”地址。
 
-| Type   | Example                  |
+|类型 |示例 |
 | ------ | ------------------------ |
-| String | `no-reply@chevereto.com` |
+|字符串 | `no-reply@chevereto.com` |
 
-## Incoming email address
+## 接收电子邮件地址
 
-Determines the `email` inbox.
+确定“电子邮件”收件箱。
 
-Contact form and system notifications will send emails to this address.
+联系表格和系统通知将向此地址发送电子邮件。
 
-| Type   | Example               |
+|类型 |示例 |
 | ------ | --------------------- |
-| String | `inbox@chevereto.com` |
+|字符串 | `inbox@chevereto.com` |
 
-## Email mode
+## 电子邮件模式
 
-Determines the email mode to use.
+确定要使用的电子邮件模式。
 
-::: warning
-The setting `PHP mail() func.` should only be used at development environment and for reliability you should always use SMTP.
+::: danger
+设置`PHP mail() func.` 应该只在开发环境中使用，并且为了可靠性你应该总是使用 SMTP。
 :::
 
-| Value            | Effect                                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------------------- |
-| SMTP             | Send email using [Simple Mail Transfer Protocol](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) |
-| PHP mail() func. | Send email using PHP [mail function](https://www.php.net/manual/en/function.mail.php)                         |
+|键值 |效果|
+| ---------------- | ------------------------------------------------------------------------------ |
+|邮件发送 |使用 [简单邮件传输协议](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) 发送电子邮件 |
+| PHP 邮件()函数。 |使用PHP发送邮件[邮件功能](https://www.php.net/manual/en/function.mail.php) |
 
 ::: tip
-Below SMTP settings applies only when `Email mode` is set to `SMTP`.
+以下 SMTP 设置仅在“电子邮件模式”设置为“SMTP”时适用。
 :::
 
-## SMTP server and port
+## SMTP 服务器和端口
 
-Determines SMTP server and its port.
+确定 SMTP 服务器及其端口。
 
-| Type    | Values                  |
+|类型 |价值观 |
 | ------- | ----------------------- |
-| String  | SMTP hostname           |
-| Integer | Ports: 25, 80, 465, 587 |
+|字符串 | SMTP 主机名 |
+|整数 |端口：25、80、465、587 |
 
-## SMTP username
+## SMTP 用户名
 
-Determines SMTP username.
+确定 SMTP 用户名。
 
-| Type   | Values        |
+|类型 |价值观 |
 | ------ | ------------- |
-| String | SMTP username |
+|字符串 | SMTP 用户名 |
 
-## SMTP password
+## SMTP 密码
 
-Determines SMTP password.
+确定 SMTP 密码。
 
-| Type   | Values        |
+|类型 |价值观 |
 | ------ | ------------- |
-| String | SMTP password |
+|字符串 | SMTP 密码 |
 
-## SMTP security
+## SMTP 安全
 
-Determines SMTP security.
+确定 SMTP 安全性。
 
-| Value     | Effect                                                                                 |
-| --------- | -------------------------------------------------------------------------------------- |
-| TLS       | Use [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) |
-| SSL       | Use Secure Sockets Layer                                                               |
-| Unsecured | Don't secure emails                                                                    |
+|键值 |效果|
+| --------- | ---------------------------------------------------------------- |
+| TLS |使用[传输层安全](https://en.wikipedia.org/wiki/Transport_Layer_Security) |
+| SSL |使用安全套接字层 |
+|无担保 |不要保护电子邮件 |

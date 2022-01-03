@@ -1,47 +1,47 @@
-# Routing
+# 路径
 
 `/dashboard/settings/routing`
 
-## Image routing
+## 图像路径
 
-Determines the image routing.
+确定图像路径。
 
-| Type   | Examples     |
+|类型 |例子 |
 | ------ | ------------ |
-| String | `image`, `i` |
+|字符串 | `image`, `i` |
 
-## Album routing
+## 专辑路径
 
-Determines the album routing.
+确定专辑路径。
 
-| Type   | Examples     |
+|类型 |例子 |
 | ------ | ------------ |
-| String | `album`, `a` |
+|字符串 | `album`, `a` |
 
-## Hostname
+＃＃ 主机名
 
-* Applies when using sub-domain wildcards.
+* 在使用子域通配符时适用。
 
-Determines the hostname.
+确定主机名。
 
-| Type   | Example       |
+|类型 |示例 |
 | ------ | ------------- |
-| String | chevereto.com |
+|字符串 | chevereto.com |
 
-## Language subdomains
+## 语言子域
 
-Toggle the use of language subdomains. When enabled, sub-domains like `es.chevereto.com` will be used instead of `chevereto.com?lang=es`.
+切换语言子域的使用。启用后，将使用像 `es.chevereto.com` 这样的子域而不是 `chevereto.com?lang=es`。
 
-| Type     | Effect                       |
-| -------- | ---------------------------- |
-| Enabled  | Enables language subdomains  |
-| Disabled | Disables language subdomains |
+|类型 |效果|
+| -------- | ----------------------------- |
+|启用|启用语言子域 |
+|禁用|禁用语言子域 |
 
-## Username subdomains
+## 用户名子域
 
-Toggle the use of user subdomains. When enabled, sub-domains like `rodolfo.chevereto.com` will be used instead of `chevereto.com/rodolfo`.
+切换用户子域的使用。启用后，将使用像 `rodolfo.chevereto.com` 这样的子域而不是 `chevereto.com/rodolfo`。
 
-| Type     | Effect                   |
+|类型 |效果|
 | -------- | ------------------------ |
-| Enabled  | Enables user subdomains  |
-| Disabled | Disables user subdomains |
+|启用|启用用户子域 |
+|禁用|禁用用户子域 |

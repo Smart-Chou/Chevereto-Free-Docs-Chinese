@@ -34,7 +34,7 @@ Toggle the use of language subdomains. When enabled, sub-domains like `es.chever
 
 | Type     | Effect                       |
 | -------- | ---------------------------- |
-| Enabled  | Enables language subdomains  |
+| Enabled | Enables language subdomains  |
 | Disabled | Disables language subdomains |
 
 ## Username subdomains
@@ -43,5 +43,5 @@ Toggle the use of user subdomains. When enabled, sub-domains like `rodolfo.cheve
 
 | Type     | Effect                   |
 | -------- | ------------------------ |
-| Enabled  | Enables user subdomains  |
+| Enabled | Enables user subdomains  |
 | Disabled | Disables user subdomains |

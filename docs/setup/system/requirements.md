@@ -1,38 +1,38 @@
-# Requirements
+# 要求
 
-::: tip Universal VPS infra available
-Check our [VPS](https://github.com/chevereto/vps) universal bash script for all-included worry-free server setup.
+::: tip 通用 VPS 基础设施可用
+查看我们的 [VPS](https://github.com/chevereto/vps) 通用 bash 脚本，了解所有包含的无忧服务器设置。
 :::
 
-Minimum machine requirements:
+最低机器要求：
 
-**Note:** When running with minimum requirements it is recommended to [add swap space](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04).
+**注意：** 以最低要求运行时，建议[添加交换空间](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04)。
 
-* 1GB RAM
-* 1 CPU
+* 1GB 内存
+* 1 个中央处理器
 
-## Software requirements
+## 软件要求
 
-* [Server requirements](../server/requirements.md)
-* [Container requirements](../container/requirements.md)
+* [服务器要求](../server/requirements.md)
+* [容器要求](../container/requirements.md)
 
 ## Cron
 
-A [cron](https://en.wikipedia.org/wiki/Cron) is required to process the application background jobs. A cron is system in which a command is executed in a regular basis, this way Chevereto can perform operations in the background.
+需要 [cron](https://en.wikipedia.org/wiki/Cron) 来处理应用程序后台作业。 cron 是定期执行命令的系统，这样 Chevereto 可以在后台执行操作。
 
-::: tip Check your server documentation
-This cron setup reference applies only for Debian-based servers with root access. We **strongly recommend** checking your server documentation on how to setup and run cron.
+::: tip 检查您的服务器文档
+此 cron 设置参考仅适用于具有 root 访问权限的基于 Debian 的服务器。我们**强烈建议**检查您的服务器文档，了解如何设置和运行 cron。
 :::
 
-### Command
+### 命令
 
-The command should be run by the web-server user which is `www-data` (may vary). To run the command in Chevereto it requires to call PHP binary at the Chevereto CLI.
+该命令应该由 web-server 用户运行，它是 `www-data`(可能会有所不同)。要在 Chevereto 中运行该命令，它需要在 Chevereto CLI 中调用 PHP 二进制文件。
 
-::: tip PHP binary
-Use `which php` to locate the PHP binary as its location may vary in different systems and configurations.
+::: tip PHP 二进制文件
+使用 `which php` 来定位 PHP 二进制文件，因为它的位置在不同的系统和配置中可能会有所不同。
 :::
 
-Command below uses `sudo -u www-data` to run the command as `www-data` user permissions. PHP binary is at `php` and the Chevereto CLI is at `/var/www/html/cli.php`. The command argument passed to Chevereto is `-C cron`.
+下面的命令使用 `sudo -u www-data` 以 `www-data` 用户权限运行命令。 PHP 二进制文件位于 `php`，而 Chevereto CLI 位于 `/var/www/html/cli.php`。传递给 Chevereto 的命令参数是`-C cron`。
 
 <CodeGroup>
 <CodeGroupItem title="V3.20+">
@@ -52,7 +52,7 @@ sudo -u www-data IS_CRON=1 php /var/www/html/cron.php
 </CodeGroupItem>
 </CodeGroup>
 
-#### Docker command
+#### Docker 命令
 
 <CodeGroup>
 <CodeGroupItem title="V3.20+">
@@ -77,9 +77,9 @@ docker exec -it \
 </CodeGroupItem>
 </CodeGroup>
 
-### Cron.d file
+### Cron.d 文件
 
-With a [cron.d file](https://manpages.debian.org/stretch/cron/cron.8) the cron can be easily setup. For example:
+使用 [cron.d 文件](https://manpages.debian.org/stretch/cron/cron.8) 可以轻松设置 cron。例如：
 
 ```sh
 cat >/etc/cron.d/chevereto <<EOM
@@ -87,10 +87,10 @@ cat >/etc/cron.d/chevereto <<EOM
 EOM
 ```
 
-### Cron schedule
+### Cron 计划
 
-In the instruction above [* * * * *](https://crontab.guru/#*_*_*_*_*) is the cron schedule to run every minute.
+在上面的指令中 [* * * * *](https://crontab.guru/#*_*_*_*_*) 是每分钟运行的 cron 计划。
 
-::: danger Suit your context
-The above default cron works when running our official provisioning. If you don't use our server provisioning you will be required to alter the default instructions for user, PHP binary and Chevereto CLI location. Refer to your system documentation.
+::: danger 适合你的情况
+上述默认 cron 在运行我们的官方配置时有效。如果您不使用我们的服务器配置，您将需要更改用户、PHP 二进制文件和 Chevereto CLI 位置的默认说明。请参阅您的系统文档。
 :::

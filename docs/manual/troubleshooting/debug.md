@@ -1,79 +1,79 @@
-# Debug
+# 调试
 
-Debug enables to dump information about errors that may be affecting the software functionality. If Chevereto isn't working properly you must start debugging it.
+调试可以转储有关可能影响软件功能的错误的信息。如果 Chevereto 不能正常工作，您必须开始调试它。
 
-## Configuring debug
+## 配置调试
 
-Debug can be configured using [environment](../../setup/system/environment.md#debug-variables) variables or using the [settings file](../../setup/server/settings-file.md).
+可以使用 [environment](../../setup/system/environment.md#debug-variables) 变量或使用 [settings file](../../setup/server/settings-file.md)。
 
-### Debug level
+### 调试级别
 
-Depending on your work context you may need to configure debug accordingly.
+根据您的工作环境，您可能需要相应地配置调试。
 
-::: warning
-Error level >= 2 is not recommended for production environments. Is not safe to print the errors to the screen, handle it with care.
+::: danger
+不建议将错误级别 >= 2 用于生产环境。将错误打印到屏幕上是不安全的，请小心处理。
 :::
 
-| Level | Description                          |
+|级别 |说明 |
 | ----- | ------------------------------------ |
 | 0     | No debug                             |
 | 1     | Debug to `log_device`                |
 | 2     | Print errors (no logging)            |
 | 3     | Print errors and log to `log_device` |
 
-Use `CHEVERETO_DEBUG_LEVEL=3` or add the following to your `app/settings.php` file:
+使用 `CHEVERETO_DEBUG_LEVEL=3` 或将以下内容添加到你的 `app/settings.php` 文件中：
 
 ```php
 $settings['debug_level'] = 3;
 ```
 
-### Log device
+### 日志设备
 
-Configure your own error log device to control where the logs will be sent. If you don't alter this it will fallback to the default system log device.
+配置您自己的错误日志设备以控制日志的发送位置。如果你不改变它，它将回退到默认的系统日志设备。
 
-::: tip Containers
-Containers will always log to `/dev/stderr` regardless this setting.
+::: tip 容器
+无论此设置如何，容器都将始终登录到`/dev/stderr`。
 :::
 
-Use `CHEVERETO_ERROR_LOG=log_device` or add the following to your `app/settings.php` file:
+使用 `CHEVERETO_ERROR_LOG=log_device` 或将以下内容添加到你的 `app/settings.php` 文件中：
 
 ```php
 $settings['error_log'] = 'log_device';
 ```
 
-## Accessing logs
+## 访问日志
 
-To access logs you will need to know first the location for those. If you don't configure debug Chevereto will follow the default [error_log](https://www.php.net/manual/errorfunc.configuration.php#ini.error-log) handling configured for your PHP installation.
+要访问日志，您首先需要知道这些日志的位置。如果您不配置调试 Chevereto 将遵循为您的 PHP 安装配置的默认 [error_log](https://www.php.net/manual/errorfunc.configuration.php#ini.error-log) 处理。
 
-### Where are the default logs?
+### 默认日志在哪里？
 
-This vary a lot depending the server provider and how PHP runs in the server. In doubt, check first with your service provider.
+这取决于服务器提供商以及 PHP 在服务器中的运行方式。如有疑问，请先咨询您的服务提供商。
 
 * PHP
-  * Logs by default at `syslog`
-* Apache
-  * Logs by default at `/var/log/apache2/error.log`
-  * Virtual host directive defines custom error log location
-  * Commonly configured for `/var/www/domain.com/logs`
+  * 默认在`syslog` 记录
+* 阿帕奇
+  * 默认记录在`/var/log/apache2/error.log`
+  * 虚拟主机指令定义自定义错误日志位置
+  * 通常配置为`/var/www/domain.com/logs`
 * NGINX
-  * Logs by default at `/var/log/nginx/error.log`
-  * Server block defines custom error log location
-  * Commonly configured for `/var/www/domain.com/logs`
+  * 默认记录在`/var/log/nginx/error.log`
+  * 服务器块定义自定义错误日志位置
+  * 通常配置为`/var/www/domain.com/logs`
 * cPanel
-  * Logs by default at `../domain.com.error.log` (parent of `public_html` folder)
-  * Vary a lot from providers and cPanel version
-* Docker
-  * Logs to `/dev/stderr`
+  * 默认记录在`../domain.com.error.log`(`public_html` 文件夹的父文件夹)
+  * 因供应商和 cPanel 版本而异
+* 码头工人
+  * 记录到`/dev/stderr`
 
-### I can't find the logs
+### 我找不到日志
 
-You can configure `debug_level` >= 2 but note that such error reporting level **could compromise** your installation. Restrict any public access to your website and revert back to `debug_level=1` as soon as possible.
+您可以配置 `debug_level` >= 2 但请注意，此类错误报告级别**可能会损害**您的安装。限制对您网站的任何公开访问，并尽快恢复为`debug_level=1`。
 
-If you can't find the logs or you are having a hard time with this you can request [extra support](https://chevereto.com/support) so we can safely debug your installation.
+如果您找不到日志或遇到困难，您可以请求 [额外支持](https://chevereto.com/support)，以便我们可以安全地调试您的安装。
 
-### Reading logs
+### 读取日志
 
-Logs can be easily accessed by direct file access or by running commands accordingly.
+可以通过直接文件访问或相应地运行命令来轻松访问日志。
 
 <CodeGroup>
 <CodeGroupItem title="Shell">
@@ -93,10 +93,10 @@ docker logs -f container-name | sed 's/\\n/\n/g'
 </CodeGroupItem>
 </CodeGroup>
 
-## Error reporting
+## 错误报告
 
-::: warning Not for production!
-Enable this is recommended only in development environments.
+::: danger 不适用于生产！
+仅建议在开发环境中启用此功能。
 :::
 
-To enable printed error reporting you will need to go to [system settings](../../settings/system.md). By enabling this all the runtime errors will be printed which means that they will be visible.
+要启用打印错误报告，您需要转到 [系统设置](../../settings/system.md)。通过启用此功能，将打印所有运行时错误，这意味着它们将可见。

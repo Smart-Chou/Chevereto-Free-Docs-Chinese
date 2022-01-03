@@ -8,7 +8,7 @@ Toggles usage of [Facebook login](../features/social-login.md#facebook-login).
 
 | Value    | Effect                                       |
 | -------- | -------------------------------------------- |
-| Enabled  | Enable login with Facebook (not recommended) |
+| Enabled | Enable login with Facebook (not recommended) |
 | Disabled | Disable login with Facebook (recommended)    |
 
 ## Facebook app id
@@ -33,7 +33,7 @@ Toggles usage of [Twitter login](../features/social-login.md#twitter-login).
 
 | Value    | Effect                                      |
 | -------- | ------------------------------------------- |
-| Enabled  | Enable login with Twitter (not recommended) |
+| Enabled | Enable login with Twitter (not recommended) |
 | Disabled | Disable login with Twitter (recommended)    |
 
 ## Twitter API key
@@ -66,7 +66,7 @@ Toggles usage of [Google login](../features/social-login.md#google-login).
 
 | Value    | Effect                    |
 | -------- | ------------------------- |
-| Enabled  | Enable login with Google  |
+| Enabled | Enable login with Google  |
 | Disabled | Disable login with Google |
 
 ## Google client id
@@ -91,7 +91,7 @@ Toggles usage of [VK login](../features/social-login.md#vk-login).
 
 | Value    | Effect                |
 | -------- | --------------------- |
-| Enabled  | Enable login with VK  |
+| Enabled | Enable login with VK  |
 | Disabled | Disable login with VK |
 
 ## VK client id

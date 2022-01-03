@@ -1,24 +1,24 @@
-# Theme
+# 主题
 
-## Theme overrides
+## 主题覆盖
 
-Theme overrides works by detecting a file override which replaces a given theme file, so the system will use the override instead of the default file. Overrides are placed at `app/themes/Peafowl/overrides`. For example, let's say you want to replace `app/themes/Peafowl/views/image.php` you have to simply copy the file to `app/themes/Peafowl/overrides/views/image.php` and the system will now use the override instead of the default file.
+主题覆盖通过检测替换给定主题文件的文件覆盖来工作，因此系统将使用覆盖而不是默认文件。覆盖放置在`app/themes/Peafowl/overrides`。例如，假设您要替换`app/themes/Peafowl/views/image.php`，您只需将文件复制到`app/themes/Peafowl/overrides/views/image.php`，系统现在将使用覆盖而不是默认文件。
 
-## Custom hooks
+## 自定义钩子
 
-Custom hooks allows to add or edit code in designated areas or segments of the theme. Default theme includes a custom hooks folder where you can add your own stuff and is filled with plenty sample files. For example, to customize the share buttons follow these steps:
+自定义钩子允许在主题的指定区域或部分添加或编辑代码。默认主题包括一个自定义 hooks 文件夹，您可以在其中添加自己的内容，并填充了大量示例文件。例如，要自定义共享按钮，请执行以下步骤：
 
-- Go to the theme custom hooks folder `app/themes/Peafowl/custom_hooks/`
-- Make a copy of `share_links.sample.php` (do all your editing needed in this copy)
-- Rename your working copy to `share_links.php`
+- 转到主题自定义钩子文件夹`app/themes/Peafowl/custom_hooks/`
+- 复制一份`share_links.sample.php`(在此副本中进行所有需要的编辑)
+- 将您的工作副本重命名为`share_links.php`
 
-Chevereto will detect your overrides and it will load this file into the theme.
+Chevereto 将检测您的覆盖并将此文件加载到主题中。
 
-## Clone default theme
+## 克隆默认主题
 
-If you need more customization you should clone the default "Peafowl" theme and do your work in this new theme. To clone the default theme:
+如果您需要更多自定义，您应该克隆默认的“Peafowl”主题并在这个新主题中完成您的工作。克隆默认主题：
 
-- Copy `app/themes/Peafowl/` and paste it in the same directory
-- Name your new theme as anything you want (no white spaces)
+- 复制`app/themes/Peafowl/` 并粘贴到同一目录中
+- 将您的新主题命名为您想要的任何名称(无空格)
 
-Best way to keep a track of default theme changes is by creating a local git repo in your computer. Create a local git repo with last Chevereto version and commit each time you want to merge the code and will be able to see exactly all the changes line by line.
+跟踪默认主题更改的最佳方法是在您的计算机中创建一个本地 git 存储库。使用最新的 Chevereto 版本创建一个本地 git 存储库，并在每次要合并代码时提交，这样就能够逐行准确地看到所有更改。

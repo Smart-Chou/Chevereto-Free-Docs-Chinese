@@ -14,7 +14,7 @@ Toggles sending a notification when flood is detected.
 
 | Value    | Effect                      |
 | -------- | --------------------------- |
-| Enabled  | Email notify on flood       |
+| Enabled | Email notify on flood       |
 | Disabled | Don't email notify on flood |
 
 ## Minute limit

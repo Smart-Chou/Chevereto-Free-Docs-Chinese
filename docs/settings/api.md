@@ -2,10 +2,10 @@
 
 `/dashboard/settings/api`
 
-## API v1 key
+## API v1 密钥
 
-Determines the API v1 key.
+确定 API v1 密钥。
 
-| Type   | Accepted |
+|类型 |接受 |
 | ------ | -------- |
-| String | Any      |
+|字符串 |任何 |

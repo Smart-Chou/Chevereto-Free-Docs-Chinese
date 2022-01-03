@@ -1,25 +1,25 @@
-# Upgrading
+# 升级
 
-This section outlines the upgrade process required to upgrade to V3 from old releases (V2 and older).
+本节概述了从旧版本(V2 及更早版本)升级到 V3 所需的升级过程。
 
-::: danger Unsupported
-These versions are old, if you encounter any issue upgrading from these please [report](https://chv.to/open-bug) it.
+::: danger 不支持
+这些版本是旧的，如果您在从这些版本升级时遇到任何问题，请[报告](https://chv.to/open-bug)。
 :::
 
-## Update from V2.1 - V2.6
+## 从 V2.1 - V2.6 更新
 
-When updating from these old versions try to always perform a database backup of your system.
+从这些旧版本更新时，请尝试始终执行系统的数据库备份。
 
-* Download the [latest release](https://chevereto.com/panel/downloads)
-* Save the DB connection info from `includes/config.php`
-* Save the `__CHV_CRYPT_SALT__` that you have in `includes/definitions.php`
-* Upload all the files except for the images folder
-* Go to your website, the system will ask you for the DB connection info
-* Complete the process with the required information
-* The system MUST ask you for your `__CHV_CRYPT_SALT__`. If not, don't continue the process and ask for support
-* Remove the `/admin` folder, you won't need it anymore. Since 3.0.0 the admin folder is `/dashboard`.
+* 下载[最新版本](https://chevereto.com/panel/downloads)
+* 从`includes/config.php` 保存数据库连接信息
+* 保存你在 `includes/definitions.php` 中的 `__CHV_CRYPT_SALT__`
+* 上传除图片文件夹外的所有文件
+* 进入您的网站，系统会询问您的数据库连接信息
+* 使用所需信息完成流程
+* 系统必须要求您提供`__CHV_CRYPT_SALT__`。如果没有，请不要继续该过程并寻求支持
+* 删除`/admin` 文件夹，您将不再需要它。从 3.0.0 开始，admin 文件夹是`/dashboard`。
 
-## Update from 2.0.X and older
+## 从 2.0.X 及更早版本更新
 
-* Update to 2.1 (or newer) following the instructions in the download package
-* Proceed with the [Update from 2.1 - 2.6](#update-from-v2-1-v2-6) instructions
+* 按照下载包中的说明更新到 2.1(或更新版本)
+* 继续[从 2.1 - 2.6 更新](#从-v2-1-v2-6-更新) 说明

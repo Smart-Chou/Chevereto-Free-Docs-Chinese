@@ -4,7 +4,7 @@
 
 This control the settings related to image uploading.
 
-## Enabled image formats
+## Enabledimage formats
 
 Determines which image formats can be uploaded.
 

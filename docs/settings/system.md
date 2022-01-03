@@ -1,111 +1,111 @@
-# System
+# 系统
 
 `/dashboard/settings/system`
 
-## Automatic updates check
+## 自动更新检查
 
-Toggles the automatic updates check. When enabled, your installation will automatically check for new updates.
+切换自动更新检查。启用后，您的安装将自动检查新更新。
 
-| Value    | Effect                          |
+|键值 |效果|
 | -------- | ------------------------------- |
-| Enabled  | Enable automatic updates check  |
-| Disabled | Disable automatic updates check |
+|启用|启用自动更新检查 |
+|禁用|禁用自动更新检查 |
 
-## Display available updates notification
+## 显示可用更新通知
 
-Toggles the display of a system notification on update available.
+在可用更新时切换系统通知的显示。
 
-| Value    | Effect                                 |
-| -------- | -------------------------------------- |
-| Enabled  | Enable available updates notification  |
-| Disabled | Disable available updates notification |
+|键值 |效果|
+| -------- | ------------------------------- |
+|启用|启用可用更新通知 |
+|禁用|禁用可用更新通知 |
 
-## Dump update query
+## 转储更新查询
 
-Toggles the display of the update query. When enabled, the update query will be shown and not executed.
+切换更新查询的显示。启用后，将显示更新查询而不执行。
 
-::: warning
-This is automatically enabled if the installation holds more than 1,000,000 (1M) images. This is because is safer to run the query directly in the database console.
+::: danger
+如果安装包含超过 1,000,000 (1M) 个图像，则会自动启用此功能。这是因为直接在数据库控制台中运行查询更安全。
 :::
 
-| Value    | Effect                                                      |
-| -------- | ----------------------------------------------------------- |
-| Enabled  | Dump the update query (queries should be manually executed) |
-| Disabled | Run the update query (queries will be executed directly)    |
+|键值 |效果|
+| -------- | --------------------------------------------------- |
+|启用|转储更新查询(应手动执行查询) |
+|禁用|运行更新查询(查询将直接执行) |
 
-## SEO image URLs
+## SEO 图像 URL
 
-Toggles image SEO URLs.
+切换图像 SEO URL。
 
-When enabled, the image URL will contain its title, like `/image/image-title.<id>`.
+启用后，图像 URL 将包含其标题，如`/image/image-title.<id>`。
 
-| Value    | Effect                 |
-| -------- | ---------------------- |
-| Enabled  | Enable SEO image URLs  |
-| Disabled | Disable SEO image URLs |
+|键值 |效果|
+| -------- | --------------- |
+|启用|启用 SEO 图片 URL |
+|禁用|禁用 SEO 图片 URL |
 
-## SEO album URLs
+## SEO 专辑网址
 
-Toggles album SEO URLs.
+切换专辑 SEO URL。
 
-When enabled, the album URL will contain its title, like `/album/album-name.<id>`.
+启用后，专辑 URL 将包含其标题，如`/album/album-name.<id>`。
 
-| Value    | Effect                 |
-| -------- | ---------------------- |
-| Enabled  | Enable SEO album URLs  |
-| Disabled | Disable SEO album URLs |
+|键值 |效果|
+| -------- | --------------- |
+|启用|启用 SEO 相册 URL |
+|禁用|禁用 SEO 相册 URL |
 
-## Minify code
+## 缩小代码
 
-Toggles CSS and JSS minification.
+切换 CSS 和 JSS 缩小。
 
-When enabled, `*.min.js` and `*.min.css` will be automatically used.
+启用后，将自动使用 `*.min.js` 和 `*.min.css`。
 
-| Value    | Effect              |
+|键值 |效果|
 | -------- | ------------------- |
-| Enabled  | Enable minify code  |
-| Disabled | Disable minify code |
+|启用|启用缩小代码 |
+|禁用|禁用缩小代码 |
 
-## Maintenance
+＃＃ 维护
 
-Toggles maintenance mode.
+切换维护模式。
 
-When enabled, the website will show a maintenance message and no actions will be allowed.
+启用后，网站将显示一条维护消息，并且不允许进行任何操作。
 
-| Value    | Effect                   |
+|键值 |效果|
 | -------- | ------------------------ |
-| Enabled  | Enable maintenance mode  |
-| Disabled | Disable maintenance mode |
+|启用|启用维护模式 |
+|禁用|禁用维护模式 |
 
-## Crypt salt
+## 地穴盐
 
-The crypt salt used to encode DB integer IDs to alphanumeric representations.
+用于将 DB 整数 ID 编码为字母数字表示的加密盐。
 
-::: warning
-This value is shown only for reference. It shouldn't be edited.
+::: danger
+此值仅供参考。它不应该被编辑。
 :::
 
-| Type   | Example   |
+|类型 |示例 |
 | ------ | --------- |
-| String | bnnnfer98 |
+|字符串 | bnnfer98 |
 
-## PHP error reporting
+## PHP 错误报告
 
-Toggles PHP error reporting. When enabled, the system will use:
+切换 PHP 错误报告。启用后，系统将使用：
 
 ```php
 error_reporting(E_ALL ^ E_NOTICE);
 ```
 
-| Value    | Effect                      |
+|键值 |效果|
 | -------- | --------------------------- |
-| Enabled  | Enable PHP error reporting  |
-| Disabled | Disable PHP error reporting |
+|启用|启用 PHP 错误报告 |
+|禁用|禁用 PHP 错误报告 |
 
-## Debug level
+## 调试级别
 
-Shows the debug level. This value is taken from the [settings file](../setup/settings-file.md).
+显示调试级别。该值取自 [设置文件](../setup/settings-file.md)。
 
-| Type    | Example              |
+|类型 |示例 |
 | ------- | -------------------- |
-| Integer | Print and log errors |
+|整数 |打印和记录错误 |

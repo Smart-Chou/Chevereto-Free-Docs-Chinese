@@ -1,38 +1,38 @@
-# Tools
+# 工具
 
 `/dashboard/settings/tools`
 
-## Decode ID
+## 解码ID
 
-Converts an encoded id into its integer decoded value.
+将编码的 id 转换为其整数解码值。
 
-| Example | Result |
+|示例 |结果 |
 | ------- | ------ |
 | v5ZO    | 1234   |
 
-## Encode ID
+## 编码 ID
 
-Converts an integer id into its encoded value.
+将整数 id 转换为其编码值。
 
-| Example | Result |
+|示例 |结果 |
 | ------- | ------ |
 | 1234    | v5ZO   |
 
-## Send test email
+## 发送测试邮件
 
-Sends a test mail to the target email address.
+向目标电子邮件地址发送测试邮件。
 
-Use this to test email delivery rate.
+使用它来测试电子邮件传送率。
 
-| Example                             | Result                                                 |
-| ----------------------------------- | ------------------------------------------------------ |
-| test-ihmi89xct@srv1.mail-tester.com | Test email sent to test-ihmi89xct@srv1.mail-tester.com |
+|示例 |结果 |
+| --------------------- | ---------------------------------------------- |
+| test-ihmi89xct@srv1.mail-tester.com |测试邮件发送至 test-ihmi89xct@srv1.mail-tester.com |
 
-## Export a user
+## 导出用户
 
-Exports user profile information in `json` format.
+以 `json` 格式导出用户配置文件信息。
 
-Use this when needing to export an user.
+当需要导出用户时使用它。
 
 ```json
 {
@@ -50,21 +50,21 @@ Use this when needing to export an user.
 }
 ```
 
-## Regenerate external storage stats
+## 重新生成外部存储统计信息
 
-Re-calculate external storage stats for the target storage id.
+重新计算目标存储 ID 的外部存储统计信息。
 
-| Example | Result                                                 |
-| ------- | ------------------------------------------------------ |
-| 1       | Storage "AWS S3 US WEST N.CALI" (1) stats re-generated |
+|示例 |结果 |
+| ------- | ---------------------------------------------- |
+| 1 |存储“AWS S3 US WEST N.CALI”(1) 统计信息重新生成 |
 
-## Migrate image records from one external storage to another
+## 将图像记录从一个外部存储迁移到另一个
 
-Re-assign image database tables from one storage to another.
+将图像数据库表从一个存储重新分配到另一个存储。
 
-Use this when you want to migrate storages and need to update the database records.
+当您要迁移存储并需要更新数据库记录时使用此选项。
 
-| Values            | Example |
+|价值观 |示例 |
 | ----------------- | ------- |
-| Source storage id | 1       |
-| Target storage id | 2       |
+|源存储 ID | 1 |
+|目标存储 ID | 2 |

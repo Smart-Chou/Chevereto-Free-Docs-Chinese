@@ -1,48 +1,48 @@
-# Languages
+# 语言
 
 `/dashboard/settings/languages`
 
 ::: tip
-Check our [language customization](../customization/language.md) guide if you need to add new languages or just alter some language strings.
+如果您需要添加新语言或只是更改一些语言字符串，请查看我们的 [语言定制](../customization/language.md) 指南。
 :::
 
-## Default language
+## 默认语言
 
-Determines the language used by default.
+确定默认使用的语言。
 
-| Type   | Default |
+|类型 |默认 |
 | ------ | ------- |
-| String | English |
+|字符串 |English |
 
-## Auto language
+## 自动语言
 
-Toggles the use of automatic language.
+切换自动语言的使用。
 
-When enabled, the system language will be set based on user's browser default language setting.
+启用后，系统语言将根据用户的浏览器默认语言设置进行设置。
 
-| Value    | Effect                |
+|键值 |效果|
 | -------- | --------------------- |
-| Enabled  | Enable auto language  |
-| Disabled | Disable auto language |
+|启用|启用自动语言 |
+|禁用|禁用自动语言 |
 
-## Language chooser
+## 语言选择器
 
-Toggles the availability of language chooser.
+切换语言选择器的可用性。
 
-When enabled the system will allow users to choose which language they want to use. Guests will be able to pick the language from the top bar, registered users will be able to pick the language at `/settings`.
+启用后，系统将允许用户选择他们想要使用的语言。来宾可以从顶部栏中选择语言，注册用户可以在`/settings` 中选择语言。
 
-| Value    | Effect                   |
+|键值 |效果|
 | -------- | ------------------------ |
-| Enabled  | Enable language chooser  |
-| Disabled | Disable language chooser |
+|启用|启用语言选择器 |
+|禁用|禁用语言选择器 |
 
-## Enabled languages
+## 启用的语言
 
-This sets  This means that for all users this will be the default language used if "Auto language" is turned off.
+这意味着如果“自动语言”关闭，这将是所有用户使用的默认语言。
 
-## Available languages
+## 可用语言
 
-Select which languages are available to use in your installation. You can selective turn on/off any language.
+选择可以在您的安装中使用的语言。您可以选择性地打开/关闭任何语言。
 
 | Type     | Available                                                                                                                                                                                                                                                                                                                                                       |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -1,22 +1,22 @@
-# Consent screen
+# 内容警告
 
 `/dashboard/settings/consent-screen`
 
-## Enable consent screen
+## 启用内容警告
 
-Toggles the use of a consent screen when browsing the website for the first time.
+首次浏览网站时切换是否使用内容警告。
 
-| Value    | Effect                 |
-| -------- | ---------------------- |
-| Enabled  | Enable consent screen  |
-| Disabled | Disable consent screen |
+| 键值     | 效果         |
+| -------- | ------------ |
+| 启用 | 启用内容警告 |
+| 禁用 | 禁用内容警告 |
 
-## Consent screen cover image
+## 内容警告封面图片
 
-* Applies only if `Enable consent screen` is set to `Enabled`.
+- 仅当“启用内容警告”设置为“启用”时才适用。
 
-Determines the background image used for the consent screen page.
+确定用于内容警告页面的背景图像。
 
-| Type  | Recommended |
-| ----- | ----------- |
-| Image | < `400KB`   |
+| 类型 | 推荐      |
+| ---- | --------- |
+| 图像 | < `400KB` |

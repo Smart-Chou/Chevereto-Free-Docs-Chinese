@@ -8,7 +8,7 @@ Toggles the availability of the `/plugin` route.
 
 | Value | Effect  |
 |---|---|
-| Enabled  | Enable plugin route  |
+| Enabled | Enable plugin route  |
 | Disabled  | Disable plugin route  |
 
 ## PUP SDK URL
@@ -25,5 +25,5 @@ Toggles the display of the cookie law acceptance message.
 
 | Value | Effect  |
 |---|---|
-| Enabled  | Enable display of cookie law message |
+| Enabled | Enable display of cookie law message |
 | Disabled  | Enable display of cookie law message |

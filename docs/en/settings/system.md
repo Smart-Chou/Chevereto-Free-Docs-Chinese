@@ -8,7 +8,7 @@ Toggles the automatic updates check. When enabled, your installation will automa
 
 | Value    | Effect                          |
 | -------- | ------------------------------- |
-| Enabled  | Enable automatic updates check  |
+| Enabled | Enable automatic updates check  |
 | Disabled | Disable automatic updates check |
 
 ## Display available updates notification
@@ -17,7 +17,7 @@ Toggles the display of a system notification on update available.
 
 | Value    | Effect                                 |
 | -------- | -------------------------------------- |
-| Enabled  | Enable available updates notification  |
+| Enabled | Enable available updates notification  |
 | Disabled | Disable available updates notification |
 
 ## Dump update query
@@ -25,12 +25,12 @@ Toggles the display of a system notification on update available.
 Toggles the display of the update query. When enabled, the update query will be shown and not executed.
 
 ::: warning
-This is automatically enabled if the installation holds more than 1,000,000 (1M) images. This is because is safer to run the query directly in the database console.
+This is automatically Enabledif the installation holds more than 1,000,000 (1M) images. This is because is safer to run the query directly in the database console.
 :::
 
 | Value    | Effect                                                      |
 | -------- | ----------------------------------------------------------- |
-| Enabled  | Dump the update query (queries should be manually executed) |
+| Enabled | Dump the update query (queries should be manually executed) |
 | Disabled | Run the update query (queries will be executed directly)    |
 
 ## SEO image URLs
@@ -41,7 +41,7 @@ When enabled, the image URL will contain its title, like `/image/image-title.<id
 
 | Value    | Effect                 |
 | -------- | ---------------------- |
-| Enabled  | Enable SEO image URLs  |
+| Enabled | Enable SEO image URLs  |
 | Disabled | Disable SEO image URLs |
 
 ## SEO album URLs
@@ -52,7 +52,7 @@ When enabled, the album URL will contain its title, like `/album/album-name.<id>
 
 | Value    | Effect                 |
 | -------- | ---------------------- |
-| Enabled  | Enable SEO album URLs  |
+| Enabled | Enable SEO album URLs  |
 | Disabled | Disable SEO album URLs |
 
 ## Minify code
@@ -63,7 +63,7 @@ When enabled, `*.min.js` and `*.min.css` will be automatically used.
 
 | Value    | Effect              |
 | -------- | ------------------- |
-| Enabled  | Enable minify code  |
+| Enabled | Enable minify code  |
 | Disabled | Disable minify code |
 
 ## Maintenance
@@ -74,7 +74,7 @@ When enabled, the website will show a maintenance message and no actions will be
 
 | Value    | Effect                   |
 | -------- | ------------------------ |
-| Enabled  | Enable maintenance mode  |
+| Enabled | Enable maintenance mode  |
 | Disabled | Disable maintenance mode |
 
 ## Crypt salt
@@ -99,7 +99,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 | Value    | Effect                      |
 | -------- | --------------------------- |
-| Enabled  | Enable PHP error reporting  |
+| Enabled | Enable PHP error reporting  |
 | Disabled | Disable PHP error reporting |
 
 ## Debug level

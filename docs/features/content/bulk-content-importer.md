@@ -1,36 +1,36 @@
-# Bulk content importer
+# 批量内容导入器
 
-This tool allows to **mass import** images, albums, and users by parsing the contents of a filesystem location. It is intended to be used when you want to import a massive amount of content that otherwise will be troublesome to import by using the API or the web gui.
+该工具允许通过解析文件系统位置的内容来**批量导入**图像、相册和用户。当您想要导入大量内容时使用它，否则使用 API 或 Web gui 导入会很麻烦。
 
-::: tip Importing != Syncing
-Importing takes the content from the importing path and *import it* into database, filesystem or external storage. Failed files will be moved to a special directory at `./importing/failed/`.
+::: tip 导入 != 同步
+导入从导入路径中获取内容并将其*导入*到数据库、文件系统或外部存储中。失败的文件将被移动到一个特殊的目录`./importing/failed/`。
 :::
 
-## How to use it
+## 如何使用它
 
-::: tip demo-importing
-Check the repository at [chevereto/demo-importing](https://github.com/chevereto/demo-importing) for an example on how to organize your files to use the Bulk content importer.
+::: tip 演示导入
+查看 [chevereto/demo-importing](https://github.com/chevereto/demo-importing) 中的存储库，了解如何组织文件以使用批量内容导入器的示例。
 :::
 
-Bulk content importer works by scanning the `importing/` path, where folders are used to denote a given parsing format for the files contained within.
+批量内容导入器通过扫描 `importing/` 路径工作，其中文件夹用于表示其中包含的文件的给定解析格式。
 
-Placing the content at these directories following the [parsing formats](#parsing-formats) conventions will enable to import images to users created as a folder, add categories, etc.
+按照 [解析格式](#parsing-formats) 约定将内容放置在这些目录中，可以将图像导入到作为文件夹创建的用户、添加类别等。
 
-| `./importing/`  | Parsing                                                       |
-| --------------- | ------------------------------------------------------------- |
-| `parse-users/`  | [Top-level folder as username](#top-level-folder-as-username) |
-| `parse-albums/` | [Top-level folders as albums](#top-level-folders-as-albums)   |
-| `no-parse/`     | [No folder parsing](#no-parse)                                |
+| `./importing/` | 解析                                                  |
+| -------------- | ----------------------------------------------------- |
+| `parse-users/` | [顶级文件夹作为用户名](#top-level-folder-as-username) |
+| `parse-albums/`| [顶级文件夹作为相册](#top-level-folders-as-albums)    |
+| `no-parse/`    | [不解析文件夹](#no-parse)                             |
 
 ::: tip
-Go to `dashboard/bulk` to review importing jobs.
+转到`仪表板/批量`以查看导入作业。
 :::
 
-### Charset
+### 字符集
 
-Files and `.json` metadata must be in UTF-8.
+文件和 `.json` 元数据必须是 UTF-8。
 
-### Command
+### 命令
 
 <CodeGroup>
 <CodeGroupItem title="V3.20+">
@@ -50,40 +50,40 @@ sudo -u www-data IS_CRON=1 THREAD_ID=1 php importing.php
 </CodeGroupItem>
 </CodeGroup>
 
-### Cron entry
+### Cron 条目
 
-The importing command can be automatically scheduled by using [cron](https://en.wikipedia.org/wiki/Cron):
+可以使用 [cron](https://en.wikipedia.org/wiki/Cron) 自动调度导入命令：
 
 ```sh
 * * * * * COMMAND_HERE >/dev/null 2>&1
 ```
 
-### Threads
+### 线程
 
-You can speed up the process by running the importing in multiple threads by passing different `env` for `THREAD_ID`.
+您可以通过为`THREAD_ID`传递不同的`env`，在多个线程中运行导入来加快进程。
 
 ```sh
 sudo -u www-data THREAD_ID=1 php cli.php -C importing
 sudo -u www-data THREAD_ID=2 php cli.php -C importing
 ```
 
-### File locking
+### 文件锁定
 
-The importing process can be locked by placing an empty lock file at `./importing/.lock`.
+导入过程可以通过在`./importing/.lock` 放置一个空的锁文件来锁定。
 
-The process won't be carried until this file gets removed. This comes handy when you want to import a large dataset and you care about the nested folder structure.
+在删除此文件之前，不会进行该过程。当您想要导入大型数据集并且关心嵌套文件夹结构时，这会很方便。
 
-## Parsing formats
+## 解析格式
 
-The bulk importer scans the target importing directory and creates content accordingly parsing rules described below. User assets (avatar, background image) will get uploaded to the system user folder.
+批量导入器扫描目标导入目录并相应地创建如下所述的解析规则的内容。用户资产(头像、背景图片)将上传到系统用户文件夹。
 
 ::: tip
-The parser creates users and albums only if those doesn't exists. It detects if `username` exists, and it does the same for albums (based on the album name + its owner).
+解析器仅在用户和相册不存在时才创建这些用户和相册。它检测`username` 是否存在，并且对相册执行相同的操作(基于相册名称 + 其所有者)。
 :::
 
-### Top-level folder as username
+### 顶级文件夹作为用户名
 
-Top-level folders within the importing path will be handled as `username`. Second-level folders will be parsed as `album name`.
+导入路径中的顶级文件夹将作为`username`处理。二级文件夹将被解析为`album name`。
 
 ```shell
 ./<path>
@@ -94,16 +94,16 @@ Top-level folders within the importing path will be handled as `username`. Secon
     └── logo-alt.png
 ```
 
-For the tree above, the parser will:
+对于上面的树，解析器将：
 
-* Create `rodolfo` user (if the user doesn't exists)
-* Create album `weapons` under `rodolfo` user (if the album doesn't exists)
-* Upload the images contained in `./<path>/rodolfo/weapons` to rodolfo's `weapons` album
-* Upload `logo-alt.png` to `rodolfo` (no album)
+- 创建 `rodolfo` 用户(如果用户不存在)
+- 在`rodolfo` 用户下创建相册`weapons`(如果相册不存在)
+- 将`./<path>/rodolfo/weapons` 中包含的图片上传到 rodolfo 的`weapons` 相册
+- 上传`logo-alt.png` 到`rodolfo`(无专辑)
 
-### Top-level folders as albums
+### 顶级文件夹作为相册
 
-Top-level folders within the importing path will be handled as `album_name`.
+导入路径中的顶级文件夹将作为`album_name` 处理。
 
 ```shell
 ./<path>
@@ -113,14 +113,14 @@ Top-level folders within the importing path will be handled as `album_name`.
     └── logo-alt.png
 ```
 
-For the tree above, the parser will:
+对于上面的树，解析器将：
 
-* Create album `weapons` as guest user (if the album doesn't exists)
-* Upload the images contained in `./<path>/weapons` to `weapons` album
+- 以访客用户身份创建相册`weapons`(如果相册不存在)
+- 将`./<path>/weapons` 中包含的图片上传到`weapons` 相册
 
-### No parse
+### 没有解析
 
-No folder is parsed, only images will be imported as guest.
+没有文件夹被解析，只有图像将作为来宾导入。
 
 ```shell
 ./<path>
@@ -129,35 +129,35 @@ No folder is parsed, only images will be imported as guest.
 └── logo-alt.png
 ```
 
-For the tree above, the parser will:
+对于上面的树，解析器将：
 
-* Upload the images contained in `./<path>` to public, as guest user.
+- 将包含在`./<path>` 中的图像以访客用户身份上传到公众。
 
-## Statuses
+## 状态
 
-The importing jobs statuses get defined as follow:
+导入作业状态定义如下：
 
-| Status    | Description                                     |
-| --------- | ----------------------------------------------- |
-| Queued    | Job is in the processing queue (default status) |
-| Working   | Job is being parsed                             |
-| Paused    | Job is paused                                   |
-| Canceled  | Job aborted by the user                         |
-| Completed | Job completed (everything parsed)               |
+| 状态      | 说明                           |
+| --------- | ------------------------------ |
+| Queued    | 作业在处理队列中(默认状态)   |
+| Working   | 正在解析作业                   |
+| Paused    | 作业已暂停                     |
+| Canceled  | 作业被用户中止                 |
+| Completed | 作业已完成(所有内容都已解析) |
 
 ::: tip
-Importing may show "completed" when there's nothing else to parse, but internally it will get re-queued automatically.
+当没有其他东西要解析时，导入可能会显示"completed"，但在内部它会自动重新排队。
 :::
 
-## Metadata
+## 元数据
 
-The bulk importer supports metadata using the JSON format, same as [Google Photos](#importing-from-google-photos). Metadata must be provided per content basis, meaning that you must use one metadata file for each content.
+批量导入器支持使用 JSON 格式的元数据，与 [Google 相册](#importing-from-google-photos) 相同。必须按内容提供元数据，这意味着您必须为每个内容使用一个元数据文件。
 
 ::: tip UTF-8
-Metadata must be in UTF-8 format. Don't forget to fix your charset.
+元数据必须采用 UTF-8 格式。不要忘记修复您的字符集。
 :::
 
-| Content                               | Type     | Metadata file                          |
+| 内容                                  | 类型     | 元数据文件                             |
 | ------------------------------------- | -------- | -------------------------------------- |
 | `rodolfo/`                            | username | `rodolfo/metadata.json`                |
 | `rodolfo/weapons/`                    | album    | `rodolfo/weapons/metadata.json`        |
@@ -165,7 +165,7 @@ Metadata must be in UTF-8 format. Don't forget to fix your charset.
 | `rodolfo/weapons/rocket-launcher.jpg` | image    | `rodolfo/weapons/rocket-launcher.json` |
 | `rodolfo/logo-alt.png`                | image    | `rodolfo/logo-alt.json`                |
 
-Tree below shows metadata for the table above.
+下面的树显示了上表的元数据。
 
 ```shell
 ./<path>
@@ -181,13 +181,13 @@ Tree below shows metadata for the table above.
     └── metadata.json
 ```
 
-::: tip Note
-Metadata properties merges the content being parsed, meaning that you don't need to explicitly indicate all properties, only what you need to describe.
+::: tip 注意
+元数据属性合并了正在解析的内容，这意味着您不需要明确指出所有属性，只需要描述您需要描述的内容。
 :::
 
-### Image metadata
+### 图像元数据
 
-JSON metadata file below provides a sample metadata for `machine-gun.jpg`.
+下面的 JSON 元数据文件提供了`machine-gun.jpg`的示例元数据。
 
 ```json
 {
@@ -204,13 +204,13 @@ JSON metadata file below provides a sample metadata for `machine-gun.jpg`.
 }
 ```
 
-::: tip Image categories
-Image categories will be created if needed long as you provide both `name` and `urlKey`.
+::: tip 图片类别
+只要您同时提供 `name` 和 `urlKey`，就会根据需要创建图像类别。
 :::
 
-### Album metadata
+### 专辑元数据
 
-JSON metadata file bellow provides a sample metadata for `guns/` album.
+下面的 JSON 元数据文件提供了 `guns/` 专辑的示例元数据。
 
 ```json
 {
@@ -226,16 +226,16 @@ JSON metadata file bellow provides a sample metadata for `guns/` album.
 }
 ```
 
-For album privacy, you can pick from:
+对于专辑隐私，您可以选择：
 
-| Privacy type       | Effect                                        |
-| ------------------ | --------------------------------------------- |
-| `public`           | Public album (default)                        |
-| `private`          | Private album for owner                       |
-| `private_but_link` | Same as `private` + those with the album link |
-| `password`         | Will set the password for accessing the album |
+| 隐私类型           | 效果                                |
+| ------------------ | ----------------------------------- |
+| `public`           | 公共相册(默认)                    |
+| `private`          | 所有者的私人专辑                    |
+| `private_but_link` | 与`private` 相同+带有专辑链接的那些 |
+| `password`         | 将设置访问相册的密码                |
 
-For example, if you need `private_but_link` the metadata property should look like this:
+例如，如果您需要 `private_but_link`，元数据属性应该如下所示：
 
 ```json
 {
@@ -245,9 +245,9 @@ For example, if you need `private_but_link` the metadata property should look li
 }
 ```
 
-### User metadata
+### 用户元数据
 
-JSON metadata file bellow provides a sample metadata for `rodolfo/` user.
+下面的 JSON 元数据文件为 `rodolfo/` 用户提供了一个示例元数据。
 
 ```json
 {
@@ -273,7 +273,7 @@ JSON metadata file bellow provides a sample metadata for `rodolfo/` user.
 }
 ```
 
-Profile images have to be located in the `.assets/` folder inside the user folder.
+个人资料图片必须位于用户文件夹内的`.assets/`文件夹中。
 
 ```shell
 ./<path>
@@ -283,6 +283,6 @@ Profile images have to be located in the `.assets/` folder inside the user folde
         └── rodo-bkg.jpg
 ```
 
-::: warning User assets
-The type of the image assets must be one of the file formats handled by your installation.
+::: danger 用户资产
+图像资产的类型必须是您的安装处理的文件格式之一。
 :::

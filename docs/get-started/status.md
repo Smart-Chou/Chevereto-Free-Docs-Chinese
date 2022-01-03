@@ -1,22 +1,22 @@
-# Status
+# 地位
 
-## Current version
+## 当前版本
 
-[3.20.12](https://releases.chevereto.com/3.X/3.20/3.20.12.html) `coqueto` - Chevereto V3.20 LTS (Long Term Support).
+[3.20.12](https://releases.chevereto.com/3.X/3.20/3.20.12.html) `coqueto` - Chevereto V3.20 LTS(长期支持)。
 
-This version is getting active maintenance and updates until **2022-11** for:
+此版本正在进行积极维护和更新，直到 **2022-11** 用于：
 
-* Security updates
-* PHP updates
-* Software bugs
-* Deprecated dependencies
+* 安全更新
+* PHP 更新
+* 软件错误
+* 弃用的依赖项
 
-Chevereto V3.20 LTS was made using [Ubuntu 20.04](https://wiki.ubuntu.com/Releases) and thanks to this you should be able to run V3.20 based systems until **2025-04**.
+Chevereto V3.20 LTS 是使用 [Ubuntu 20.04](https://wiki.ubuntu.com/Releases) 制作的，因此您应该能够在 **2025-04** 之前运行基于 V3.20 的系统。
 
-| Version | End of LTS | End of Life |
+|版本 | LTS 结束 |生命终结 |
 | ------- | ---------- | ----------- |
-| V3.20.X | 2022-11    | 2025-04     |
+| V3.20.X | 2022-11 | 2025-04 |
 
-## Next version
+## 下一个版本
 
-V3.20 is the final version for 3.X. There won't be next versions for it just maintenance revisions (3.20.X).
+V3.20 是 3.X 的最终版本。不会有下一个版本，只是维护修订版 (3.20.X)。

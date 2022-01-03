@@ -1,20 +1,20 @@
 # ShareX
 
-[ShareX](https://en.wikipedia.org/wiki/ShareX) is an utility for Windows that allows you to upload images, screen captures, text and other kind of content to several providers. You can easily use ShareX with your Chevereto website to upload images directly from your computer thanks to the [Chevereto API](./../API/V1.md).
+[ShareX](https://en.wikipedia.org/wiki/ShareX) 是一个适用于 Windows 的实用程序，它允许您将图像、屏幕截图、文本和其他类型的内容上传到多个提供商。借助 [Chevereto API](./../API/V1.md)，您可以轻松地在 Chevereto 网站上使用 ShareX，直接从您的计算机上传图像。
 
-## Get ShareX
+## 获取 ShareX
 
-ShareX is free and Open Source. You can download it from [ShareX website](https://getsharex.com/) and once downloaded proceed to install it in your computer.
+ShareX 是免费且开源的。您可以从 [ShareX 网站](https://getsharex.com/) 下载它，下载后继续将其安装到您的计算机中。
 
-## Add Chevereto to ShareX
+## 将 Chevereto 添加到 ShareX
 
-Since ShareX version 9.4.0 you only need to:
+从 ShareX 9.4.0 版开始，您只需要：
 
-- Go to image destination settings
-- Select «Chevereto»
-- Fill your website details
+- 转到图像目标设置
+- 选择«Chevereto»
+- 填写您的网站详细信息
 
-For older ShareX versions you need to manually import Chevereto to ShareX. First copy the following code block somewhere and edit it to match your Chevereto installation.
+对于较旧的 ShareX 版本，您需要手动将 Chevereto 导入 ShareX。首先将以下代码块复制到某处并编辑它以匹配您的 Chevereto 安装。
 
 ```json
 {
@@ -35,25 +35,25 @@ For older ShareX versions you need to manually import Chevereto to ShareX. First
 }
 ```
 
-Once you are ready editing this code, copy all the code and follow these steps:
+准备好编辑此代码后，请复制所有代码并按照以下步骤操作：
 
-- Open ShareX
-- Click on "Destinations" and then go to "Destination Settings..."
-- Scroll down and click "Custom uploaders"
-- Click on "Import" and then "From clipboard" (is on the column at the left)
+- 打开 ShareX
+- 单击“目的地”，然后转到“目的地设置...”
+- 向下滚动并点击“自定义上传者”
+- 单击“导入”，然后单击“从剪贴板”(位于左侧的列中)
 
-You will see that the information from the code block has been added to ShareX. Click on "Test" next to the "Image uploader" section. You should see something like this in the "Test result" log:
+您将看到代码块中的信息已添加到 ShareX。单击“图像上传器”部分旁边的“测试”。您应该在“测试结果”日志中看到类似的内容：
 
 ```plain
 URL: http://mysite.com/image/<id>
 ```
 
-If everything is OK you will see that and ShareX is ready to upload directly to you Chevereto website.
+如果一切正常，您将看到，ShareX 已准备好直接上传到您的 Chevereto 网站。
 
-## Upload images to an user account
+## 将图像上传到用户帐户
 
-Chevereto API V1 works uploading images as guest. If you want to upload images to a given user check the [API user upload Workaround](./../API/V1.md).
+Chevereto API V1 可以以访客身份上传图片。如果要将图像上传到给定用户，请检查 [API 用户上传解决方法](./../API/V1.md)。
 
-## Need help?
+## 需要帮忙？
 
-Refer to this topic for help about [ShareX and Chevereto](https://chevereto.com/community/threads/sharex-and-chevereto.5254/).
+请参阅此主题以获取有关 [ShareX 和 Chevereto](https://chevereto.com/community/threads/sharex-and-chevereto.5254/) 的帮助。

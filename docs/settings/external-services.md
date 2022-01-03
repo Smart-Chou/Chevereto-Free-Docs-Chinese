@@ -1,224 +1,224 @@
-# External services
+# 外部服务
 
 `/dashboard/settings/external-services`
 
-## Akismet spam protection
+## Akismet 垃圾邮件保护
 
-Toggles usage of [Akismet](https://akismet.com/) service.
+切换 [Akismet](https://akismet.com/) 服务的使用。
 
-| Value    | Effect          |
+|键值 |效果|
 | -------- | --------------- |
-| Enabled  | Enable Akismet  |
-| Disabled | Disable Akismet |
+|启用|启用 Akismet |
+|禁用|禁用 Akismet |
 
-## Akismet API key
+## Akismet API 密钥
 
-*Applies only if `Akismet spam protection` is `Enabled`.
+*仅在“Akismet 垃圾邮件保护”为“已启用”时适用。
 
-| Type   | Description     |
+|类型 |说明 |
 | ------ | --------------- |
-| String | Akismet API key |
+|字符串 | Akismet API 密钥 |
 
-## StopForumSpam spam protection
+## StopForumSpam 垃圾邮件保护
 
-Toggles usage of [Stop Forum Spam](https://stopforumspam.com/) service.
+切换 [停止论坛垃圾邮件](https://stopforumspam.com/) 服务的使用。
 
-| Value    | Effect                  |
+|键值 |效果|
 | -------- | ----------------------- |
-| Enabled  | Enable Stop Forum Spam  |
-| Disabled | Disable Stop Forum Spam |
+|启用|启用阻止论坛垃圾邮件 |
+|禁用|禁用停止论坛垃圾邮件 |
 
 ## CDN
 
-Toggles usage of [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) (Content delivery network).
+切换 [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)(内容交付网络)的使用。
 
-| Value    | Effect      |
+|键值 |效果|
 | -------- | ----------- |
-| Enabled  | Enable CDN  |
-| Disabled | Disable CDN |
+|启用|启用 CDN |
+|禁用|禁用 CDN |
 
-## CDN URL
+## CDN 网址
 
-*Applies only if `CDN` is set to `Enabled`.
+*仅当“CDN”设置为“已启用”时才适用。
 
-Determines the CDN for the website. The CDN URL will be used for all local static resources.
+确定网站的 CDN。 CDN URL 将用于所有本地静态资源。
 
-| Type   | Description        |
+|类型 |说明 |
 | ------ | ------------------ |
-| String | The CDN (pull) URL |
+|字符串 | CDN(拉取)URL |
 
 ## reCAPTCHA
 
-Toggles usage of [reCAPTCHA](https://www.google.com/recaptcha/about/).
+切换 [reCAPTCHA](https://www.google.com/recaptcha/about/) 的使用。
 
-| Value    | Effect            |
+|键值 |效果|
 | -------- | ----------------- |
-| Enabled  | Enable reCAPTCHA  |
-| Disabled | Disable reCAPTCHA |
+|启用|启用 reCAPTCHA |
+|禁用|禁用 reCAPTCHA |
 
-## reCAPTCHA version
+## reCAPTCHA 版本
 
-*Applies only if `reCAPTCHA` is set to `Enabled`.
+*仅当 `reCAPTCHA` 设置为 `Enabled` 时适用。
 
-Determines the reCAPTCHA version. It must match the version spec for your key.
+确定 reCAPTCHA 版本。它必须与您的密钥的版本规范相匹配。
 
-| Type    | Values |
+|类型 |价值观 |
 | ------- | ------ |
-| Integer | 2, 3   |
+|整数 | 2, 3 |
 
-## reCAPTCHA site key
+## reCAPTCHA 站点密钥
 
-*Applies only if `reCAPTCHA` is set to `Enabled`.
+*仅当 `reCAPTCHA` 设置为 `Enabled` 时适用。
 
-Determines the reCAPTCHA site key.
+确定 reCAPTCHA 站点密钥。
 
-| Type   | Values             |
+|类型 |价值观 |
 | ------ | ------------------ |
-| String | reCAPTCHA site key |
+|字符串 | reCAPTCHA 站点密钥 |
 
-## reCAPTCHA secret key
+## reCAPTCHA 密钥
 
-*Applies only if `reCAPTCHA` is set to `Enabled`.
+*仅当 `reCAPTCHA` 设置为 `Enabled` 时适用。
 
-Determines the reCAPTCHA secret key.
+确定 reCAPTCHA 密钥。
 
-| Type   | Values               |
+|类型 |价值观 |
 | ------ | -------------------- |
-| String | reCAPTCHA secret key |
+|字符串 | reCAPTCHA 密钥 |
 
-## reCAPTCHA threshold
+## reCAPTCHA 阈值
 
-*Applies only if `reCAPTCHA` is set to `Enabled`.
+*仅当 `reCAPTCHA` 设置为 `Enabled` 时适用。
 
-Determines the reCAPTCHA threshold.
+确定 reCAPTCHA 阈值。
 
-For example, if you
+例如，如果你
 
-| Value | Effect                                                                                                       |
-| ----- | ------------------------------------------------------------------------------------------------------------ |
-| 0     | Always display reCAPTCHA                                                                                     |
-| n     | Display reCAPTCHA after (n) failed attempts, for example when failing to provide the right login credentials |
+|键值 |效果|
+| ----- | ----------------------------------------------------------------------------- |
+| 0 |始终显示 reCAPTCHA |
+| | |在 (n) 次尝试失败后显示 reCAPTCHA，例如在未能提供正确的登录凭据时 |
 
-## Force reCAPTCHA on contact page
+## 在联系页面强制 reCAPTCHA
 
-*Applies only if `reCAPTCHA` is set to `Enabled`.
+*仅当 `reCAPTCHA` 设置为 `Enabled` 时适用。
 
-Toggle showing (forced) reCAPTCHA on contact page.
+在联系页面上切换显示(强制)reCAPTCHA。
 
-| Value    | Effect                                   |
+|键值 |效果|
 | -------- | ---------------------------------------- |
-| Enabled  | Enable forced reCAPTCHA on contact page  |
-| Disabled | Disable forced reCAPTCHA on contact page |
+|启用|在联系页面上启用强制 reCAPTCHA |
+|禁用|在联系页面上禁用强制 reCAPTCHA |
 
-## Comments API
+## 评论 API
 
-Determines the comment API to use.
+确定要使用的评论 API。
 
-| Value           | Effect                                            |
+|键值 |效果|
 | --------------- | ------------------------------------------------- |
-| Disqus          | Use [Disqus](https://disqus.com/) comment service |
-| JavaScript/HTML | Use any HTML comment provider                     |
+|讨论 |使用[Disqus](https://disqus.com/)评论服务|
+| JavaScript/HTML |使用任何 HTML 评论提供程序 |
 
-## Disqus shortname
+## Disqus 简称
 
-*Applies only if `Comments API` is set to `Disqus`.
+*仅当`Comments API` 设置为`Disqus` 时适用。
 
-Determines the Disqus shortname.
+确定 Disqus 短名称。
 
-| Type   | Value            |
+|类型 |键值 |
 | ------ | ---------------- |
-| String | Disqus shortname |
+|字符串 | Disqus 简称 |
 
-## Disqus secret key
+## Disqus 密钥
 
-*Applies only if `Comments API` is set to `Disqus`.
+*仅当`Comments API` 设置为`Disqus` 时适用。
 
-Determines the Disqus secret key.
+确定 Disqus 密钥。
 
-| Type   | Value             |
+|类型 |键值 |
 | ------ | ----------------- |
-| String | Disqus secret key |
+|字符串 | Disqus 秘钥 |
 
-## Disqus public key
+## Disqus 公钥
 
-*Applies only if `Comments API` is set to `Disqus`.
+*仅当`Comments API` 设置为`Disqus` 时适用。
 
-Determines the Disqus public key.
+确定 Disqus 公钥。
 
-| Type   | Value             |
+|类型 |键值 |
 | ------ | ----------------- |
-| String | Disqus public key |
+|字符串 | Disqus 公钥 |
 
-## Comment code
+## 注释代码
 
-*Applies only when `Comments API` is set to `JavaScript/HTML`
+*仅当 `Comments API` 设置为 `JavaScript/HTML` 时适用
 
-Determines the HTML comment code, which will get added to image view.
+确定将添加到图像视图的 HTML 注释代码。
 
-| Type   | Value |
+|类型 |键值 |
 | ------ | ----- |
-| String | HTML  |
+|字符串 | HTML |
 
-## ModerateContent
+## 中等内容
 
-Toggles usage of [ModerateContent](https://www.moderatecontent.com/) service.
+切换 [ModerateContent](https://www.moderatecontent.com/) 服务的使用。
 
-| Value    | Effect                  |
+|键值 |效果|
 | -------- | ----------------------- |
-| Enabled  | Enable ModerateContent  |
-| Disabled | Disable ModerateContent |
+|启用|启用中等内容 |
+|禁用|禁用中等内容 |
 
-## ModerateContent API Key
+## ModerateContent API 密钥
 
-*Applies only if `ModerateContent` is `Enabled`.
+*仅适用于“ModerateContent”为“Enabled”的情况。
 
-Determines the ModerateContent API key.
+确定 ModerateContent API 密钥。
 
-| Type   | Value                   |
+|类型 |键值 |
 | ------ | ----------------------- |
-| String | ModerateContent API key |
+|字符串 | ModerateContent API 密钥 |
 
-## Automatic approve
+## 自动批准
 
-*Applies only if `ModerateContent` is `Enabled`.
+*仅适用于“ModerateContent”为“Enabled”的情况。
 
-Toggles automatic approve for content approved by ModerateContent.
+为 ModerateContent 批准的内容切换自动批准。
 
-| Value    | Effect                                    |
+|键值 |效果|
 | -------- | ----------------------------------------- |
-| Enabled  | Enable ModerateContent automatic approve  |
-| Disabled | Disable ModerateContent automatic approve |
+|启用|启用 ModerateContent 自动批准 |
+|禁用|禁用 ModerateContent 自动批准 |
 
-## Block content
+## 阻止内容
 
-*Applies only if `ModerateContent` is `Enabled`.
+*仅适用于“ModerateContent”为“Enabled”的情况。
 
-Determines which content will be blocked by ModerateContent.
+确定哪些内容将被 ModerateContent 阻止。
 
-| Value          | Effect                       |
-| -------------- | ---------------------------- |
-| Disabled       | Don't block any content      |
-| Adult          | Block adult content          |
-| Teen and adult | Block adult and teen content |
+|键值 |效果|
+| -------------- | ----------------------------- |
+|禁用|不要屏蔽任何内容|
+|成人 |阻止成人内容 |
+|青少年和成人 |阻止成人和青少年内容 |
 
-## Flag NSFW
+## 标记 NSFW
 
-*Applies only if `ModerateContent` is `Enabled`.
+*仅适用于“ModerateContent”为“Enabled”的情况。
 
-Determines which content will get NSFW flagged by ModerateContent.
+确定哪些内容将由 ModerateContent 标记为 NSFW。
 
-| Value          | Effect                      |
+|键值 |效果|
 | -------------- | --------------------------- |
-| Disabled       | Don't flag any content      |
-| Adult          | Flag adult as NSFW          |
-| Teen and adult | Flag adult and teen as NSFW |
+|禁用|不要标记任何内容 |
+|成人 |将成人标记为 NSFW |
+|青少年和成人 |将成人和青少年标记为 NSFW |
 
-## Analytics code
+## 分析代码
 
-Determines the analytics HTML code that will track stats for your website. This is where you can place the tracking code provided by Google Analytics, Heap, Yandex.Metrica, [Matomo](https://matomo.org/), Mixpanel, etc.
+确定将跟踪您网站统计信息的分析 HTML 代码。您可以在此处放置 Google Analytics、Heap、Yandex.Metrica、[Matomo](https://matomo.org/)、Mixpanel 等提供的跟踪代码。
 
-Code you enter in this section will be printed in all views.
+您在此部分输入的代码将打印在所有视图中。
 
-| Type   | Description |
+|类型 |说明 |
 | ------ | ----------- |
-| String | HTML        |
+|字符串 | HTML |

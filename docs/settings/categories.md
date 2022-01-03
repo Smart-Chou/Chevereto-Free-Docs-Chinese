@@ -1,35 +1,35 @@
-# Categories
+# 分类
 
 `/dashboard/settings/categories`
 
-Categories classify the uploaded images and generate listings based in each category.
+分类对上传的图像进行分类并基于每个分类生成列表。
 
-## Adding categories
+## 添加分类
 
-Click on "Add category".
+点击“添加分类”。
 
-## Category values
+## 分类值
 
-### Name
+### 名称
 
-The name for the category.
+分类的名称。
 
-| Type   | Accepted     |
-| ------ | ------------ |
-| String | maxlength 32 |
+| 类型   | 接受        |
+| ------ | ----------- |
+| 字符串 | 最大长度 32 |
 
-### URL key
+### 网址键
 
-The URL key (path component). For better SEO, try to use hyphens (-) instead of underscores (_) in the URL key.
+URL 键(路径组件)。为了获得更好的 SEO，请尝试在 URL 键中使用连字符 (-) 而不是下划线 (\_)。
 
-| Type   | Accepted                           |
-| ------ | ---------------------------------- |
-| String | Only letters, numbers, and hyphens |
+| 类型   | 接受                   |
+| ------ | ---------------------- |
+| 字符串 | 只有字母、数字和连字符 |
 
-### Description
+### 描述
 
-A brief description about the category. It will be used in the `<meta name="description">` tag for the category page.
+关于分类的简要说明。它将在分类页面的 `<meta name="description">` 标签中使用。
 
-| Type   | Accepted |
-| ------ | -------- |
-| String | Any      |
+| 类型   | 接受 |
+| ------ | ---- |
+| 字符串 | 任何 |

@@ -1,54 +1,54 @@
-# Listing settings
+# 页面列表
 
-`/dashboard/settings/listings`
+`dashboard/settings/listings`
 
-## List items per page
+## 每页列出项目
 
-Determines how many items will be displayed per page. The more you display, the slower it gets. Choose wisely.
+确定每页将显示多少项。你显示的越多，它变得越慢。做出明智的选择。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 24          |
+|整数 | 24 |
 
-## List pagination mode
+## 列表分页模式
 
-Determines how pagination will work.
+确定分页的工作方式。
 
-| Value              | Effect                                        |
+|键值 |效果|
 | ------------------ | --------------------------------------------- |
-| Classic pagination | Use conventional pages to browse listings     |
-| Endless scrolling  | Use XHR to append content to the listing page |
+|经典分页 |使用常规页面浏览列表 |
+|无休止的滚动|使用 XHR 将内容附加到列表页面 |
 
-## Listing viewer
+## 列表查看器
 
-Toggles the listing viewer.
+切换列表查看器。
 
-| Value    | Effect                                                             |
-| -------- | ------------------------------------------------------------------ |
-| Enabled  | Enables a a full-screen image browsing experience, like a lightbox |
-| Disabled | No viewer                                                          |
+|键值 |效果|
+| -------- | ------------------------------------------- |
+|启用|启用像灯箱一样的全屏图像浏览体验 |
+|禁用|没有查看器 |
 
-## Image listing size
+## 图像列表大小
 
-Determines how images will be fitted in listings.
+确定如何在列表中安装图像。
 
-| Value | Effect                                        |
+|键值 |效果|
 | ----- | --------------------------------------------- |
-| Fixed | Tiled listing display, fixed width and height |
-| Fluid | Masonry listing display, automatic height     |
+|固定 |平铺列表显示，固定宽度和高度|
+|流体 |砌体列表显示，自动高度|
 
-## Album listing images requirement (explore)
+## 专辑列表图片要求(探索)
 
-Determine the album image count required to show the album in listings.
+确定在列表中显示专辑所需的专辑图像计数。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 5           |
+|整数 | 5 |
 
-## Listing columns number
+## 列出列数
 
-Determines the number of columns used for listing. You can control this for a wide selection of devices: phone, phablet, tablet, laptop and desktop.
+确定用于列表的列数。您可以对多种设备进行控制：手机、平板手机、平板电脑、笔记本电脑和台式机。
 
-| Type    | Recommended                          |
-| ------- | ------------------------------------ |
-| Integer | `1` or `2` columns for small devices |
+|类型 |推荐 |
+| ------- | ------------------------------------- |
+|整数 |小型设备的`1` 或`2` 列|

@@ -1,41 +1,41 @@
-# Environment
+# 环境
 
-These are the system level settings that can be used to tweak Chevereto provisioning.
+这些是可用于调整 Chevereto 配置的系统级设置。
 
-## Passing values
+## 传递值
 
-To pass settings to Chevereto is recommended to use system level environment variables.
+将设置传递给 Chevereto 建议使用系统级环境变量。
 
-::: tip Settings file
-If is not possible to use environment variables you can use the [settings file](../server/settings-file.md) to configure the Chevereto variables.
+::: tip 设置文件
+如果无法使用环境变量，您可以使用 [设置文件](../server/settings-file.md) 来配置 Chevereto 变量。
 :::
 
-### Apache HTTP Web Server (PHP module)
+### Apache HTTP Web 服务器(PHP 模块)
 
-If PHP is provided using `mpm_prefork` you must refer to the documentation on [Apache HTTP Server environment variables](https://httpd.apache.org/docs/current/env.html). You may check our real use cases at [chevereto/vultr-marketplace](https://github.com/chevereto/vultr-marketplace/blob/main/files/var/lib/cloud/scripts/per-instance/provision.sh).
+如果 PHP 是使用 `mpm_prefork` 提供的，您必须参考有关 [Apache HTTP Server 环境变量](https://httpd.apache.org/docs/current/env.html) 的文档。您可以在 [chevereto/vultr-marketplace](https://github.com/chevereto/vultr-marketplace/blob/main/files/var/lib/cloud/scripts/per-instance/provision.sh)。
 
-### Other setups
+### 其他设置
 
-For these you will be running [PHP-FPM](https://www.php.net/manual/en/install.fpm.configuration.php) so you can add those settings at your `php-fpm.conf` file.
+对于这些，您将运行 [PHP-FPM](https://www.php.net/manual/en/install.fpm.configuration.php)，以便您可以在您的 `php-fpm.conf` 文件中添加这些设置.
 
-### Application servers
+### 应用服务器
 
-For these you will be running PHP CLI so you should be able to pass those at `php.ini` for your CLI. You can also `export` those in your shell. Refer to the documentation of each application server for the best way to pass those to Chevereto.
+对于这些，您将运行 PHP CLI，因此您应该能够在 CLI 的 `php.ini` 中传递这些内容。你也可以在你的 shell 中“导出”那些。请参阅每个应用程序服务器的文档，了解将这些内容传递给 Chevereto 的最佳方式。
 
-### Container
+### 容器
 
-Pass the environment variables to the container run command or at `docker compose` layer.
+将环境变量传递给容器运行命令或在 `docker compose` 层。
 
-## Assets variables
+## 资产变量
 
-Environment variables for storing assets that can be uploaded to any of the supported external storage APIs.
+用于存储可以上传到任何受支持的外部存储 API 的资产的环境变量。
 
-Note that assets refers to user provided assets such as avatars and backgrounds, also website graphics like logos and homepage covers.
+请注意，资产是指用户提供的资产，例如头像和背景，还有网站图形，例如徽标和主页封面。
 
-Check [External storage](../../settings/external-storage.md) for adding external storage servers for user content uploads.
+检查 [外部存储](../../settings/external-storage.md) 为用户内容上传添加外部存储服务器。
 
-| Variable                             | Setting Key                | Example        |
-| ------------------------------------ | -------------------------- | -------------- |
+|变量 |设置键 |示例 |
+| ------------------------------------- | -------------------------- | -------------- |
 | CHEVERETO_ASSET_STORAGE_ACCOUNT_ID   | asset_storage_account_id   | 123            |
 | CHEVERETO_ASSET_STORAGE_ACCOUNT_NAME | asset_storage_account_name | account_name   |
 | CHEVERETO_ASSET_STORAGE_BUCKET       | asset_storage_bucket       | bucket         |
@@ -48,11 +48,11 @@ Check [External storage](../../settings/external-storage.md) for adding external
 | CHEVERETO_ASSET_STORAGE_TYPE         | asset_storage_type         | s3             |
 | CHEVERETO_ASSET_STORAGE_URL          | asset_storage_url          | `<url>/bucket` |
 
-## Database variables
+## 数据库变量
 
-Environment variables for the database details.
+数据库详细信息的环境变量。
 
-| Variable                  | Setting Key     | Example                  |
+|变量 |设置键 |示例 |
 | ------------------------- | --------------- | ------------------------ |
 | CHEVERETO_DB_DRIVER       | db_driver       | mysql                    |
 | CHEVERETO_DB_HOST         | db_host         | mariadb                  |
@@ -63,67 +63,67 @@ Environment variables for the database details.
 | CHEVERETO_DB_TABLE_PREFIX | db_table_prefix | chv_                     |
 | CHEVERETO_DB_USER         | db_user         | chevereto                |
 
-## Debug variables
+## 调试变量
 
-Environment variables for [debug](../troubleshoot/debug.md).
+[debug](../troubleshoot/debug.md) 的环境变量。
 
 ::: tip
-When using Docker it logs to `/dev/stderr` regardless this configuration.
+使用 Docker 时，无论此配置如何，它都会记录到 `/dev/stderr`。
 :::
 
-| Variable              | Setting Key | Example                      |
-| --------------------- | ----------- | ---------------------------- |
+|变量 |设置键 |示例 |
+| --------------------- | ----------- | ----------------------------- |
 | CHEVERETO_DEBUG_LEVEL | debug_level | `1`                          |
 | CHEVERETO_ERROR_LOG   | error_log   | /var/log/chevereto-error.log |
 
-## Session variables
+## 会话变量
 
-Environment variables for the session driver.
+会话驱动程序的环境变量。
 
-| Variable                       | Setting Key          | Example              |
+|变量 |设置键 |示例 |
 | ------------------------------ | -------------------- | -------------------- |
 | CHEVERETO_SESSION_SAVE_HANDLER | session.save_handler | `redis` `files`      |
 | CHEVERETO_SESSION_SAVE_PATH    | session.save_path    | `tcp://redis` `/tmp` |
 
-## Image handling variables
+## 图像处理变量
 
-Environment variables for controlling image handling.
+用于控制图像处理的环境变量。
 
-| Variable                          | Setting Key             | Example                          |
+|变量 |设置键 |示例 |
 | --------------------------------- | ----------------------- | -------------------------------- |
 | CHEVERETO_IMAGE_FORMATS_AVAILABLE | image_formats_available | `'JPG','PNG','BMP','GIF','WEBP'` |
 | CHEVERETO_IMAGE_LIBRARY           | image_library           | `imagick` `gd`                   |
 
-## Hostname variables
+## 主机名变量
 
-Environment variables for the hostname configuration.
+主机名配置的环境变量。
 
-| Variable                | Setting Key   | Example       |
+|变量 |设置键 |示例 |
 | ----------------------- | ------------- | ------------- |
 | CHEVERETO_HOSTNAME      | hostname      | chevereto.loc |
 | CHEVERETO_HOSTNAME_PATH | hostname_path | /             |
 | CHEVERETO_HTTPS         | https         | `true`        |
 
-## System context variables
+## 系统上下文变量
 
-Environment variables for the context where Chevereto system is being provided. Depending on where you run it, you may want to disable sensitive functionality.
+提供 Chevereto 系统的上下文的环境变量。根据您运行它的位置，您可能想要禁用敏感功能。
 
-| Variable                        | Setting Key         | Example |
+|变量 |设置键 |示例 |
 | ------------------------------- | ------------------- | ------- |
 | CHEVERETO_DISABLE_PHP_PAGES     | disable_php_pages   | `false` |
 | CHEVERETO_DISABLE_UPDATE_HTTP   | disable_update_http | `false` |
 | CHEVERETO_DISABLE_UPDATE_CLI    | disable_update_cli  | `false` |
 | CHEVERETO_ENABLE_HTACCESS_CHECK | htaccess_enforce    | `true`  |
 
-## File upload variables
+## 文件上传变量
 
-Environment variables for the file uploading limits. Note that the following environment variables will work for container provisioning.
+文件上传限制的环境变量。请注意，以下环境变量适用于容器配置。
 
-| Variable                      | Example |
+|变量 |示例 |
 | ----------------------------- | ------- |
-| CHEVERETO_UPLOAD_MAX_FILESIZE | 50M     |
-| CHEVERETO_POST_MAX_SIZE       | 50M     |
-| CHEVERETO_MAX_EXECUTION_TIME  | 30      |
-| CHEVERETO_MEMORY_LIMIT        | 512M    |
+| CHEVERETO_UPLOAD_MAX_FILESIZE | 50M |
+| CHEVERETO_POST_MAX_SIZE | 50M |
+| CHEVERETO_MAX_EXECUTION_TIME | 30 |
+| CHEVERETO_MEMORY_LIMIT | 512M |
 
-For **non-container** based provisioning you need to change those at [php.ini configuration](./requirements.md#php-configuration).
+对于基于**非容器**的配置，您需要在 [php.ini 配置](./requirements.md#php-configuration) 中更改这些配置。

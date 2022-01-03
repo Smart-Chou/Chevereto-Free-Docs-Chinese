@@ -1,134 +1,134 @@
-# Theme
+# 主题
 
 `/dashboard/settings/theme`
 
-## Tone
+## 语气
 
-Determines the theme tone.
+确定主题基调。
 
-| Value | Effect         |
+|键值 |效果|
 | ----- | -------------- |
-| Light | Use light mode |
-| Dark  | Use dark mode  |
+|光 |使用灯光模式 |
+|黑暗 |使用暗模式 |
 
-## Main color
+## 主色
 
-Determines the main color.
+确定主要颜色。
 
-| Type | Example |
+|类型 |示例 |
 | ---- | ------- |
-| Hex  | #00A7DA |
+|十六进制 | #00A7DA |
 
-## Top bar button color
+## 顶栏按钮颜色
 
-Determines the top bar button color.
+确定顶部栏按钮颜色。
 
-## Enable vector logo
+## 启用矢量标志
 
-Toggles the use of vector logo.
+切换矢量标志的使用。
 
-| Value    | Effect                |
+|键值 |效果|
 | -------- | --------------------- |
-| Enabled  | Use vector logo       |
-| Disabled | Don't use vector logo |
+|启用|使用矢量标志 |
+|禁用|不要使用矢量标志 |
 
-## Vector logo image
+## 矢量标志图像
 
-The vector logo image. The size is just for reference, the system will display the logo fixing height.
+矢量标志图像。尺寸仅供参考，系统会显示logo固定高度。
 
-| Type | Default |
+|类型 |默认 |
 | ---- | ------- |
-| SVG  | 500x76  |
+| SVG | 500x76 |
 
-## Raster logo image
+## 光栅标志图像
 
-The raster logo image. The size is just for reference, the system will display the logo fixing height.
+光栅标志图像。尺寸仅供参考，系统会显示logo固定高度。
 
-| Type | Default |
+|类型 |默认 |
 | ---- | ------- |
-| PNG  | 314x48  |
+| PNG | 314x48 |
 
-## Logo height
+## 标志高度
 
-Determines the logo height, which will be fixed and width will be adjusted.
+确定徽标高度，该高度将是固定的，而宽度将被调整。
 
-| Type    | Recommended           |
+|类型 |推荐 |
 | ------- | --------------------- |
-| Integer | Min: `20` - Max: `50` |
+|整数 |最小值：`20` - 最大值：`50` |
 
-## Favicon image
+## 图标图像
 
-Determines the favicon image, the icon which appears in the web browser bar.
+确定网站图标图像，即出现在 Web 浏览器栏中的图标。
 
-| Type | Default |
+|类型 |默认 |
 | ---- | ------- |
-| PNG  | 300x300 |
+| PNG | 300x300 |
 
-## Image load max. filesize (MB)
+## 图像加载最大值。文件大小 (MB)
 
-Determines the maximum image file size to load. Images bigger than this value will require "click to load" full resolution image.
+确定要加载的最大图像文件大小。大于此值的图像将需要“单击以加载”全分辨率图像。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 3           |
+|整数 | 3 |
 
-## Enable download button
+## 启用下载按钮
 
-Toggles the display of a download button for image view.
+切换图像视图的下载按钮的显示。
 
-| Value    | Effect                                         |
+|键值 |效果|
 | -------- | ---------------------------------------------- |
-| Enabled  | Enable download button to appear on image view |
-| Disabled | Don't show the image download button           |
+|启用|启用下载按钮以显示在图像视图 |
+|禁用|不显示图片下载按钮 |
 
-## Enable right click on image
+## 启用右键单击图像
 
-Toggles the ability to right click on the images. This controls the display of the context menu for the `<image>` tag.
+切换右键单击图像的能力。这控制了`<image>` 标签的上下文菜单的显示。
 
-| Value    | Effect                                    |
+|键值 |效果|
 | -------- | ----------------------------------------- |
-| Enabled  | Enable to right click on images (save-as) |
-| Disabled | Disable right click on images             |
+|启用|启用右键单击图像(另存为)|
+|禁用|禁用右键单击图像 |
 
-## Enable show Exif data
+## 启用显示 Exif 数据
 
-Toggles the display of image Exif data.
+切换图像 Exif 数据的显示。
 
-| Value    | Effect                            |
+|键值 |效果|
 | -------- | --------------------------------- |
-| Enabled  | Show image Exif data              |
-| Disabled | Don't show (hide) image Exif data |
+|启用|显示图像 Exif 数据 |
+|禁用|不显示(隐藏)图像 Exif 数据 |
 
-## Enable social share
+## 启用社交分享
 
-Toggles the social share buttons for sharing the image.
+切换用于共享图像的社交共享按钮。
 
-| Value    | Effect                                 |
-| -------- | -------------------------------------- |
-| Enabled  | Enable social share buttons for image  |
-| Disabled | Disable social share buttons for image |
+|键值 |效果|
+| -------- | ------------------------------- |
+|启用|为图像启用社交分享按钮 |
+|禁用|禁用图像的社交分享按钮 |
 
-## Enable embed codes (content)
+## 启用嵌入代码(内容)
 
-Toggles the display of embed codes.
+切换嵌入代码的显示。
 
-| Value    | Effect                        |
+|键值 |效果|
 | -------- | ----------------------------- |
-| Enabled  | Show embed codes              |
-| Disabled | Don't show (hide) embed codes |
+|启用|显示嵌入代码 |
+|禁用|不显示(隐藏)嵌入代码 |
 
-## Not safe content checkbox in uploader
+## 上传器中的不安全内容复选框
 
-Toggles the display of the NSFW checkbox.
+切换 NSFW 复选框的显示。
 
-| Value    | Effect                           |
+|键值 |效果|
 | -------- | -------------------------------- |
-| Enabled  | Enable display of NSFW checkbox  |
-| Disabled | DIsable display of NSFW checkbox |
+|启用|启用显示 NSFW 复选框 |
+|禁用|禁用 NSFW 复选框的显示 |
 
-## Custom CSS code
+## 自定义 CSS 代码
 
-Custom `CSS` code that will get added to the HTML. Example:
+将添加到 HTML 的自定义 `CSS` 代码。例子：
 
 ```css
 body {
@@ -139,9 +139,9 @@ a {
 }
 ```
 
-## Custom JS code
+## 自定义JS代码
 
-Custom `JS` code that will get added to the HTML. Example:
+将添加到 HTML 中的自定义 `JS` 代码。例子：
 
 ```js
 console.log('argument')

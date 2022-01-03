@@ -1,193 +1,193 @@
-# Image upload
+# 图片上传
 
 `/dashboard/settings/image-upload`
 
-This control the settings related to image uploading.
+这控制与图像上传相关的设置。
 
-## Enabled image formats
+## 启用图像格式
 
-Determines which image formats can be uploaded.
+确定可以上传的图像格式。
 
-::: tip Formats supported
+::: tip 格式支持
 JPG PNG BMP GIF WEBP
 :::
 
-## Enable uploads
+## 启用上传
 
-Toggles the image upload functionality.
+切换图片上传功能。
 
-## Enable uploads (URL)
+## 启用上传(URL)
 
-Toggles the image upload functionality from URL.
+从 URL 切换图像上传功能。
 
-## Upload user interface
+## 上传用户界面
 
-Determines how the upload will be displayed.
+确定上传的显示方式。
 
-| Value             | Effect                                |
+|键值 |效果|
 | ----------------- | ------------------------------------- |
-| On-page container | Uses a JS uploader that stays in page |
-| /upload route     | Drives users towards the upload page  |
+|页面容器 |使用停留在页面中的 JS 上传器 |
+| /upload 路径|将用户引向上传页面 |
 
-## Guest uploads
+## 访客上传
 
-Same as [enable uploads](#enable-uploads), but for guest users.
+与 [启用上传](#enable-uploads) 相同，但适用于访客用户。
 
-## Moderate uploads
+## 适度上传
 
-Determines if incoming uploads must be moderated or not.
+确定是否必须审核传入的上传。
 
-| Value    | Effect                 |
-| -------- | ---------------------- |
-| Disabled | No moderation required |
-| Guest    | Moderate guest uploads |
-| All      | Moderate all uploads   |
+|键值 |效果|
+| -------- | --------------- |
+|禁用|无需节制 |
+|来宾 |适度的访客上传 |
+|全部 |审核所有上传 |
 
-## Enable embed codes (uploader)
+## 启用嵌入代码(上传器)
 
-Toggles the display of embed codes after upload process.
+在上传过程后切换嵌入代码的显示。
 
-## Upload threads
+## 上传线程
 
-Determines the number of parallel threads used by the uploader. This setting should be configured according to the installed hardware and the usage of your website.
+确定上传器使用的并行线程数。此设置应根据已安装的硬件和您网站的使用情况进行配置。
 
-## Redirect on single upload
+## 单次上传重定向
 
-Toggles the HTTP redirection on single image upload. When enabled, users will be redirected to the image viewer.
+在单个图像上传时切换 HTTP 重定向。启用后，用户将被重定向到图像查看器。
 
-::: warning
-This should be disabled if upload moderation is enabled. This is because the viewer URL will return `HTTP 403` until the image gets approved.
+::: danger
+如果启用了上传审核，则应禁用此功能。这是因为查看器 URL 将返回“HTTP 403”，直到图像获得批准。
 :::
 
-## Enable duplicate uploads
+## 启用重复上传
 
-Toggles the acceptance of duplicate uploads.
+切换是否接受重复上传。
 
-## Enable expirable uploads
+## 启用过期上传
 
-Toggles the availability of expirable uploads, which will get automatically removed after a certain date.
+切换可过期上传的可用性，它将在特定日期后自动删除。
 
-## Auto delete guest uploads
+## 自动删除访客上传
 
-Determines the automatic deletion of guest uploads.
+确定自动删除访客上传。
 
-## Maximum image size
+## 最大图像大小
 
-Determines the maximum size (in pixels) allowed for image uploads. Larger images will get automatically downscale.
+确定允许上传图像的最大尺寸(以像素为单位)。较大的图像将自动缩小。
 
-## Image Exif data
+## 图像 Exif 数据
 
-Toggles the handling of image [Exif](https://en.wikipedia.org/wiki/Exif) data.
+切换图像 [Exif](https://en.wikipedia.org/wiki/Exif) 数据的处理。
 
-## Image Exif data (user setting)
+## 图像 Exif 数据(用户设置)
 
-Toggles if users can determine how to handle Exif data.
+切换用户是否可以决定如何处理 Exif 数据。
 
-## Maximum upload file size [MB]
+## 最大上传文件大小 [MB]
 
-Determines the maximum image size allowed.
+确定允许的最大图像大小。
 
-::: warning
-This setting is capped by local `php.ini` [configuration](../setup/system/php.md).
+::: danger
+此设置受本地`php.ini` [配置](../setup/system/php.md) 的限制。
 :::
 
-## Maximum upload file size (guests)
+## 最大上传文件大小(访客)
 
-Same as above, but for guests.
+与上面相同，但对于客人。
 
-## Image path
+## 图片路径
 
-The file system path for storing uploads.
+用于存储上传的文件系统路径。
 
-## Storage mode
+## 存储模式
 
-How uploads will get organized in the file system.
+如何在文件系统中组织上传。
 
-| Value       | Effect                                      |
-| ----------- | ------------------------------------------- |
-| Datefolders | Uses a nested folder structure `YYYY/MM/DD` |
-| Direct      | No folder structure                         |
+|键值 |效果|
+| ----------- | --------------------------------------------- |
+|日期文件夹 |使用嵌套文件夹结构`YYYY/MM/DD` |
+|直销 |无文件夹结构 |
 
 ::: tip
-This setting only affects future uploads. Previous uploads won't be affected.
+此设置仅影响以后的上传。以前的上传不会受到影响。
 :::
 
-## File naming method
+## 文件命名方法
 
-How uploads will be named on upload.
+上传时如何命名上传。
 
-- Source file: `./DSC-1313.jpg`
+- 源文件：`./DSC-1313.jpg`
 
-| Value                 | Effect                                                     | Example          |
-| --------------------- | ---------------------------------------------------------- | ---------------- |
-| Original              | Keep the original file name (will randomize on collisions) | `DSC-1313.jpg`   |
-| Random                | A randomized alphanumeric name                             | `bJdrpmdfi.jpg`  |
-| Mix original + random | Keep part of the original filename                         | `DSC-13pLfm.jpg` |
-| ID                    | Name the uploads as their public (encoded) ID              | `kIf.jpg`        |
+|键值 |效果|示例 |
+| --------------------- | -------------------------------------------------- | ---------------- |
+|原创 |保留原始文件名(碰撞时会随机化) | `DSC-1313.jpg` |
+|随机 |随机字母数字名称 | `bJdrpmdfi.jpg` |
+|混合原创+随机|保留部分原始文件名 | `DSC-13pLfm.jpg` |
+|身份证 |将上传命名为其公共(编码)ID | `kIf.jpg` |
 
-## Thumb size
+## 拇指大小
 
-The with and height for the image thumbs.
+图像缩略图的高度和高度。
 
-## Medium image fixed dimension
+## 中等图像固定尺寸
 
-Determines how medium images will be generated by specifying the resizing criteria.
+通过指定调整大小标准来确定如何生成中等图像。
 
-| Value  | Effect                                     |
+|键值 |效果|
 | ------ | ------------------------------------------ |
-| Width  | Resizing fixing width to the target value  |
-| Height | Resizing fixing height to the target value |
+|宽度|将固定宽度调整为目标值 |
+|身高 |调整固定高度到目标值|
 
-## Medium image fixed size
+## 中等图像固定大小
 
-The medium image size. Images will be resized based on the [medium image fixed dimension](#medium-image-fixed-dimension) criteria.
+中等图像大小。图像将根据 [中等图像固定尺寸](#medium-image-fixed-dimension) 标准调整大小。
 
-## Watermarks
+## 水印
 
-Toggles image watermarking, which are images that are merged in front of the images. Useful for any branding need.
+切换图像水印，即在图像前面合并的图像。可用于任何品牌需求。
 
 ::: tip
-Watermark settings below applies only if `Watermarks` is `Enabled`.
+以下水印设置仅适用于“水印”为“已启用”的情况。
 :::
 
-## Watermark user toggles
+## 水印用户切换
 
-Which user uploads will be watermarked.
+哪些用户上传将被添加水印。
 
-## Watermark file toggles
+## 水印文件切换
 
-Which image formats will be watermarked.
+哪些图像格式将被加水印。
 
-## Minimum image size needed to apply watermark
+## 应用水印所需的最小图像大小
 
-Determines the minimum image size criteria needed to watermark an image.
+确定为图像添加水印所需的最小图像大小标准。
 
-## Watermark image
+## 水印图像
 
-The image used to watermark image uploads.
+用于水印图像上传的图像。
 
-| Type  | Recommended                 |
+|类型 |推荐 |
 | ----- | --------------------------- |
-| Image | PNG with alpha transparency |
+|图像 |具有 alpha 透明度的 PNG |
 
-## Watermark position
+## 水印位置
 
-The area where the watermark will be applied to the image.
+将水印应用于图像的区域。
 
-|             |               |              |
+| | | |
 | ----------- | ------------- | ------------ |
-| Left top    | Center top    | Right top    |
-| Left center | Center center | Right center |
-| Left bottom | Center bottom | Right bottom |
+|左上|中心顶部 |右上 |
+|左中 |中心中心 |右中 |
+|左下|中底|右下|
 
-## Watermark percentage
+## 水印百分比
 
-The watermark size expressed in percentage of the target area.
+水印大小以目标区域的百分比表示。
 
-## Watermark margin
+## 水印边距
 
-A margin to implement around the watermark. Useful if the watermark is not implemented at center/center.
+在水印周围实现的边距。如果水印未在中心/中心实施，则很有用。
 
-## Watermark opacity
+## 水印不透明度
 
-The opacity of the watermark image.
+水印图像的不透明度。

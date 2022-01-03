@@ -1,24 +1,24 @@
-# Errors
+# 错误
 
-Application errors can be caused by several causes and understanding in which layer the error is affecting the system will drive towards an easy outcome. Kindly understand that in multi-layered systems like Chevereto is crucial to understand when an error is caused by Chevereto or when the problem is elsewhere.
+应用程序错误可能是由多种原因引起的，了解错误影响系统的哪一层将有助于实现简单的结果。请理解，在像 Chevereto 这样的多层系统中，对于了解错误何时由 Chevereto 引起或问题出在其他地方至关重要。
 
-## Error Id
+## 错误 ID
 
-Chevereto logs all error events under a unique **errorId** associated with the error stack trace and debug information.
+Chevereto 在与错误堆栈跟踪和调试信息相关联的唯一 **errorId** 下记录所有错误事件。
 
 ```plain
 <some code>: ** errorId #dacb7f96fb9fd28d **
-```
+```  
 
-Application errors in Chevereto **are hidden by default** on production mode, the only public part is the errorId. Errors won't be displayed **for security reasons** and the errorId is a randomly generated unique identifier per error event.
+Chevereto 中的应用程序错误**在生产模式下默认隐藏**，唯一公开的部分是 errorId。 **出于安全原因**不会显示错误，errorId 是每个错误事件随机生成的唯一标识符。
 
-::: tip Note: A error id is not an error message
-The error id exists so you can lookup for that error in your configured system debug device.
+::: tip 注意：错误 id 不是错误信息
+错误 ID 存在，因此您可以在配置的系统调试设备中查找该错误。
 :::
 
-## Stack Trace
+## 堆栈跟踪
 
-Code below shows an example error stack trace. It describes the error, provide its unique errorId and it shows the call stack.
+下面的代码显示了一个示例错误堆栈跟踪。它描述错误，提供其唯一的 errorId 并显示调用堆栈。
 
 ```txt
 Aw, snap! Internal Server Error [debug @ error_log] - https://chv.to/v3/debug
@@ -37,53 +37,53 @@ Stack trace:
 #3 /index.php(20): include_once('/app/loader.php')
 ```
 
-## It is Chevereto related?
+## 是 Chevereto 相关的吗？
 
-Chevereto exists on top of many technologies working at the same time and any component of this stack could fail.
+Chevereto 存在于许多同时工作的技术之上，该堆栈的任何组件都可能失败。
 
-It is likely that Chevereto **won't cause** the following issues:
+Chevereto **不会导致**以下问题：
 
-* Unable to connect (network issues)
-* MySQL server gone
-* CORS (missing icons, fonts)
-* Cookies/Sessions not working (permissions)
-* Restricted functions (`set_time_limit`)
-* Server restrictions (`mod_security`)
+* 无法连接(网络问题)
+* MySQL 服务器不见了
+* CORS(缺少图标、字体)
+* Cookies/Sessions 不工作(权限)
+* 受限功能(`set_time_limit`)
+* 服务器限制(`mod_security`)
 
-## Common errors
+## 常见错误
 
-### HTTP 500 Internal Server Error
+### HTTP 500 内部服务器错误
 
-This is a generic error response emitted by the web server layer and this it indicates the existence of an error, but it doesn't specify any concrete explication for it.
+这是由 Web 服务器层发出的通用错误响应，它表明存在错误，但没有为其指定任何具体说明。
 
-As these errors may spawn in any layer, it is recommended to check the system error log device (read [accessing logs](debug.md#accessing-logs) to learn how-to).
+由于这些错误可能在任何层产生，因此建议检查系统错误日志设备(阅读 [访问日志](debug.md#accessing-logs) 以了解操作方法)。
 
-::: warning Debugging HTTP 500 error
-This errors need to be debugged in the web-server layer, which will vary depending on the web server software being used. Refer to your web server provisioning documentation.
+::: danger 调试 HTTP 500 错误
+这个错误需要在 web-server 层调试，这取决于所使用的 web 服务器软件。请参阅您的 Web 服务器配置文档。
 :::
 
-Once you get the error you can solve the situation in your own context or use that information to request [support](https://chevereto.com/support) from us.
+收到错误后，您可以在自己的上下文中解决问题，或使用该信息向我们请求 [支持](https://chevereto.com/support)。
 
-### Aw, snap! Internal Server Error
+### Aw, snap! 内部服务器错误
 
 ```txt
 Aw, snap! Internal Server Error - Check your error_log or enable debug_mode = 3
 ```
 
-This message indicates an error caught by Chevereto, but hidden due to **production error reporting** settings. To actually know what is going on you have to [debug](./debug.md).
+此消息表示 Chevereto 捕获的错误，但由于 **生产错误报告** 设置而隐藏。要真正了解发生了什么，您必须[调试](./debug.md)。
 
-### Database messages
+### 数据库消息
 
-::: danger Dumped update query
-If at `/install` you see a plain text message starting with `#Dumped update query` it means that you **MUST** manual run the printed queries in your MySQL console.
+::: danger 转储更新查询
+如果在`/install`你看到一条以`#Dumped update query`开头的纯文本消息，这意味着你**必须**在你的MySQL控制台中手动运行打印的查询。
 :::
 
-If [dump update query](../../settings/system.md#dump-update-query) setting is **enabled** or if the images table has **more than 1,000,000** records, Chevereto will dump the SQL statements required to carry the database update which must run direct in the MySQL console.
+如果 [dump update query](../../settings/system.md#dump-update-query) 设置为 **enabled** 或者图像表有 **多于 1,000,000** 条记录，Chevereto 将转储执行数据库更新所需的 SQL 语句，必须直接在 MySQL 控制台中运行。
 
-Chevereto has this functionality to minimize breaking your large database as the process could take several minutes to complete.
+Chevereto 具有此功能，可以最大限度地减少破坏大型数据库，因为该过程可能需要几分钟才能完成。
 
-When manual updating the database keep the following considerations:
+手动更新数据库时，请注意以下事项：
 
-* Disconnect all peers
-* Turn off the MySQL server, work in its console (phpMyAdmin, Adminer, CLI)
-* Run the MySQL statements one-by-one (a semi-colon `;` denotes when a MySQL statement ends)
+* 断开所有对等点
+* 关闭 MySQL 服务器，在它的控制台中工作(phpMyAdmin、Adminer、CLI)
+* 逐个运行 MySQL 语句(分号`;` 表示 MySQL 语句何时结束)

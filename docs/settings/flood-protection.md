@@ -1,58 +1,58 @@
-# Flood protection
+# 防洪保护
 
 `/dashboard/settings/flood-protection`
 
-Flood protection is enabled by default and is highly encouraged to enable it in your website.
+默认情况下启用洪水保护，强烈建议您在您的网站中启用它。
 
 ::: tip
-All settings here applies only if `Flood protection` is enabled.
+此处的所有设置仅在启用“防洪保护”时适用。
 :::
 
-## Notify to email
+## 通过电子邮件通知
 
-Toggles sending a notification when flood is detected.
+在检测到洪水时切换发送通知。
 
-| Value    | Effect                      |
+|键值 |效果|
 | -------- | --------------------------- |
-| Enabled  | Email notify on flood       |
-| Disabled | Don't email notify on flood |
+|启用|关于洪水的电子邮件通知 |
+|禁用|不要通过电子邮件通知洪水 |
 
-## Minute limit
+## 分钟限制
 
-Determines the maximum image uploads per minute.
+确定每分钟上传的最大图像。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 50          |
+|整数 | 50 |
 
-## Hourly limit
+## 每小时限制
 
-Determines the maximum image uploads per hour.
+确定每小时上传的最大图像。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 500         |
+|整数 | 500 |
 
-## Daily limit
+## 每日限额
 
-Determines the maximum image uploads per day.
+确定每天上传的最大图像。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 1000        |
+|整数 | 1000 |
 
-## Weekly limit
+## 每周限额
 
-Determines the maximum image uploads per week.
+确定每周上传的最大图像。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 5000        |
+|整数 | 5000 |
 
-## Monthly limit
+## 每月限额
 
-Determines the maximum image uploads per minute.
+确定每分钟上传的最大图像。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 10000       |
+|整数 | 10000 |

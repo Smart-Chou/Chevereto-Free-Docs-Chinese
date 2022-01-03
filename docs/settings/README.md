@@ -1,17 +1,17 @@
-# Dashboard
+# 仪表盘
 
-System is controlled at the Dashboard panel, which is the route at `/dashboard` where you can administer your website.
+系统由仪表盘面板控制，这是您可以管理网站的“/dashboard”路径。
 
-- Click on your user menu on the top bar
-- Select "Dashboard"
+- 单击顶部栏上的用户菜单
+- 选择“仪表盘”
 
-![Dashboard](/screen/dashboard_3.19.png "Dashboard")
+![仪表盘](/screen/dashboard_3.19.png "仪表盘")
 
-## Granting access to the Dashboard
+## 授予对仪表盘的访问权限
 
-Only users with the role "Administrator" will be able to access the Dashboard. To grant administrator role:
+只有具有“管理员”角色的用户才能访问仪表盘。授予管理员角色：
 
-- Go to the user profile
-- Click "Edit"
-- Select `Administrator` under user role
-- Save changes
+- 转到用户个人资料
+- 点击“编辑”
+- 在用户角色下选择“管理员”
+- 保存更改

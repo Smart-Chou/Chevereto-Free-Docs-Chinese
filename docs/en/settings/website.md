@@ -22,7 +22,7 @@ Showing "Powered by Chevereto" allows others to know the software and it helps u
 
 | Value    | Effect                                |
 | -------- | ------------------------------------- |
-| Enabled  | Enable "Powered by Chevereto" footer  |
+| Enabled | Enable "Powered by Chevereto" footer  |
 | Disabled | Disable "Powered by Chevereto" footer |
 
 ## HTTPS
@@ -47,7 +47,7 @@ Search allows users to locate content based on a search query.
 
 | Value    | Effect         |
 | -------- | -------------- |
-| Enabled  | Enable search  |
+| Enabled | Enable search  |
 | Disabled | Disable search |
 
 ## Explore
@@ -58,7 +58,7 @@ Explore browses the public available images.
 
 | Value    | Effect          |
 | -------- | --------------- |
-| Enabled  | Enable explore  |
+| Enabled | Enable explore  |
 | Disabled | Disable explore |
 
 ## Explore (guests)
@@ -69,7 +69,7 @@ Same as [explore](#explore), but only affects guests users.
 
 | Value    | Effect                    |
 | -------- | ------------------------- |
-| Enabled  | Enable explore for guest  |
+| Enabled | Enable explore for guest  |
 | Disabled | Disable explore for guest |
 
 ## Random
@@ -80,7 +80,7 @@ Random allows to randomly show a public image. It enables `?random` to fetch a r
 
 | Value    | Effect                |
 | -------- | --------------------- |
-| Enabled  | Enable random button  |
+| Enabled | Enable random button  |
 | Disabled | Disable random button |
 
 ## Likes
@@ -91,7 +91,7 @@ Likes allow users to like content. It also generates "liked" listings.
 
 | Value    | Effect        |
 | -------- | ------------- |
-| Enabled  | Enable likes  |
+| Enabled | Enable likes  |
 | Disabled | Disable likes |
 
 ## Followers
@@ -102,7 +102,7 @@ Followers allow users to follow each other. It also enables the "following" list
 
 | Value    | Effect            |
 | -------- | ----------------- |
-| Enabled  | Enable followers  |
+| Enabled | Enable followers  |
 | Disabled | Disable followers |
 
 ## Website mode

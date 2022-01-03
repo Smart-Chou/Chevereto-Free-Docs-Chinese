@@ -1,156 +1,156 @@
-# External storage
+# 外部存储
 
 `/dashboard/settings/external-storage`
 
-## Adding storages
+## 添加存储
 
-Click on "Add storage".
+单击“添加存储”。
 
-## Storage values (common)
+## 存储值(常见)
 
-### Name
+### 名称
 
-The name for the storage.
+存储的名称。
 
-| Type   | Accepted      |
+|类型 |接受 |
 | ------ | ------------- |
-| String | max length 32 |
+|字符串 |最大长度 32 |
 
-### Bucket
+### 桶
 
-The bucket where the files will be stored.
+将存储文件的存储桶。
 
-| Type   | Description     |
+|类型 |说明 |
 | ------ | --------------- |
-| String | The bucket name |
+|字符串 |存储桶名称 |
 
-### Key
+### 钥匙
 
-The API key to access storage.
+用于访问存储的 API 密钥。
 
-| Type   | Description |
+|类型 |说明 |
 | ------ | ----------- |
-| String | Public key  |
+|字符串 |公钥 |
 
-### Secret
+### 秘密
 
-The API secret to access storage.
+用于访问存储的 API 密钥。
 
-| Type   | Description |
+|类型 |说明 |
 | ------ | ----------- |
-| String | Secret key  |
+|字符串 |秘钥 |
 
-### Storage capacity
+### 存储容量
 
-The capacity allowed for the storage.
+允许存储的容量。
 
-| Type   | Example |
+|类型 |示例 |
 | ------ | ------- |
-| String | 20 GB   |
+|字符串 | 20 GB |
 
-### URL
+### 网址
 
-The URL that will be mapped to the storage.
+将映射到存储的 URL。
 
-| Type   | Example                                       |
+|类型 |示例 |
 | ------ | --------------------------------------------- |
-| String | `https://storage1.demo.chevereto.com/bucket/` |
+|字符串 | `https://storage1.demo.chevereto.com/bucket/` |
 
-::: warning
-For the example above, a file at `https://storage1.demo.chevereto.com/bucket/example.jpg` should be resolving.
+::: danger
+对于上面的示例，应该解析位于 `https://storage1.demo.chevereto.com/bucket/example.jpg` 的文件。
 :::
 
-## Alibaba Cloud OSS
+## 阿里云OSS
 
-### Endpoint
+### 端点
 
-Besides common settings, Alibaba Cloud OSS requires to provide the endpoint.
+除了常用的设置，阿里云OSS还需要提供端点。
 
-| Type   | Description                |
+|类型 |说明 |
 | ------ | -------------------------- |
-| String | Alibaba Cloud OSS endpoint |
+|字符串 |阿里云OSS端点|
 
-## Amazon S3
+## 亚马逊 S3
 
-Besides common settings, Amazon S3 requires to provide the region.
+除了常用设置，Amazon S3 还需要提供区域。
 
-| Type   | Description      |
+|类型 |说明 |
 | ------ | ---------------- |
-| String | Amazon S3 region |
+|字符串 | Amazon S3 区域 |
 
 ## Backblaze B2
 
-Uses common settings, but Backblaze B2 names key/secret in differently.
+使用通用设置，但 Backblaze B2 以不同的方式命名密钥/秘密。
 
-| Value  | Description            |
-| ------ | ---------------------- |
-| Key    | Account ID             |
-| Secret | Master Application Key |
+|键值 |说明 |
+| ------ | --------------- |
+|钥匙 |帐户 ID |
+|秘密 |主应用程序密钥 |
 
 ## FTP
 
-Besides some common settings, FTP requires other values.
+除了一些常用设置，FTP 还需要其他值。
 
-| Value    | Description            | Example                         |
-| -------- | ---------------------- | ------------------------------- |
-| Server   | IP address or hostname | `127.0.0.1` `ftp.chevereto.com` |
-| Path     | Server FTP path        | `/path/in/server/`              |
-|          |
-| User     | FTP user               | username                        |
-| Password | FTP password           | password                        |
+|键值 |说明 |示例 |
+| -------- | --------------- | ------------------------------- |
+|服务器 | IP 地址或主机名 | `127.0.0.1` `ftp.chevereto.com` |
+|路径 |服务器FTP路径| `/path/in/server/` |
+| |
+|用户 | FTP 用户 |用户名 |
+|密码 | FTP 密码 |密码 |
 
-## Google Cloud
+## 谷歌云
 
-Besides some common settings, Google Cloud requires to provide the key in JSON format.
+除了一些常见的设置，Google Cloud 还需要提供 JSON 格式的密钥。
 
-### Private key
+### 私钥
 
-| Type   | Description           |
+|类型 |说明 |
 | ------ | --------------------- |
-| String | Google Cloud JSON key |
+|字符串 | Google Cloud JSON 密钥 |
 
-## Local
+## 当地的
 
-Besides some common settings, Local requires to provide the local path.
+除了一些常用的设置，Local 还需要提供本地路径。
 
-| Type   | Description |
+|类型 |说明 |
 | ------ | ----------- |
-| String | Local path  |
+|字符串 |本地路径 |
 
-## Microsoft Azure
+## 微软 Azure
 
-Besides some common settings, Microsoft Azure requires other values.
+除了一些常用设置，Microsoft Azure 还需要其他值。
 
-| Value    | Description                 |
+|键值 |说明 |
 | -------- | --------------------------- |
-| Account  | Microsoft Azure AccountName |
-| Key      | Microsoft Azure Accountkey  |
-| Endpoint | Microsoft Azure endpoint    |
+|帐号 | Microsoft Azure 帐户名称 |
+|钥匙 | Microsoft Azure 帐户密钥 |
+|端点 | Microsoft Azure 端点 |
 
 ## OpenStack
 
-Besides some common settings, OpenStack requires other values.
+除了一些常见的设置，OpenStack 还需要其他值。
 
-| Value        | Description                |
+|键值 |说明 |
 | ------------ | -------------------------- |
-| Service name | For example, `swift`       |
-| Identity URL | Identity API endpoint      |
-| Username     | The username               |
-| Password     | The password               |
-| Region       | Storage region             |
-| Container    | Storage container          |
-| Tenant id    | Tenant id (account id)     |
-| Tenant name  | Tenant name (account name) |
+|服务名称 |例如，`swift` |
+|身份网址 |身份 API 端点 |
+|用户名 |用户名 |
+|密码 |密码 |
+|地区 |存储区域 |
+|集装箱 |储存容器 |
+|租户编号 |租户 ID(帐户 ID) |
+|租户姓名 |租户名(账户名)|
 
-## S3 compatible
+## S3 兼容
 
-Besides some common settings, S3 compatible requires to provide the region and the endpoint.
+除了一些常见的设置，S3 compatible 还需要提供区域和端点。
 
-| Value    | Description      |
+|键值 |说明 |
 | -------- | ---------------- |
-| Region   | Storage region   |
-| Endpoint | Storage endpoint |
+|地区 |存储区域 |
+|端点 |存储端点 |
 
 ## SFTP
 
-Same as [FTP](#ftp), but using the [SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) protocol.
+与 [FTP](#ftp) 相同，但使用 [SSH 文件传输协议](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) 协议。

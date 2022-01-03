@@ -1,84 +1,84 @@
 # cPanel
 
-This guide will enable you to install Chevereto on cPanel from scratch.
+本指南将使您能够从头开始在 cPanel 上安装 Chevereto。
 
-## Database
+## 数据库
 
-Go to the **MySQL Database Wizard** under **Databases**.
+转到 **Databases** 下的 **MySQL Database Wizard**。
 
-![databases](/screen/cpanel/databases.png)
+![数据库](/screen/cpanel/databases.png)
 
-Follow the process to create a database and its user. Take note on the MySQL **database name**, **username** and **password**.
+按照流程创建数据库及其用户。记下 MySQL **数据库名称**、**用户名** 和 **密码**。
 
-![MySQL wizard create](/screen/cpanel/mysql-wizard-create-database.png)
+![MySQL 向导创建](/screen/cpanel/mysql-wizard-create-database.png)
 
-Grant `ALL PRIVILEGES` on the newly created database and user.
+在新创建的数据库和用户上授予`ALL PRIVILEGES`。
 
-![MySQL wizard privileges](/screen/cpanel/mysql-wizard-privileges.png)
+![MySQL 向导权限](/screen/cpanel/mysql-wizard-privileges.png)
 
-## Chevereto Files
+## Chevereto 文件
 
-- Go to **File Manager** under **Files**.
+- 转到**文件**下的**文件管理器**。
 
-![Files](/screen/cpanel/files.png)
+![文件](/screen/cpanel/files.png)
 
-- Navigate to your website `public_html/` directory.
+- 导航到您的网站 `public_html/` 目录。
 
-![File Manager](/screen/cpanel/file-manager.png)
+![文件管理器](/screen/cpanel/file-manager.png)
 
-- Click on **Upload** and on **Select File** upload the release zip file downloaded from [chevereto.com/panel/downloads](https://chevereto.com/panel/downloads)
-- Once uploaded, go back to the file manager at `public_html/` directory.
-- Right-click on the zip file file and select **Extract**.
+- 点击**上传**和**选择文件**上传从[Downloads](https://chevereto.com/panel/downloads)下载的发布zip文件
+- 上传后，返回到`public_html/` 目录下的文件管理器。
+- 右键单击 zip 文件并选择 **Extract**。
 
-![File Manager Extract](/screen/cpanel/file-manager-extract.png)
+![文件管理器提取](/screen/cpanel/file-manager-extract.png)
 
-- A prompt appears, click on **Extract Files**
+- 出现提示，点击**Extract Files**
 
-![File Manager Extract Files](/screen/cpanel/file-manager-extract-files.png)
+![文件管理器提取文件](/screen/cpanel/file-manager-extract-files.png)
 
-- Delete the zip file when the extraction completes.
+- 提取完成后删除 zip 文件。
 
-![File Manager Delete File](/screen/cpanel/file-manager-delete-file.png)
+![文件管理器删除文件](/screen/cpanel/file-manager-delete-file.png)
 
 ## PHP
 
-Go to **MultiPHP INI Editor** under **Software**.
+转到 **Software** 下的 **MultiPHP INI Editor**。
 
-![Software](/screen/cpanel/software.png)
+![软件](/screen/cpanel/software.png)
 
-Select your website under **Configure PHP INI basic settings**.
+在 **Configure PHP INI basic settings** 下选择您的网站。
 
-![MultiPHP INI editor](/screen/cpanel/mutliphp-ini-editor.png)
+![MultiPHP INI 编辑器](/screen/cpanel/mutliphp-ini-editor.png)
 
-Take note on the following configurable keys:
+请注意以下可配置键：
 
-![MultiPHP INI keys](/screen/cpanel/multiphp-ini-keys.png)
+![MultiPHP INI 键](/screen/cpanel/multiphp-ini-keys.png)
 
 - `max_execution_time` 30
-- `memory_limit` 256M (min)
-- Use `post_max_size` and `upload_max_filesize` to limit the file upload max. size allowed for uploads
+- `memory_limit` 256M(分钟)
+- 使用`post_max_size` 和`upload_max_filesize` 来限制文件上传的最大值。允许上传的大小
 
-Go to **MultiPHP Manager** and select `PHP 7.4` for your website.
+转到 **MultiPHP Manager** 并为您的网站选择“PHP 7.4”。
 
 ![MultiPHP manager](/screen/cpanel/multiphp-manager.png)
 
-- From here you can also enable the [extensions required](requirements.md#php-extensions) by Chevereto.
+- 从这里您还可以启用 Chevereto 的 [extensions required](requirements.md#php-extensions)。
 
-::: danger PHP Extensions
-Refer to the cPanel [PHP Extensions and Applications Package](https://docs.cpanel.net/whm/software/php-extensions-and-applications-package/) and WHM [How to install a PHP extension in WHM](https://support.cpanel.net/hc/en-us/articles/360050971633) documentation if your cPanel provisioning lacks the extensions required by Chevereto.
+::: danger PHP 扩展
+参考cPanel[PHP扩展和应用程序包](https://docs.cpanel.net/whm/software/php-extensions-and-applications-package/)和WHM[如何在WHM中安装PHP扩展]( https://support.cpanel.net/hc/en-us/articles/360050971633) 文档，如果您的 cPanel 配置缺少 Chevereto 所需的扩展。
 :::
 
-## Install Chevereto
+## 安装 Chevereto
 
-Go to `http://your_website/` and follow the instructions to the create the admin account.
+转到 `http://your_website/` 并按照说明创建管理员帐户。
 
-## PHP Versioning
+## PHP 版本控制
 
-::: tip Did you know?
-cPanel uses root `.htaccess` file to add rules that enable to override the default cPanel PHP versioning. This may cause issues in your Chevereto installation.
+::: tip 你知道吗？
+cPanel 使用根`.htaccess` 文件添加规则以覆盖默认的 cPanel PHP 版本控制。这可能会导致 Chevereto 安装出现问题。
 :::
 
-If you have PHP versioning issues make sure that the root `.htaccess` file contains the following:
+如果您有 PHP 版本控制问题，请确保根 `.htaccess` 文件包含以下内容：
 
 <CodeGroup>
 <CodeGroupItem title="Apache">
@@ -102,27 +102,27 @@ If you have PHP versioning issues make sure that the root `.htaccess` file conta
 </CodeGroupItem>
 </CodeGroup>
 
-> Note that the configuration in your system may vary. Double-check with your service provider.
+> 请注意，您系统中的配置可能会有所不同。请与您的服务提供商仔细核对。
 
-## Setup Cron on cPanel
+## 在 cPanel 上设置 Cron
 
-- Go to **Cron Jobs** under **Advanced**
-- Scroll to **Add New Cron Job**
+- 转到**高级**下的**Cron Jobs**
+- 滚动到**添加新的 Cron 作业**
 
-![File Manager Delete File](/screen/cpanel/cronjob.png)
+![文件管理器删除文件](/screen/cpanel/cronjob.png)
 
-- Under **Common Settings** pick `Once Per Minute (* * * * *)`
+- 在**通用设置**下选择`每分钟一次(* * * * *)`
 
-The **Command** varies on each installation, you need to create your own command based on the following general form:
+**Command** 因每次安装而异，您需要根据以下一般形式创建自己的命令：
 
 ```sh
 php-binary cli-path -C cron >/dev/null 2>&1
 ```
 
-- **php-binary** Check the `PHP command examples` section under **Add New Cron Job** where you can learn about the PHP path for your system.
-- **cli-path** The Chevereto CLI path can be found on your Dashboard panel under **Installation details**.
+- **php-binary** 检查 **Add New Cron Job** 下的 `PHP 命令示例` 部分，您可以在其中了解系统的 PHP 路径。
+- **cli-path** Chevereto CLI 路径可以在仪表板面板的**安装详细信息**下找到。
 
-### Command examples
+### 命令示例
 
 <CodeGroup>
 <CodeGroupItem title="General">
@@ -142,6 +142,6 @@ php-binary cli-path -C cron >/dev/null 2>&1
 </CodeGroupItem>
 </CodeGroup>
 
-## Setup Email
+## 设置电子邮件
 
-- Refer to: [Setup Email](../../manual/first-steps/setup-email.md)
+- 请参阅：[设置电子邮件](../../manual/first-steps/setup-email.md)

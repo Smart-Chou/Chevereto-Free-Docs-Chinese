@@ -1,48 +1,48 @@
-# Content settings
+# 内容
 
 `/dashboard/settings/content`
 
-## Lock NSFW editing
+## 锁定 NSFW 编辑
 
-Toggles the NSFW editing.
+切换 NSFW 编辑。
 
-| Value    | Effect                                     |
+|键值 |效果|
 | -------- | ------------------------------------------ |
-| Enabled  | Prevent users from changing the NSFW flag  |
-| Disabled | Allow users to freely change the NSFW flag |
+|启用|阻止用户更改 NSFW 标志 |
+|禁用|允许用户自由更改 NSFW 标志 |
 
-## Show not safe content in listings
+## 在列表中显示不安全的内容
 
-Toggles the display of NSFW content in listings.
+切换列表中 NSFW 内容的显示。
 
-| Value    | Effect                                       |
+|键值 |效果|
 | -------- | -------------------------------------------- |
-| Enabled  | Show NSFW content in listings                |
-| Disabled | Hide NSFW content from appearing in listings |
+|启用|在列表中显示 NSFW 内容 |
+|禁用|隐藏 NSFW 内容，使其不出现在列表中 |
 
-## Blur NSFW content in listings
+## 模糊列表中的 NSFW 内容
 
-Toggles the blurring of NSFW content in listings.
+切换列表中 NSFW 内容的模糊。
 
-| Value    | Effect                                                                                            |
+|键值 |效果|
 | -------- | ------------------------------------------------------------------------------------------------- |
-| Enabled  | A blur filter is implemented on the image, requires mouse over to see the image without filtering |
-| Disabled | Disable blur filtering for NSFW images                                                            |
+|启用|在图像上实现了模糊过滤器，需要将鼠标悬停在不过滤的图像上|
+|禁用|禁用 NSFW 图像的模糊过滤 |
 
-## Show banners in not safe content
+## 在不安全的内容中显示横幅
 
-Toggles the display of banners in NSFW content.
+切换 NSFW 内容中横幅的显示。
 
-| Value    | Effect                       |
-| -------- | ---------------------------- |
-| Enabled  | Hide banners in NSFW content |
-| Disabled | Show banners in NSFW content |
+|键值 |效果|
+| -------- | ----------------------------- |
+|启用|在 NSFW 内容中隐藏横幅 |
+|禁用|在 NSFW 内容中显示横幅 |
 
-## Show not safe content in random mode
+## 以随机模式显示不安全的内容
 
-Toggles the display of NSFW content in randomized image fetching (`?random`).
+在随机图像提取 (`?random`) 中切换 NSFW 内容的显示。
 
-| Value    | Effect                                   |
+|键值 |效果|
 | -------- | ---------------------------------------- |
-| Enabled  | Allows NSFW content to appear on random  |
-| Disabled | Disable NSFW content to appear on random |
+|启用|允许 NSFW 内容随机出现 |
+|禁用|禁止 NSFW 内容随机出现 |

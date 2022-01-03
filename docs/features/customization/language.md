@@ -1,37 +1,37 @@
-# Language
+# 语言
 
-Chevereto uses `gettext` for its translations and the system comes with a lot of languages built-in which you can find in the `app/content/languages` folder.
+Chevereto 使用`gettext` 进行翻译，并且系统内置了很多语言，您可以在`app/content/languages` 文件夹中找到这些语言。
 
-## Add new languages
+## 添加新语言
 
 ### OneSky
 
-If you want to add a brand new language we encourage you to apply to [translation](http://translate.chevereto.com/), where you can easily contribute a new language. OneSky features a complete suite for translations with no additional software required.
+如果您想添加一种全新的语言，我们鼓励您申请 [translation](http://translate.chevereto.com/)，在那里您可以轻松贡献一种新语言。 OneSky 具有完整的翻译套件，无需额外的软件。
 
 ::: tip
-Translations contributed will get added to the software.
+贡献的翻译将被添加到软件中。
 :::
 
-### Manually
+### 手动
 
-Put your `.po` files at `app/content/languages` folder. The language code must be expressed in ISO format.
+将你的 `.po` 文件放在 `app/content/languages` 文件夹中。语言代码必须以 ISO 格式表示。
 
-::: warning
-Considering using a [.po editor software](https://www.google.com/search?q=po%20editor) to create the translation file.
+::: danger
+考虑使用[.po 编辑器软件](https://www.google.com/search?q=po%20editor) 来创建翻译文件。
 :::
 
-## Customizing language strings
+## 自定义语言字符串
 
-All language strings can be customized to fit what you want to show to your visitors. That way, you don't need to touch the theme at all.
+可以自定义所有语言字符串以适合您要向访问者显示的内容。这样，您根本不需要触及主题。
 
-The system works by overriding the target translation. For example, replacing `Upload and share your images.` to "Upload, do it now!" by doing the following procedure:
+系统通过覆盖目标翻译来工作。例如，将“上传并分享您的图片”替换为“上传，立即执行！”通过执行以下程序：
 
-### 1. Get the translation string (`msgid` and `msgstr` values)
+### 1. 获取翻译字符串(`msgid` 和 `msgstr` 值)
 
-- Go to the `app/content/languages` folder
-- Open the file `en.po` (in this example we are overriding English language)
-- Find this text: `Upload and share your images.`
-- Copy the `msgid` and the `msgstr` lines, you should get something like this:
+- 转到`app/content/languages`文件夹
+- 打开文件`en.po`(在这个例子中我们覆盖英语)
+- 找到此文字：`上传并分享您的图片。`
+- 复制 `msgid` 和 `msgstr` 行，你应该得到如下内容：
 
 ```po
 msgid "Upload and share your images."
@@ -39,13 +39,13 @@ msgstr ""
 ```
 
 ::: tip
-The property `msgstr` is empty because English is the base language. If you open any other language you will see that value actually translated.
+属性 `msgstr` 为空，因为英语是基本语言。如果您打开任何其他语言，您将看到实际翻译的值。
 :::
 
-### 2. Override translation string
+### 2. 覆盖翻译字符串
 
-- Go to the `app/content/languages/overrides` folder
-- Create the file `en.po` with these contents:
+- 转到`app/content/languages/overrides`文件夹
+- 使用以下内容创建文件 `en.po`：
 
 ```po
 msgid "Upload and share your images."
@@ -53,11 +53,11 @@ msgstr "Upload, do it now!"
 ```
 
 ::: tip
-You only need to replace `msgstr` because that is the translation string.
+您只需要替换 `msgstr`，因为那是翻译字符串。
 :::
 
-The result is that the system now will display `Upload, do it now!` instead of the default `Upload and share your images.` and it will only affect that language.
+结果是系统现在将显示“上传，立即执行！”而不是默认的“上传并共享您的图像。”并且它只会影响该语言。
 
-::: warning
-**Note:** You don't actually need a gettext editor for language overrides, but make sure to use double-quotes. If you need to put a double quote inside `msgstr` use `\"` (escaped double-quote).
+::: danger
+**注意：** 您实际上不需要用于语言覆盖的 gettext 编辑器，但请确保使用双引号。如果您需要在 `msgstr` 中放置双引号，请使用 `\"`(转义双引号)。
 :::

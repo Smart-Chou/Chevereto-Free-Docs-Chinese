@@ -1,9 +1,9 @@
-# Settings file
+# 设置文件
 
-The file at `app/settings.php` contains the application system level settings.
+`app/settings.php` 中的文件包含应用程序系统级别的设置。
 
-::: tip Running container?
-You can ignore using this file as you can pass `-e` variables on container run.
+::: tip 正在运行容器？
+您可以忽略使用此文件，因为您可以在容器运行时传递 `-e` 变量。
 :::
 
 ```php
@@ -44,11 +44,11 @@ $settings = [
 ];
 ```
 
-To add or override settings simply assign the key value:
+要添加或覆盖设置，只需分配键值：
 
 ```php
 <?php
 $settings['key'] = 'value';
 ```
 
-Check [environment](../system/environment.md) variables for more info.
+检查 [environment](../system/environment.md) 变量以获取更多信息。

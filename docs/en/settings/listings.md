@@ -25,7 +25,7 @@ Toggles the listing viewer.
 
 | Value    | Effect                                                             |
 | -------- | ------------------------------------------------------------------ |
-| Enabled  | Enables a a full-screen image browsing experience, like a lightbox |
+| Enabled | Enables a a full-screen image browsing experience, like a lightbox |
 | Disabled | No viewer                                                          |
 
 ## Image listing size

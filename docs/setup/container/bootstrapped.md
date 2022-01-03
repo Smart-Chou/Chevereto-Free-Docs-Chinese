@@ -1,19 +1,19 @@
-# Bootstrapped
+# 自举
 
 ::: tip
-Use [Container Registry](../../setup/container/registry.md) for disposable container provisioning. Bootstrapped means that the application layer is provided on container run.
+使用 [Container Registry](../../setup/container/registry.md) 进行一次性容器配置。 Bootstrapped 意味着应用层是在容器运行时提供的。
 :::
 
-This method for running Chevereto is recommended when you install it in your local computer. Check the repository at [chevereto/docker](https://github.com/chevereto/docker) for instructions.
+在本地计算机上安装 Chevereto 时，建议使用此方法运行 Chevereto。查看 [chevereto/docker](https://github.com/chevereto/docker) 中的存储库以获取说明。
 
-## Reference
+## 参考
 
-The [REFERENCE](https://github.com/chevereto/docker/blob/3.20/docs/REFERENCE.md) guide explains the Docker image provides and how it works.
+[REFERENCE](https://github.com/chevereto/docker/blob/3.20/docs/REFERENCE.md) 指南解释了提供的 Docker 镜像及其工作原理。
 
-## Compose
+## 撰写
 
-The [COMPOSE](https://github.com/chevereto/docker/blob/3.20/docs/COMPOSE.md) guide contains the instructions for spawn the services using `docker compose`.
+[COMPOSE](https://github.com/chevereto/docker/blob/3.20/docs/COMPOSE.md) 指南包含使用`docker compose` 生成服务的说明。
 
-## Dev
+## 开发
 
-The [DEV](https://github.com/chevereto/docker/blob/3.20/docs/DEV.md) guide outlines the process required to setup the development repository with Docker.
+[DEV](https://github.com/chevereto/docker/blob/3.20/docs/DEV.md) 指南概述了使用 Docker 设置开发存储库所需的过程。

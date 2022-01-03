@@ -1,29 +1,29 @@
-# Additional settings
+# 其他设置
 
-`/dashboard/settings/additional-settings`
+`/dashboard/settings/其他设置`
 
-## Plugin route
+## 插件路由
 
-Toggles the availability of the `/plugin` route.
+切换 `/plugin` 路由的可用性。
 
-| Value | Effect  |
+|键值 |效果|
 |---|---|
-| Enabled  | Enable plugin route  |
-| Disabled  | Disable plugin route  |
+|启用|启用插件路由 |
+|禁用|禁用插件路由 |
 
-## PUP SDK URL
+## PUP SDK 网址
 
-Determines the URL for PUP SDK.
+确定 PUP SDK 的 URL。
 
-| Type  | Accepted  |
+|类型 |接受 |
 |---|---|
-| String  | URL  |
+|字符串 |网址 |
 
-## Cookie law compliance
+## Cookie 法律合规性
 
-Toggles the display of the cookie law acceptance message.
+切换 cookie 法律接受消息的显示。
 
-| Value | Effect  |
+|键值 |效果|
 |---|---|
-| Enabled  | Enable display of cookie law message |
-| Disabled  | Enable display of cookie law message |
+|启用|启用 cookie 法律消息的显示 |
+|禁用|启用 cookie 法律消息的显示 |

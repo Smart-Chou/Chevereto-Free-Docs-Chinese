@@ -1,22 +1,22 @@
-# Running
+# 运行
 
-## Persistent layers
+## 持久层
 
-### Asset storage
+### 资产存储
 
-::: tip Local asset storage
-To use Local Storage is required to mount the appropriate volume in a path visible to the application.
+::: tip 本地资产存储
+要使用本地存储，需要在应用程序可见的路径中安装适当的卷。
 :::
 
-For asset storage you can use any supported [external storage](../../features/integrations/external-storage.md) API. This need to be configured passing [Assets environment variables](../system/environment.md#assets-variables).
+对于资产存储，您可以使用任何受支持的 [外部存储](../../features/integrations/external-storage.md) API。这需要配置传递[资产环境变量](../system/environment.md#assets-variables)。
 
-### Sessions
+### 会话
 
-For persistent sessions you can use Redis by configuring the [Session environment variables](../system/environment.md#session-variables) variables.
+对于持久会话，您可以通过配置 [会话环境变量](../system/environment.md#session-variables) 变量来使用 Redis。
 
-### Database
+### 数据库
 
-For database you can create a volume for persistence, or use a server over the network. If you manual provide the database you will need to create its user binding:
+对于数据库，您可以为持久性创建一个卷，或通过网络使用服务器。如果您手动提供数据库，您将需要创建其用户绑定：
 
 ```sh
 docker exec chv-mariadb mysql -uroot -ppassword -e "CREATE DATABASE chevereto; \
@@ -24,17 +24,17 @@ docker exec chv-mariadb mysql -uroot -ppassword -e "CREATE DATABASE chevereto; \
     GRANT ALL ON chevereto.* TO 'chevereto' IDENTIFIED BY 'user_database_password';"
 ```
 
-### User uploads storage
+### 用户上传存储
   
-This persistent layer can be configured in the application [Dashboard panel](../../settings/external-storage.md).
+这个持久层可以在应用程序[仪表板面板](../../settings/external-storage.md)中配置。
 
-## Compose
+## 撰写
 
 ::: tip
-Check [Environment](../system/environment.md) for the `-e` options you can pass in the Docker command.
+检查 [Environment](../system/environment.md) 以获取可以在 Docker 命令中传递的 `-e` 选项。
 :::
 
-In the following example volumes are used for all data persistence. The image used is [httpd-php](https://github.com/chevereto/container-builder/blob/3.20/httpd-php.Dockerfile) which includes Apache HTTP Web server.
+在以下示例中，卷用于所有数据持久性。使用的图像是 [httpd-php](https://github.com/chevereto/container-builder/blob/3.20/httpd-php.Dockerfile)，其中包含 Apache HTTP Web 服务器。
 
 ```yaml
 version: "3"
@@ -83,7 +83,7 @@ networks:
   chv-network:
 ```
 
-**Note** that `CHEVERETO_ASSET_STORAGE` is mapped to the mounted volume `chv-assets` and to the same URL. This can be mapped to any supported [external storage](../../features/integrations/external-storage.md) API:
+**注意** `CHEVERETO_ASSET_STORAGE` 映射到安装的卷 `chv-assets` 和相同的 URL。这可以映射到任何支持的 [外部存储](../../features/integrations/external-storage.md) API：
 
 ```yaml
   chv-build:
@@ -109,6 +109,6 @@ networks:
       CHEVERETO_ASSET_STORAGE_REGION: s3-us-west-1
 ```
 
-## First run
+## 首轮
 
-Refer to [First-steps](../../manual/first-steps/README.md) instructions.
+请参阅[第一步](../../manual/first-steps/README.md) 说明。

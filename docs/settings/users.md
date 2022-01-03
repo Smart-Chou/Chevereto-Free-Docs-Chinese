@@ -1,81 +1,81 @@
-# Users
+# 用户
 
-`/dashboard/settings/consent-screen`
+`/dashboard/settings/users`
 
-## Enable signups
+## 启用注册
 
-Toggles the ability to signup to your website.
+切换注册到您的网站的能力。
 
-| Value    | Effect                 |
-| -------- | ---------------------- |
-| Enabled  | Enable users to signup |
-| Disabled | Disable users signup   |
+|键值 |效果|
+| -------- | --------------- |
+|启用|允许用户注册 |
+|禁用|禁用用户注册 |
 
-## Enable user content delete
+## 启用用户内容删除
 
-Toggles the ability of own content deletion for users.
+为用户切换自己的内容删除能力。
 
-| Value    | Effect                                        |
+|键值 |效果|
 | -------- | --------------------------------------------- |
-| Enabled  | Enable users to delete their own content      |
-| Disabled | Disable users from deleting their own content |
+|启用|允许用户删除自己的内容|
+|禁用|禁止用户删除自己的内容 |
 
-## Minimum age required
+## 最低年龄要求
 
-Determines the minimum age required to use your website.
+确定使用您的网站所需的最低年龄。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 13          |
+|整数 | 13 |
 
-## Notify on user signup
+## 用户注册时通知
 
-Toggles sending of an email notification when a new user sign up.
+在新用户注册时切换发送电子邮件通知。
 
-| Value    | Effect                          |
+|键值 |效果|
 | -------- | ------------------------------- |
-| Enabled  | Notify on new user signup       |
-| Disabled | Don't notify on new user signup |
+|启用|新用户注册通知 |
+|禁用|不通知新用户注册 |
 
-## Username routing
+## 用户名路由
 
-Toggles the username routing.
+切换用户名路由。
 
-| Value    | Effect                    |
+|键值 |效果|
 | -------- | ------------------------- |
-| Enabled  | User URL `/username`      |
-| Disabled | User URL `/user/username` |
+|启用|用户 URL `/username` |
+|禁用|用户 URL `/user/username` |
 
-## Require email confirmation
+## 需要电子邮件确认
 
-Toggles the requirement of confirming the email address on signup.
+切换在注册时确认电子邮件地址的要求。
 
-| Value    | Effect                                        |
+|键值 |效果|
 | -------- | --------------------------------------------- |
-| Enabled  | Require to confirm singup email address       |
-| Disabled | Don't require to confirm signup email address |
+|启用|需要确认注册邮箱地址 |
+|禁用|不需要确认注册电子邮件地址 |
 
-## Require email for social signup
+## 需要电子邮件进行社交注册
 
-Toggles the requirement of an email address when user signup using a social network.
+当用户使用社交网络注册时，切换对电子邮件地址的要求。
 
-| Value    | Effect                                                          |
-| -------- | --------------------------------------------------------------- |
-| Enabled  | Require an email address when using social network signup       |
-| Disabled | Don't require an email address when using social network signup |
+|键值 |效果|
+| -------- | ------------------------------------------------------- |
+|启用|使用社交网络注册时需要电子邮件地址 |
+|禁用|使用社交网络注册时不需要电子邮件地址 |
 
-## User avatar max. filesize (MB)
+## 用户头像最大。文件大小 (MB)
 
-Determines the maximum allowed file size for user avatars.
+确定用户头像允许的最大文件大小。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 1           |
+|整数 | 1 |
 
-## User background max. filesize (MB)
+## 用户背景最大值。文件大小 (MB)
 
-Determines the maximum allowed file size for the user backgrounds.
+确定用户背景允许的最大文件大小。
 
-| Type    | Recommended |
+|类型 |推荐 |
 | ------- | ----------- |
-| Integer | 2           |
+|整数 | 2 |

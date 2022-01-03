@@ -1,22 +1,22 @@
-# Deploy on Cloud
+# 部署在云端
 
-Get Chevereto easily one-click deployed in seconds.
+在几秒钟内轻松一键部署 Chevereto。
 
-* [Chevereto on Linode Marketplace](https://www.linode.com/marketplace/apps/chevereto/chevereto/?r=b14b22fdc1bf3f958fdf294c5a8624627d7f2315)
-  * [Docs](https://www.linode.com/docs/guides/deploying-chevereto-marketplace-app/?r=b14b22fdc1bf3f958fdf294c5a8624627d7f2315)
-  * [Repository](https://github.com/chevereto/linode-marketplace)
-* [Chevereto on Vultr Marketplace](https://vultr.grsm.io/rodolfoberrios5076)
-  * [Repository](https://github.com/chevereto/vultr-marketplace)
+* [Linode 市场上的 Chevereto](https://www.linode.com/marketplace/apps/chevereto/chevereto/?r=b14b22fdc1bf3f958fdf294c5a8624627d7f2315)
+  * [文档](https://www.linode.com/docs/guides/deploying-chevereto-marketplace-app/?r=b14b22fdc1bf3f958fdf294c5a8624627d7f2315)
+  * [存储库](https://github.com/chevereto/linode-marketplace)
+* [Vultr 市场上的 Chevereto](https://vultr.grsm.io/rodolfoberrios5076)
+  * [存储库](https://github.com/chevereto/vultr-marketplace)
 
-All these provisioning alternatives are **officially supported by us**.
+所有这些配置替代方案都**由我们正式支持**。
 
 ::: tip All-included
-Our marketplace provisioning includes the following:
+我们的市场供应包括以下内容：
 
-* Enables the UFW firewall to allow only SSH (port 22, rate limited), HTTP (port 80), and HTTPS (port 443) access.
-* Sets up the Chevereto database and its user.
-* Sets the MySQL root password.
-* Sets up the debian-sys-maint user in MySQL so the system’s init scripts for MySQL will work without requiring the MySQL root user password.
-* Sets the cron required for background tasks.
-* Includes Certbot pre-installed.
+* 使 UFW 防火墙仅允许 SSH(端口 22，限速)、HTTP(端口 80)和 HTTPS(端口 443)访问。
+* 设置 Chevereto 数据库及其用户。
+* 设置 MySQL 根密码。
+* 在 MySQL 中设置 debian-sys-maint 用户，以便系统的 MySQL 初始化脚本无需 MySQL root 用户密码即可运行。
+* 设置后台任务所需的 cron。
+* 包括预安装的 Certbot。
 :::

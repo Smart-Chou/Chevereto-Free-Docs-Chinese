@@ -29,7 +29,7 @@ Toggles the use of vector logo.
 
 | Value    | Effect                |
 | -------- | --------------------- |
-| Enabled  | Use vector logo       |
+| Enabled | Use vector logo       |
 | Disabled | Don't use vector logo |
 
 ## Vector logo image
@@ -78,7 +78,7 @@ Toggles the display of a download button for image view.
 
 | Value    | Effect                                         |
 | -------- | ---------------------------------------------- |
-| Enabled  | Enable download button to appear on image view |
+| Enabled | Enable download button to appear on image view |
 | Disabled | Don't show the image download button           |
 
 ## Enable right click on image
@@ -87,7 +87,7 @@ Toggles the ability to right click on the images. This controls the display of t
 
 | Value    | Effect                                    |
 | -------- | ----------------------------------------- |
-| Enabled  | Enable to right click on images (save-as) |
+| Enabled | Enable to right click on images (save-as) |
 | Disabled | Disable right click on images             |
 
 ## Enable show Exif data
@@ -96,7 +96,7 @@ Toggles the display of image Exif data.
 
 | Value    | Effect                            |
 | -------- | --------------------------------- |
-| Enabled  | Show image Exif data              |
+| Enabled | Show image Exif data              |
 | Disabled | Don't show (hide) image Exif data |
 
 ## Enable social share
@@ -105,7 +105,7 @@ Toggles the social share buttons for sharing the image.
 
 | Value    | Effect                                 |
 | -------- | -------------------------------------- |
-| Enabled  | Enable social share buttons for image  |
+| Enabled | Enable social share buttons for image  |
 | Disabled | Disable social share buttons for image |
 
 ## Enable embed codes (content)
@@ -114,7 +114,7 @@ Toggles the display of embed codes.
 
 | Value    | Effect                        |
 | -------- | ----------------------------- |
-| Enabled  | Show embed codes              |
+| Enabled | Show embed codes              |
 | Disabled | Don't show (hide) embed codes |
 
 ## Not safe content checkbox in uploader
@@ -123,7 +123,7 @@ Toggles the display of the NSFW checkbox.
 
 | Value    | Effect                           |
 | -------- | -------------------------------- |
-| Enabled  | Enable display of NSFW checkbox  |
+| Enabled | Enable display of NSFW checkbox  |
 | Disabled | DIsable display of NSFW checkbox |
 
 ## Custom CSS code

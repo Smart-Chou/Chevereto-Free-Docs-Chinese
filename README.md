@@ -24,6 +24,5 @@
 
 ## 翻译
 
-::: tip
 为 [translations](https://chevereto.oneskyapp.com/) 做出贡献，以您的语言提供 Chevereto。
-:::
+

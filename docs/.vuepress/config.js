@@ -102,7 +102,7 @@ module.exports = {
                             },
                             {
                                 text: 'Server',
-                                children: ['/setup/server/requirements.md', '/setup/server/installation.md', '/setup/server/cpanel.md', '/setup/server/settings-file.md', '/setup/server/upgrading.md', '/setup/server/upgrading.md'],
+                                children: ['/setup/server/requirements.md', '/setup/server/installation.md', '/setup/server/cpanel.md', '/setup/server/settings-file.md', '/setup/server/updating.md', '/setup/server/upgrading.md'],
                             },
                             {
                                 text: 'Container',
@@ -139,7 +139,10 @@ module.exports = {
                         ],
                     },
                     { text: 'API', link: '/api/' },
-                    { text: 'Dashboard', link: '/settings/' },
+                    {
+                        text: 'Dashboard',
+                        children: ['/settings/README.md', '/settings/website.md', '/settings/content.md', '/settings/pages.md', '/settings/listings.md', '/settings/image-upload.md', '/settings/categories.md', '/settings/users.md', '/settings/consent-screen.md', '/settings/flood-protection.md', '/settings/theme.md', '/settings/homepage.md', '/settings/banners.md', '/settings/system.md', '/settings/routing.md', '/settings/languages.md', '/settings/external-storage.md', '/settings/email.md', '/settings/social-networks.md', '/settings/external-services.md', '/settings/ip-bans.md', '/settings/api.md', '/settings/additional-settings.md', '/settings/tools.md'],
+                    },
                 ],
                 sidebar: {
                     '/get-started/': [
@@ -157,7 +160,7 @@ module.exports = {
                         {
                             text: 'Server',
                             collapsible: true,
-                            children: ['/setup/server/requirements.md', '/setup/server/installation.md', '/setup/server/cpanel.md', '/setup/server/settings-file.md', '/setup/server/upgrading.md', '/setup/server/upgrading.md'],
+                            children: ['/setup/server/requirements.md', '/setup/server/installation.md', '/setup/server/cpanel.md', '/setup/server/settings-file.md', '/setup/server/updating.md', '/setup/server/upgrading.md'],
                         },
                         {
                             text: 'Container',
@@ -200,7 +203,7 @@ module.exports = {
                     '/settings/': [
                         {
                             text: 'Dashboard',
-                            children: ['/settings/README.md', '/settings/additional-settings.md', '/settings/api.md', '/settings/banners.md', '/settings/categories.md', '/settings/consent-screen.md', '/settings/content.md', '/settings/email.md', '/settings/external-services.md', '/settings/external-storage.md', '/settings/flood-protection.md', '/settings/homepage.md', '/settings/image-upload.md', '/settings/ip-bans.md', '/settings/languages.md', '/settings/listings.md', '/settings/pages.md', '/settings/routing.md', '/settings/social-networks.md', '/settings/system.md', '/settings/theme.md', '/settings/tools.md', '/settings/users.md', '/settings/website.md'],
+                            children: ['/settings/README.md', '/settings/website.md', '/settings/content.md', '/settings/pages.md', '/settings/listings.md', '/settings/image-upload.md', '/settings/categories.md', '/settings/users.md', '/settings/consent-screen.md', '/settings/flood-protection.md', '/settings/theme.md', '/settings/homepage.md', '/settings/banners.md', '/settings/system.md', '/settings/routing.md', '/settings/languages.md', '/settings/external-storage.md', '/settings/email.md', '/settings/social-networks.md', '/settings/external-services.md', '/settings/ip-bans.md', '/settings/api.md', '/settings/additional-settings.md', '/settings/tools.md'],
                         },
                     ],
                 },
@@ -233,7 +236,7 @@ module.exports = {
                             },
                             {
                                 text: 'Server',
-                                children: ['/en/setup/server/requirements.md', '/en/setup/server/installation.md', '/en/setup/server/cpanel.md', '/en/setup/server/settings-file.md', '/en/setup/server/upgrading.md', '/en/setup/server/upgrading.md'],
+                                children: ['/en/setup/server/requirements.md', '/en/setup/server/installation.md', '/en/setup/server/cpanel.md', '/en/setup/server/settings-file.md', '/en/setup/server/updating.md', '/en/setup/server/upgrading.md'],
                             },
                             {
                                 text: 'Container',
@@ -270,7 +273,10 @@ module.exports = {
                         ],
                     },
                     { text: 'API', link: '/en/api/' },
-                    { text: 'Dashboard', link: '/en/settings/' },
+                    {
+                        text: 'Dashboard',
+                        children: ['/en/settings/README.md', '/en/settings/website.md', '/en/settings/content.md', '/en/settings/pages.md', '/en/settings/listings.md', '/en/settings/image-upload.md', '/en/settings/categories.md', '/en/settings/users.md', '/en/settings/consent-screen.md', '/en/settings/flood-protection.md', '/en/settings/theme.md', '/en/settings/homepage.md', '/en/settings/banners.md', '/en/settings/system.md', '/en/settings/routing.md', '/en/settings/languages.md', '/en/settings/external-storage.md', '/en/settings/email.md', '/en/settings/social-networks.md', '/en/settings/external-services.md', '/en/settings/ip-bans.md', '/en/settings/api.md', '/en/settings/additional-settings.md', '/en/settings/tools.md'],
+                    },
                 ],
                 sidebar: {
                     '/en/get-started/': [
@@ -288,7 +294,7 @@ module.exports = {
                         {
                             text: 'Server',
                             collapsible: true,
-                            children: ['/en/setup/server/requirements.md', '/en/setup/server/installation.md', '/en/setup/server/cpanel.md', '/en/setup/server/settings-file.md', '/en/setup/server/upgrading.md', '/en/setup/server/upgrading.md'],
+                            children: ['/en/setup/server/requirements.md', '/en/setup/server/installation.md', '/en/setup/server/cpanel.md', '/en/setup/server/settings-file.md', '/en/setup/server/updating.md', '/en/setup/server/upgrading.md'],
                         },
                         {
                             text: 'Container',
@@ -331,7 +337,7 @@ module.exports = {
                     '/en/settings/': [
                         {
                             text: 'Dashboard',
-                            children: ['/en/settings/additional-settings.md', '/en/settings/api.md', '/en/settings/banners.md', '/en/settings/categories.md', '/en/settings/consent-screen.md', '/en/settings/content.md', '/en/settings/email.md', '/en/settings/external-services.md', '/en/settings/external-storage.md', '/en/settings/flood-protection.md', '/en/settings/homepage.md', '/en/settings/image-upload.md', '/en/settings/ip-bans.md', '/en/settings/languages.md', '/en/settings/listings.md', '/en/settings/pages.md', '/en/settings/routing.md', '/en/settings/social-networks.md', '/en/settings/system.md', '/en/settings/theme.md', '/en/settings/tools.md', '/en/settings/users.md', '/en/settings/website.md'],
+                            children: ['/en/settings/README.md', '/en/settings/website.md', '/en/settings/content.md', '/en/settings/pages.md', '/en/settings/listings.md', '/en/settings/image-upload.md', '/en/settings/categories.md', '/en/settings/users.md', '/en/settings/consent-screen.md', '/en/settings/flood-protection.md', '/en/settings/theme.md', '/en/settings/homepage.md', '/en/settings/banners.md', '/en/settings/system.md', '/en/settings/routing.md', '/en/settings/languages.md', '/en/settings/external-storage.md', '/en/settings/email.md', '/en/settings/social-networks.md', '/en/settings/external-services.md', '/en/settings/ip-bans.md', '/en/settings/api.md', '/en/settings/additional-settings.md', '/en/settings/tools.md'],
                         },
                     ],
                 },

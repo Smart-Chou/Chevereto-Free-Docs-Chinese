@@ -1,28 +1,28 @@
-# Requirements
+# 要求
 
-To use containers you need a container engine like [Docker](https://www.docker.com/) and to manage and administer these images in a container registry.
+要使用容器，您需要像 [Docker](https://www.docker.com/) 这样的容器引擎，并在容器注册表中管理和管理这些镜像。
 
-There are many container registry alternatives to pick from. To name a few:
+有许多容器注册表替代方案可供选择。仅举几例：
 
-* Docker Hub
-* GitHub Container Registry
-* Google Cloud Container Registry
-* Azure Container Registry
+* Docker 集线器
+* GitHub 容器注册表
+* 谷歌云容器注册表
+* Azure 容器注册表
 
 ::: tip
-Don't worry about image management, we have an automated one-time setup [Container Registry](registry.md) that will enable you to get all the benefits of containers without the hassles.
+不用担心镜像管理，我们有一个自动化的一次性设置 [Container Registry](registry.md)，它将使您能够轻松获得容器的所有好处。
 :::
 
-## Why?
+## 为什么？
 
-* One-time setup
+* 一次性设置
 
-Our container registry repo setup needs to be configured once. From there, the experience is button clicking to instruct base image update and re-deploy.
+我们的容器注册表 repo 设置需要配置一次。从那里，经验是单击按钮以指示基本映像更新和重新部署。
 
-* One-click experience
+* 一键体验
 
-Get your container images one-click updated from the Github web-based user interface. No more commands, just button clicking.
+从基于 Web 的 Github 用户界面一键更新您的容器映像。没有更多的命令，只需单击按钮。
 
-* Better isolation
+* 更好的隔离
 
-Running the build process in disposable CI machinery is safer than using any other system. This makes the process harder to temper with.
+在一次性 CI 机器中运行构建过程比使用任何其他系统更安全。这使得这个过程更难适应。

@@ -1,142 +1,142 @@
-# Website settings
+# 网站
 
 `/dashboard/settings/website`
 
-## Website name
+## 网站名称
 
-Determines the name of your website, it will be used in all document titles (trailing).
+确定您网站的名称，它将用于所有后缀标题。
 
-## Website `doctitle`
+## 网站`标题`
 
-Determines the `doctitle` for your website, mainly used in homepage.
+确定您网站的`标题`，主要用于主页。
 
-## Website description
+## 网站描述
 
-A brief summary on what's your website.
+关于您的网站的简要摘要。
 
-## Powered by Chevereto
+## 由 Chevereto 提供支持
 
-Determines if the "Powered by Chevereto" appears on your website.
+确定“Powered by Chevereto”是否出现在您的网站上。
 
-Showing "Powered by Chevereto" allows others to know the software and it helps us to get known.
+显示“Powered by Chevereto”可以让其他人了解该软件，也有助于我们了解该软件。
 
-| Value    | Effect                                |
+|键值 |效果|
 | -------- | ------------------------------------- |
-| Enabled  | Enable "Powered by Chevereto" footer  |
-| Disabled | Disable "Powered by Chevereto" footer |
+|启用|启用“Powered by Chevereto”页脚 |
+|禁用|禁用“Powered by Chevereto”页脚 |
 
 ## HTTPS
 
-Determines how HTTPS will be handled for the application URLs.
+确定如何为应用程序 URL 处理 HTTPS。
 
-| Value     | Effect                                                   |
+|键值 |效果|
 | --------- | -------------------------------------------------------- |
-| Automatic | Use HTTPS on URLs if web server is configured with HTTPS |
-| Forced    | Always use HTTPS                                         |
-| Disabled  | Disable HTTPS (all URLs will use `http`)                 |
+|自动 |如果 Web 服务器配置了 HTTPS，则在 URL 上使用 HTTPS |
+|强制 |始终使用 HTTPS |
+|禁用 |禁用 HTTPS（所有 URL 将使用 `http`) |
 
-## Default time zone
+## 默认时区
 
-Determines the default system time zone. This will be the default timezone for new user sign-up.
+确定默认系统时区。这将是新用户注册的默认时区。
 
-## Search
+## 搜索
 
-Toggles the search functionality.
+切换搜索功能。
 
-Search allows users to locate content based on a search query.
+搜索允许用户根据搜索查询定位内容。
 
-| Value    | Effect         |
+|键值 |效果|
 | -------- | -------------- |
-| Enabled  | Enable search  |
-| Disabled | Disable search |
+|启用|启用搜索 |
+|禁用|禁用搜索 |
 
-## Explore
+## 探索
 
-Toggles the explore functionality.
+切换探索功能。
 
-Explore browses the public available images.
+探索浏览公共可用的图像。
 
-| Value    | Effect          |
+|键值 |效果|
 | -------- | --------------- |
-| Enabled  | Enable explore  |
-| Disabled | Disable explore |
+|启用|启用探索 |
+|禁用 |禁用探索 |
 
-## Explore (guests)
+## 探索（客人）
 
-Toggles the explore functionality (for guests).
+切换探索功能（对于客人）。
 
-Same as [explore](#explore), but only affects guests users.
+与 [explore](#explore) 相同，但仅影响来宾用户。
 
-| Value    | Effect                    |
+|键值 |效果|
 | -------- | ------------------------- |
-| Enabled  | Enable explore for guest  |
-| Disabled | Disable explore for guest |
+|启用|为访客启用探索 |
+|禁用 |禁用访客探索 |
 
-## Random
+## 随机的
 
-Toggles the random functionality.
+切换随机功能。
 
-Random allows to randomly show a public image. It enables `?random` to fetch a random public image.
+Random 允许随机显示公共图像。它使 `?random` 能够获取随机的公共图像。
 
-| Value    | Effect                |
+|键值 |效果|
 | -------- | --------------------- |
-| Enabled  | Enable random button  |
-| Disabled | Disable random button |
+|启用|启用随机按钮 |
+|禁用 |禁用随机按钮 |
 
-## Likes
+## 喜欢
 
-Toggles the likes functionality.
+切换喜欢功能。
 
-Likes allow users to like content. It also generates "liked" listings.
+喜欢允许用户喜欢内容。它还生成“喜欢”的列表。
 
-| Value    | Effect        |
+|键值 |效果|
 | -------- | ------------- |
-| Enabled  | Enable likes  |
-| Disabled | Disable likes |
+|启用|启用喜欢 |
+|禁用 |禁用喜欢 |
 
-## Followers
+## 追随者
 
-Toggles the followers functionality.
+切换关注者功能。
 
-Followers allow users to follow each other. It also enables the "following" listing for each user.
+关注者允许用户互相关注。它还为每个用户启用“以下”列表。
 
-| Value    | Effect            |
+|键值 |效果|
 | -------- | ----------------- |
-| Enabled  | Enable followers  |
-| Disabled | Disable followers |
+|启用|启用关注者 |
+|禁用 |禁用关注者 |
 
-## Website mode
+## 网站模式
 
-Determines the website mode. It will affect how your installation works.
+确定网站模式。它会影响您的安装工作方式。
 
-| Value     | Effect                                          |
+|键值 |效果|
 | --------- | ----------------------------------------------- |
-| Community | A community-like website with users interacting |
-| Personal  | A single-user experience                        |
+|Community |一个用户互动的类似社区的网站|
+|Personal  |单用户体验 |
 
-## Website privacy mode
+## 网站隐私模式
 
-Determines the website privacy mode.
+确定网站隐私模式。
 
-::: warning
-Private mode will always require login. Implement it only for private audiences.
+::: danger
+私人模式将始终需要登录。仅针对私人观众实施它。
 :::
 
-| Value   | Effect                                                 |
+|键值 |效果|
 | ------- | ------------------------------------------------------ |
-| Public  | All content is intended to be public                   |
-| Private | All content is intended to be private (login required) |
+|访客开发 |所有内容都旨在公开|
+|仅注册用户 |所有内容都是私密的（需要登录）|
 
-## Content privacy mode*
+## 内容隐私模式*
 
-*Applies only if `Website privacy mode` is set to `Private`.
+*仅在“网站隐私模式”设置为“隐私”时适用。
 
-Determines the user content privacy mode.
+确定用户内容隐私模式。
 
-Privacy is provisioned per album basis. Images inherits privacy from the album.
+隐私是按专辑提供的。图像继承了相册的隐私。
 
-| Value                                | Effect                                                                      |
-| ------------------------------------ | --------------------------------------------------------------------------- |
-| Default                              | Users can freely choose the privacy for their own content                   |
-| Force private (self)                 | User content is forced to be private and only the owner can see the content |
-| Force private (anyone with the link) | User content is forced to be private but accesible for anyone with the link |
+|键值 |效果|
+| ------------------------------------- | --------------------------------------------------------------------------- |
+|默认 |用户可以为自己的内容自由选择隐私|
+|全局隐私 (仅自己可见) |用户内容被强制保密，只有所有者才能看到内容|
+|全局隐私 (所有人仅能通过链接可见)|用户内容被强制保密，但任何拥有链接的人都可以访问 |

@@ -1,29 +1,29 @@
-# Installation
+# 安装
 
-To install Chevereto it requires a server environment where the software and uploaded files will be served. This document outlines the generic installation process from scratch.
+要安装 Chevereto，它需要一个服务器环境，在该环境中将提供软件和上传的文件。本文档概述了从头开始的通用安装过程。
 
-::: danger Using cPanel?
-cPanel users are advised to check the [cPanel guide](cpanel.md).
+::: danger 使用 cPanel？
+建议 cPanel 用户查看 [cPanel 指南](cpanel.md)。
 :::
 
-## Requirements
+## 要求
 
-Before installing anything check that the target server provides the system [requirements](../server/requirements.md) to run Chevereto.
+在安装任何东西之前，请检查目标服务器是否提供了系统 [requirements](../server/requirements.md) 来运行 Chevereto。
 
-## Database
+## 数据库
 
-### Using web panels
+### 使用网络面板
 
-You can refer to the documentation for creating the MySQL database required for Chevereto. Here references for the most popular panels:
+Chevereto所需的MySQL数据库的创建可以参考文档。这里是最受欢迎的面板的参考：
 
-* [CloudPanel Database](https://www.cloudpanel.io/docs/cloudpanel-ce/frontend-area/databases)
-* [cPanel Database](https://docs.cpanel.net/cpanel/databases/mysql-databases/)
-* [Plesk Database](https://docs.plesk.com/en-US/obsidian/customer-guide/website-databases/creating-databases.65157/)
-* [CyberPanel Database](https://cyberpanel.net/docs/view-and-manage-databases-table-from-cloud-platform/)
+* [云面板数据库](https://www.cloudpanel.io/docs/cloudpanel-ce/frontend-area/databases)
+* [cPanel 数据库](https://docs.cpanel.net/cpanel/databases/mysql-databases/)
+* [Plesk 数据库](https://docs.plesk.com/en-US/obsidian/customer-guide/website-databases/creating-databases.65157/)
+* [CyberPanel 数据库](https://cyberpanel.net/docs/view-and-manage-databases-table-from-cloud-platform/)
 
-### Using the MySQL console
+### 使用 MySQL 控制台
 
-Run the following command to create the `chevereto` database and its user binding:
+运行以下命令来创建 `chevereto` 数据库及其用户绑定：
 
 ```sh
 sudo mysql -uroot -ppassword -e "CREATE DATABASE chevereto; \
@@ -31,35 +31,35 @@ sudo mysql -uroot -ppassword -e "CREATE DATABASE chevereto; \
     GRANT ALL ON chevereto.* TO 'chevereto' IDENTIFIED BY 'user_database_password';"
 ```
 
-## Provide application files
+## 提供应用程序文件
 
 ::: tip
-When providing files to your server make sure that the files `owner:group` permissions are usable by the Web Server user.
+向您的服务器提供文件时，请确保 Web 服务器用户可以使用文件`owner:group`权限。
 :::
 
-You will require to provide the Chevereto software application files to your server.
+您将需要向您的服务器提供 Chevereto 软件应用程序文件。
 
-## Using Release package
+## 使用发布包
 
-The release package is a `zip` file containing the software files. Once extracted, the software is ready to be installed.
+发布包是一个包含软件文件的`zip`文件。解压后，软件就可以安装了。
 
-👉 This method is recommended for **cPanel**, **Plesk** and other web panel users.
+👉 建议**cPanel**、**Plesk** 和其他网页面板用户使用此方法。
 
-* Upload the [latest release](https://chevereto.com/panel/downloads) package to your server (usually in the `public_html` folder)
-* Unzip the software using your server built-in `unzip` utility
-* Remove the `.zip` file
-* Open your target website URL and follow the instructions
+* 将[最新版本](https://chevereto.com/panel/downloads) 包上传到您的服务器(通常在`public_html` 文件夹中)
+* 使用服务器内置的 `unzip` 实用程序解压缩软件
+* 删除 `.zip` 文件
+* 打开您的目标网站 URL 并按照说明进行操作
 
-## Using Composer package manager
+## 使用 Composer 包管理器
 
-Using Composer the update carried in CLI context. It requires:
+使用 Composer 在 CLI 上下文中进行更新。这个需要：
 
-* CLI with `curl`, `unzip`
+* 带有 `curl`、`unzip` 的 CLI
 * [Composer](https://getcomposer.org/)
 
-👉 This method is recommended for **VPS** and machines with **CLI access**.
+👉 **VPS** 和 **CLI 访问**的机器推荐使用此方法。
 
-* Run the following command from your **Chevereto project folder**:
+* 从您的 **Chevereto 项目文件夹** 运行以下命令：
 
 <CodeGroup>
 <CodeGroupItem title="Debian">
@@ -79,12 +79,12 @@ curl -f -SOJL \
 </CodeGroupItem>
 </CodeGroup>
 
-* Open your target website URL and follow the instructions
+* 打开您的目标网站 URL 并按照说明进行操作
 
-### Installer
+### 安装程序
 
-The [installer.php](https://github.com/chevereto/installer) is a single-file tool which will ease the installation of the software. It's an API client which downloads and extracts the software for you.
+[installer.php](https://github.com/chevereto/installer) 是一个单文件工具，可以简化软件的安装。它是一个 API 客户端，可为您下载和提取软件。
 
-## Post-Install
+## 安装后
 
-Refer to [Initial setup](../../manual/first-steps/initial-setup.md) instructions.
+请参阅[初始设置](../../manual/first-steps/initial-setup.md) 说明。
