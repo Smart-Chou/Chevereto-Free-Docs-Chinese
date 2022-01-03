@@ -1,0 +1,1 @@
+const t={key:"v-489550f6",path:"/settings/banners.html",title:"\u6A2A\u5E45\u5E7F\u544A",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641199562e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:2}]},filePathRelative:"settings/banners.md"};export{t as data};

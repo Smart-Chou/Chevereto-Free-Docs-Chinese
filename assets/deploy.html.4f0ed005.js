@@ -1,1 +1,0 @@
-const t={key:"v-659727b4",path:"/get-started/deploy.html",title:"Deploy on Cloud",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"get-started/deploy.md"};export{t as data};

@@ -1,1 +1,0 @@
-const t={key:"v-4f0b2366",path:"/manual/first-steps/setup-cron.html",title:"Setup cron",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"Cron Guides",slug:"cron-guides",children:[]}],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"manual/first-steps/setup-cron.md"};export{t as data};

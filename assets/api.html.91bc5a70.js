@@ -1,0 +1,1 @@
+const t={key:"v-1b19e192",path:"/settings/api.html",title:"API",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"API v1 \u5BC6\u94A5",slug:"api-v1-\u5BC6\u94A5",children:[]}],git:{updatedTime:1641199562e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:2}]},filePathRelative:"settings/api.md"};export{t as data};

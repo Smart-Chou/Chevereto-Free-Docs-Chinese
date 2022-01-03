@@ -1,1 +1,0 @@
-const e={key:"v-64799060",path:"/setup/container/requirements.html",title:"Requirements",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"Why?",slug:"why",children:[]}],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"setup/container/requirements.md"};export{e as data};

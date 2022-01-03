@@ -1,0 +1,1 @@
+const t={key:"v-455c2dc2",path:"/manual/first-steps/setup-email.html",title:"\u8BBE\u7F6E\u90AE\u7BB1",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641199562e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:2}]},filePathRelative:"manual/first-steps/setup-email.md"};export{t as data};
