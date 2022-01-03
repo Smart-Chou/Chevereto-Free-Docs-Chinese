@@ -1,4 +1,4 @@
-# 自举
+# 自我检测
 
 ::: tip
 使用 [Container Registry](../../setup/container/registry.md) 进行一次性容器配置。 Bootstrapped 意味着应用层是在容器运行时提供的。

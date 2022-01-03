@@ -7,19 +7,12 @@ heroText: Chevereto V3 文档
 tagline: 自托管图像托管软件
 actions:
   - text: 快速入门 →
-    link: /get-started/
+    link: /setup/system/requirements.md
     type: primary
   - text: 项目介绍
-    link: /guide/
+    link: /get-started/
     type: secondary
-features:
-- title: 简单至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue 驱动
-  details: 享受 Vue 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
-footer: Copyright © MIFSH
+footer: Copyright 2022 © MIFSH | All Rights Reserved
 footerHtml: true
 ---
 

@@ -8,11 +8,11 @@
 要使用本地存储，需要在应用程序可见的路径中安装适当的卷。
 :::
 
-对于资产存储，您可以使用任何受支持的 [外部存储](../../features/integrations/external-storage.md) API。这需要配置传递[资产环境变量](../system/environment.md#assets-variables)。
+对于资产存储，您可以使用任何受支持的 [外部存储](../../features/integrations/external-storage.md) API。这需要配置传递[资产环境变量](../system/environment.md#资产变量)。
 
 ### 会话
 
-对于持久会话，您可以通过配置 [会话环境变量](../system/environment.md#session-variables) 变量来使用 Redis。
+对于持久会话，您可以通过配置 [会话环境变量](../system/environment.md#会话变量) 变量来使用 Redis。
 
 ### 数据库
 

@@ -24,8 +24,8 @@ Chevereto 是 [PHP](https://php.net/) 软件，它的设计使用：
 ```sh
 upload_max_filesize = 50M;
 post_max_size = 50M;
-最大执行时间 = 30；
-内存限制 = 512M；
+max_execution_time = 30;
+memory_limit = 512M;
 ```
 
 |物业 |说明 |示例 |
@@ -105,12 +105,12 @@ $settings['image_formats_available'] = ['PNG', 'GIF', 'BMP', 'JPG'];
 Chevereto 用户需要在以下路径中具有 **读/写** 访问权限：
 
 * `/tmp`
-* `应用程序/内容/`
-* `应用程序/内容/语言/`
-* `应用程序/内容/语言/缓存/`
-* `应用程序/内容/系统/`
-* `内容/`
-* `图像/`
+* `app/content/`
+* `app/content/languages/`
+* `app/content/languages/cache/`
+* `app/content/system/`
+* `content/`
+* `images/`
 
 ## 数据库
 

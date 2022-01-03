@@ -1,6 +1,6 @@
 # ShareX
 
-[ShareX](https://en.wikipedia.org/wiki/ShareX) 是一个适用于 Windows 的实用程序，它允许您将图像、屏幕截图、文本和其他类型的内容上传到多个提供商。借助 [Chevereto API](./../API/V1.md)，您可以轻松地在 Chevereto 网站上使用 ShareX，直接从您的计算机上传图像。
+[ShareX](https://en.wikipedia.org/wiki/ShareX) 是一个适用于 Windows 的实用程序，它允许您将图像、屏幕截图、文本和其他类型的内容上传到多个提供商。借助 [Chevereto API](../../api/#api-v1)，您可以轻松地在 Chevereto 网站上使用 ShareX，直接从您的计算机上传图像。
 
 ## 获取 ShareX
 
@@ -52,7 +52,7 @@ URL: http://mysite.com/image/<id>
 
 ## 将图像上传到用户帐户
 
-Chevereto API V1 可以以访客身份上传图片。如果要将图像上传到给定用户，请检查 [API 用户上传解决方法](./../API/V1.md)。
+Chevereto API V1 可以以访客身份上传图片。如果要将图像上传到给定用户，请检查 [API 用户上传解决方法](../../api/#上传给用户解决方法)。
 
 ## 需要帮忙？
 

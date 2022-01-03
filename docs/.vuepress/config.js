@@ -88,111 +88,110 @@ module.exports = {
         author: 'ChouCong',
         description: '开源自托管映像托管解决方案',
         hostname: 'https://codenoob.top/Chevereto-Free-Docs-Chinese',
+        docsRepo: 'Smart-Chou/Chevereto-Free-Docs-Chinese',
+        docsDir: 'docs',
+        editLink: true,
         locales: {
             '/': {
                 navbar: [
-                    { text: '首页', link: '/' },
-                    { text: 'Get Started', link: '/get-started/' },
+                    { text: '主页', link: '/get-started/' },
                     {
-                        text: 'Setup',
+                        text: '安装',
                         children: [
                             {
-                                text: 'System',
+                                text: '系统',
                                 children: ['/setup/system/requirements.md', '/setup/system/environment.md'],
                             },
                             {
-                                text: 'Server',
+                                text: '服务器',
                                 children: ['/setup/server/requirements.md', '/setup/server/installation.md', '/setup/server/cpanel.md', '/setup/server/settings-file.md', '/setup/server/updating.md', '/setup/server/upgrading.md'],
                             },
                             {
-                                text: 'Container',
+                                text: '容器',
                                 children: ['/setup/container/requirements.md', '/setup/container/registry.md', '/setup/container/running.md', '/setup/container/bootstrapped.md'],
                             },
                         ],
                     },
                     {
-                        text: 'Manual',
+                        text: '手册',
                         children: [
                             {
-                                text: 'First Steps',
+                                text: '第一步',
                                 children: ['/manual/first-steps/initial-setup.md', '/manual/first-steps/setup-cron.md', '/manual/first-steps/setup-email.md'],
                             },
                             {
-                                text: 'Troubleshooting',
+                                text: '故障排除',
                                 children: ['/manual/troubleshooting/debug.md', '/manual/troubleshooting/errors.md', '/manual/troubleshooting/server-issues.md'],
                             },
                         ],
                     },
                     {
-                        text: 'Features',
+                        text: '特点',
                         children: [
-                            { text: 'Content', children: ['/features/content/bulk-content-importer.md'] },
+                            { text: '内容', children: ['/features/content/bulk-content-importer.md'] },
                             {
-                                text: 'Customization',
+                                text: '自定义',
                                 children: ['/features/customization/language.md', '/features/customization/routes.md', '/features/customization/theme.md'],
                             },
                             {
-                                text: 'Integrations',
+                                text: '集成',
                                 children: ['/features/integrations/external-storage.md', '/features/integrations/pup.md', '/features/integrations/sharex.md', '/features/integrations/social-login.md'],
                             },
-                            { text: 'Reference', children: ['/features/reference/security.md'] },
+                            { text: '参考', children: ['/features/reference/security.md'] },
                         ],
                     },
                     { text: 'API', link: '/api/' },
-                    {
-                        text: 'Dashboard',
-                        children: ['/settings/README.md', '/settings/website.md', '/settings/content.md', '/settings/pages.md', '/settings/listings.md', '/settings/image-upload.md', '/settings/categories.md', '/settings/users.md', '/settings/consent-screen.md', '/settings/flood-protection.md', '/settings/theme.md', '/settings/homepage.md', '/settings/banners.md', '/settings/system.md', '/settings/routing.md', '/settings/languages.md', '/settings/external-storage.md', '/settings/email.md', '/settings/social-networks.md', '/settings/external-services.md', '/settings/ip-bans.md', '/settings/api.md', '/settings/additional-settings.md', '/settings/tools.md'],
-                    },
+                    { text: '设置', link: '/settings/' },
                 ],
                 sidebar: {
                     '/get-started/': [
                         {
-                            text: 'Get Started',
+                            text: '主页',
                             children: ['/get-started/README.md', '/get-started/introduction.md', '/get-started/status.md', '/get-started/deploy.md'],
                         },
                     ],
                     '/setup/': [
                         {
-                            text: 'System',
+                            text: '系统',
                             collapsible: true,
                             children: ['/setup/system/requirements.md', '/setup/system/environment.md'],
                         },
                         {
-                            text: 'Server',
+                            text: '服务器',
                             collapsible: true,
                             children: ['/setup/server/requirements.md', '/setup/server/installation.md', '/setup/server/cpanel.md', '/setup/server/settings-file.md', '/setup/server/updating.md', '/setup/server/upgrading.md'],
                         },
                         {
-                            text: 'Container',
+                            text: '容器',
                             collapsible: true,
                             children: ['/setup/container/requirements.md', '/setup/container/registry.md', '/setup/container/running.md', '/setup/container/bootstrapped.md'],
                         },
                     ],
                     '/manual/': [
                         {
-                            text: 'First Steps',
+                            text: '第一步',
                             collapsible: true,
                             children: ['/manual/first-steps/initial-setup.md', '/manual/first-steps/setup-cron.md', '/manual/first-steps/setup-email.md'],
                         },
                         {
-                            text: 'Troubleshooting',
+                            text: '故障排除',
                             collapsible: true,
                             children: ['/manual/troubleshooting/debug.md', '/manual/troubleshooting/errors.md', '/manual/troubleshooting/server-issues.md'],
                         },
                     ],
                     '/features/': [
-                        { text: 'Content', collapsible: true, children: ['/features/content/bulk-content-importer.md'] },
+                        { text: '内容', collapsible: true, children: ['/features/content/bulk-content-importer.md'] },
                         {
-                            text: 'Customization',
+                            text: '自定义',
                             collapsible: true,
                             children: ['/features/customization/language.md', '/features/customization/routes.md', '/features/customization/theme.md'],
                         },
                         {
-                            text: 'Integrations',
+                            text: '集成',
                             collapsible: true,
                             children: ['/features/integrations/external-storage.md', '/features/integrations/pup.md', '/features/integrations/sharex.md', '/features/integrations/social-login.md'],
                         },
-                        { text: 'Reference', collapsible: true, children: ['/features/reference/security.md'] },
+                        { text: '参考', collapsible: true, children: ['/features/reference/security.md'] },
                     ],
                     '/api/': [
                         {
@@ -202,7 +201,7 @@ module.exports = {
                     ],
                     '/settings/': [
                         {
-                            text: 'Dashboard',
+                            text: '设置',
                             children: ['/settings/README.md', '/settings/website.md', '/settings/content.md', '/settings/pages.md', '/settings/listings.md', '/settings/image-upload.md', '/settings/categories.md', '/settings/users.md', '/settings/consent-screen.md', '/settings/flood-protection.md', '/settings/theme.md', '/settings/homepage.md', '/settings/banners.md', '/settings/system.md', '/settings/routing.md', '/settings/languages.md', '/settings/external-storage.md', '/settings/email.md', '/settings/social-networks.md', '/settings/external-services.md', '/settings/ip-bans.md', '/settings/api.md', '/settings/additional-settings.md', '/settings/tools.md'],
                         },
                     ],
@@ -225,7 +224,6 @@ module.exports = {
             },
             '/en/': {
                 navbar: [
-                    { text: 'Home', link: '/en/' },
                     { text: 'Get Started', link: '/en/get-started/' },
                     {
                         text: 'Setup',
@@ -273,10 +271,7 @@ module.exports = {
                         ],
                     },
                     { text: 'API', link: '/en/api/' },
-                    {
-                        text: 'Dashboard',
-                        children: ['/en/settings/README.md', '/en/settings/website.md', '/en/settings/content.md', '/en/settings/pages.md', '/en/settings/listings.md', '/en/settings/image-upload.md', '/en/settings/categories.md', '/en/settings/users.md', '/en/settings/consent-screen.md', '/en/settings/flood-protection.md', '/en/settings/theme.md', '/en/settings/homepage.md', '/en/settings/banners.md', '/en/settings/system.md', '/en/settings/routing.md', '/en/settings/languages.md', '/en/settings/external-storage.md', '/en/settings/email.md', '/en/settings/social-networks.md', '/en/settings/external-services.md', '/en/settings/ip-bans.md', '/en/settings/api.md', '/en/settings/additional-settings.md', '/en/settings/tools.md'],
-                    },
+                    { text: 'Dashboard', link: '/settings/' },
                 ],
                 sidebar: {
                     '/en/get-started/': [

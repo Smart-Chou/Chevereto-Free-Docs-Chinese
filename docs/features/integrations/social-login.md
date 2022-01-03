@@ -51,7 +51,7 @@
 
 配置完成后，**注意**创建的**client ID**和**Client Secret**。
 
-转到 [Google 登录设置](../../settings/social-networks.md#google) 以在您的 Chevereto 安装中启用 Google 登录。
+转到 [Google 登录设置](../../settings/social-networks.md#谷歌) 以在您的 Chevereto 安装中启用 Google 登录。
 
 ## VK登录
 

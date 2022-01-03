@@ -75,7 +75,7 @@ Amazon S3 API 允许将图像上传到 [Amazon S3](https://en.wikipedia.org/wiki
   - 存储 **bucket name** 和 **region**
   - 您不需要设置日志记录
 
-如果您想使用自定义域，请遵循 [CNAME](https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html#VirtualHostingCustomURLs) 文档。否则只需确保 [Storage URL](#storage-url) 以 `/<your_bucket_name>/` 结尾
+如果您想使用自定义域，请遵循 [CNAME](https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html#VirtualHostingCustomURLs) 文档。否则只需确保 [Storage URL](#存储地址) 以 `/<your_bucket_name>/` 结尾
 
 ## Backblaze B2
 
@@ -130,9 +130,9 @@ Google Cloud API 允许将图像上传到 Google Cloud Storage 存储桶。为�
 - 去 **keys** 并创建一个新的 **JSON 密钥**
 - 您的浏览器将开始下载 JSON 密钥文件，文件内容是您需要粘贴到 Chevereto 的 **Secret Key** 文本区域的内容
 
-## 当地的
+## 本地
 
-[Local API](../../settings/external-storage.md#local) 允许将图像上传到服务器中的任何文件系统路径。
+[Local API](../../settings/external-storage.md#本地) 允许将图像上传到服务器中的任何文件系统路径。
 
 ## 微软 Azure
 

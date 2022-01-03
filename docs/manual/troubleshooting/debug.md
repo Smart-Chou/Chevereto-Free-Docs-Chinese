@@ -4,7 +4,7 @@
 
 ## 配置调试
 
-可以使用 [environment](../../setup/system/environment.md#debug-variables) 变量或使用 [settings file](../../setup/server/settings-file.md)。
+可以使用 [environment](../../setup/system/environment.md#调试变量) 变量或使用 [settings file](../../setup/server/settings-file.md)。
 
 ### 调试级别
 

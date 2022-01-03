@@ -56,7 +56,7 @@ Chevereto **不会导致**以下问题：
 
 这是由 Web 服务器层发出的通用错误响应，它表明存在错误，但没有为其指定任何具体说明。
 
-由于这些错误可能在任何层产生，因此建议检查系统错误日志设备(阅读 [访问日志](debug.md#accessing-logs) 以了解操作方法)。
+由于这些错误可能在任何层产生，因此建议检查系统错误日志设备(阅读 [访问日志](debug.md#访问日志) 以了解操作方法)。
 
 ::: danger 调试 HTTP 500 错误
 这个错误需要在 web-server 层调试，这取决于所使用的 web 服务器软件。请参阅您的 Web 服务器配置文档。
@@ -78,7 +78,7 @@ Aw, snap! Internal Server Error - Check your error_log or enable debug_mode = 3
 如果在`/install`你看到一条以`#Dumped update query`开头的纯文本消息，这意味着你**必须**在你的MySQL控制台中手动运行打印的查询。
 :::
 
-如果 [dump update query](../../settings/system.md#dump-update-query) 设置为 **enabled** 或者图像表有 **多于 1,000,000** 条记录，Chevereto 将转储执行数据库更新所需的 SQL 语句，必须直接在 MySQL 控制台中运行。
+如果 [dump update query](../../settings/system.md#转储更新查询) 设置为 **enabled** 或者图像表有 **多于 1,000,000** 条记录，Chevereto 将转储执行数据库更新所需的 SQL 语句，必须直接在 MySQL 控制台中运行。
 
 Chevereto 具有此功能，可以最大限度地减少破坏大型数据库，因为该过程可能需要几分钟才能完成。
 

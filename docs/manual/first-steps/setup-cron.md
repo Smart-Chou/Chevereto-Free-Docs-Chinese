@@ -8,4 +8,4 @@
 
 ## Cron 指南
 
-* [在 cPanel 上设置 Cron](../../setup/server/cpanel.md#setup-cron-on-cpanel)
+* [在 cPanel 上设置 Cron](../../setup/server/cpanel.md#在-cpanel-上设置-cron)
