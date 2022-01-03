@@ -1,0 +1,1 @@
+const e={key:"v-a2b6fda4",path:"/en/manual/first-steps/setup-email.html",title:"Setup email",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"en/manual/first-steps/setup-email.md"};export{e as data};

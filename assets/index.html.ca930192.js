@@ -1,0 +1,1 @@
+const t={key:"v-59491d93",path:"/settings/",title:"Dashboard",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"Granting access to the Dashboard",slug:"granting-access-to-the-dashboard",children:[]}],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"settings/README.md"};export{t as data};

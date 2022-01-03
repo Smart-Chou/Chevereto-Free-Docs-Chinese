@@ -1,0 +1,1 @@
+const e={key:"v-6ca7e840",path:"/en/setup/server/settings-file.html",title:"Settings file",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"en/setup/server/settings-file.md"};export{e as data};

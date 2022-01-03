@@ -1,0 +1,1 @@
+const e={key:"v-c4df85c0",path:"/en/get-started/deploy.html",title:"Deploy on Cloud",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"en/get-started/deploy.md"};export{e as data};

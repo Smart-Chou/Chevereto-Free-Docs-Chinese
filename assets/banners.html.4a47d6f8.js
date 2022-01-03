@@ -1,0 +1,1 @@
+const e={key:"v-a8e6501e",path:"/en/settings/banners.html",title:"Banners",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641174093e3,contributors:[{name:"MIFSH",email:"Z18538383923@gmail.com",commits:1}]},filePathRelative:"en/settings/banners.md"};export{e as data};
